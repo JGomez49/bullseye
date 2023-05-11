@@ -25,9 +25,13 @@ document.getElementById('btnBuscar').addEventListener('click',function(){
 
   if(heelLatitude == 0 && heelLongitude == 0 && toeLatitude == 0 && toeLongitude == 0){
     heelLatitude = 56;
+    document.getElementById('heelLat').value = 56;
     heelLongitude = -114;
+    document.getElementById('heelLon').value = -114;
     toeLatitude = 55.99;
+    document.getElementById('toeLat').value = 55.99;
     toeLongitude = -114;
+    document.getElementById('toeLon').value = -114;
   }
 
 
@@ -74,8 +78,7 @@ document.getElementById('btnBuscar').addEventListener('click',function(){
 
   let rigIcon = L.icon({
     iconUrl: 'https://res.cloudinary.com/metacortexjohn/image/upload/v1682359935/rig01_vgeizw.png',
-    iconSize:     [15, 25], // size of the icon
-    // iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location
+    iconSize: [15, 25],
   });
   L.marker([heelLatitude, heelLongitude], {icon: rigIcon}).addTo(map);
 
@@ -96,7 +99,7 @@ document.getElementById('btnBuscar').addEventListener('click',function(){
 
   let radNBearing = deg2rad(Bearing) - Math.PI
   let degNBearing = rad2deg(radNBearing)
-  console.log("degNBearing: " + degNBearing)
+  // console.log("degNBearing: " + degNBearing)
 
 
   function offset_well(d , Bearing , color){
@@ -188,67 +191,111 @@ document.getElementById('btnBuscar').addEventListener('click',function(){
   let degLon2 = latNlon2[1]
 
 
-  // Verdes:
+
+
+  // Verdes:--------------------------------------------
   color= 'green';
-  // offset_well_2(degLat2, degLon2, 800 , 0, color); //0,400
-  offset_well_3(degLat2, degLon2, 0 , 400, color);
-  offset_well_3(degLat2, degLon2, 200 , 400, color);
-  offset_well_3(degLat2, degLon2, -200 , 400, color);
-  offset_well_3(degLat2, degLon2, 100 , 300, color);
-  offset_well_3(degLat2, degLon2, -100 , 300, color);
-  offset_well_3(degLat2, degLon2, 300 , 300, color);
-  offset_well_3(degLat2, degLon2, -300 , 300, color);
-  offset_well_3(degLat2, degLon2, 400 , 400, color);
-  offset_well_3(degLat2, degLon2, -400 , 400, color);
+  // offset_well_3(degLat2, degLon2, X , Y, color);
+
   offset_well_3(degLat2, degLon2, 0 , 200, color);
+
+  offset_well_3(degLat2, degLon2, 200 , 200, color);
+  offset_well_3(degLat2, degLon2, -200 , 200, color);
+
+  offset_well_3(degLat2, degLon2, 200 , 0, color);
+  offset_well_3(degLat2, degLon2, -200 , 0, color);  
+
   offset_well_3(degLat2, degLon2, 0 , 0, color);
+
   offset_well_3(degLat2, degLon2, 100 , -100, color);
   offset_well_3(degLat2, degLon2, -100 , -100, color);
 
-
-  // Naranjas:
-  color = 'orange'
-  // offset_well_3(degLat2, degLon2, 200 , 400, color);
-  offset_well_3(degLat2, degLon2, 100 , 100, color);
-  offset_well_3(degLat2, degLon2, -100 , 100, color);
-
-
-  // Rojos:
-  color = 'red'
-  offset_well_3(degLat2, degLon2, 200 , 200, color);
-  offset_well_3(degLat2, degLon2, -200 , 200, color);
-  offset_well_3(degLat2, degLon2, 400 , 200, color);
-  offset_well_3(degLat2, degLon2, -400 , 200, color);
   offset_well_3(degLat2, degLon2, 300 , 100, color);
   offset_well_3(degLat2, degLon2, -300 , 100, color);
-  offset_well_3(degLat2, degLon2, 200 , 0, color);
-  offset_well_3(degLat2, degLon2, -200 , 0, color);
-  offset_well_3(degLat2, degLon2, 400 , 0, color);
-  offset_well_3(degLat2, degLon2, -400 , 0, color);
+
   offset_well_3(degLat2, degLon2, 300 , -100, color);
-  offset_well_3(degLat2, degLon2, -300 , -100, color);
+  offset_well_3(degLat2, degLon2, -300 , -100, color);  
+
   offset_well_3(degLat2, degLon2, 0 , -200, color);
+
   offset_well_3(degLat2, degLon2, 200 , -200, color);
   offset_well_3(degLat2, degLon2, -200 , -200, color);
+
+  offset_well_3(degLat2, degLon2, 400 , 200, color);
+  offset_well_3(degLat2, degLon2, -400 , 200, color);
+
   offset_well_3(degLat2, degLon2, 400 , -200, color);
   offset_well_3(degLat2, degLon2, -400 , -200, color);
-  offset_well_3(degLat2, degLon2, 100 , -300, color);
-  offset_well_3(degLat2, degLon2, -100 , -300, color);
-  offset_well_3(degLat2, degLon2, 300 , -300, color);
-  offset_well_3(degLat2, degLon2, -300 , -300, color);
-  offset_well_3(degLat2, degLon2, 0 , -400, color);
+
+  offset_well_3(degLat2, degLon2, 400 , 0, color);
+  offset_well_3(degLat2, degLon2, -400 , 0, color);
+
+  //======================================================
+  
+  
+  
+
+
+  // Naranjas:--------------------------------------------
+  color = 'orange'
+
+  offset_well_3(degLat2, degLon2, 500 , 200, color);
+  offset_well_3(degLat2, degLon2, -500 , 200, color);  
+
+  offset_well_3(degLat2, degLon2, 100 , 100, color);
+  offset_well_3(degLat2, degLon2, -100 , 100, color);
+  //=======================================================
+
+
+
+
+  // Rojos:-----------------------------------------------
+  color = 'red'
+
+  offset_well_3(degLat2, degLon2, 200 , 600, color);
+  offset_well_3(degLat2, degLon2, -200 , 600, color);
+
+  offset_well_3(degLat2, degLon2, 0 , 800, color);
+
+  offset_well_3(degLat2, degLon2, 0 , 600, color);
+
+  offset_well_3(degLat2, degLon2, 0 , 400, color); 
+
+  offset_well_3(degLat2, degLon2, 200 , 400, color);
+  offset_well_3(degLat2, degLon2, -200 , 400, color);
+
   offset_well_3(degLat2, degLon2, 200 , -400, color);
   offset_well_3(degLat2, degLon2, -200 , -400, color);
+
+  offset_well_3(degLat2, degLon2, 100 , 300, color);
+  offset_well_3(degLat2, degLon2, -100 , 300, color);
+
+  offset_well_3(degLat2, degLon2, 100 , -300, color);
+  offset_well_3(degLat2, degLon2, -100 , -300, color);
+
+  offset_well_3(degLat2, degLon2, 300 , -300, color);
+  offset_well_3(degLat2, degLon2, -300 , -300, color);
+
+  offset_well_3(degLat2, degLon2, 300 , 300, color);
+  offset_well_3(degLat2, degLon2, -300 , 300, color);
+
+  offset_well_3(degLat2, degLon2, 400 , 400, color);
+  offset_well_3(degLat2, degLon2, -400 , 400, color);
+
   offset_well_3(degLat2, degLon2, 400 , -400, color);
   offset_well_3(degLat2, degLon2, -400 , -400, color);
+  
+  offset_well_3(degLat2, degLon2, 0 , -400, color);
+
+  //=======================================================
+  
+  
+
+  
+  
 
 
   map.flyTo([heelLatitude,heelLongitude],15);
-
-
-
-
-  // map.flyTo([heelLatitude,heelLongitude],15);
 })
 
 
