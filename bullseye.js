@@ -197,38 +197,66 @@ document.getElementById('btnBuscar').addEventListener('click',function(){
   color= 'green';
   // offset_well_3(degLat2, degLon2, X , Y, color);
 
+  // offset_well_3(degLat2, degLon2, 0 , 200, color);
+
+  // offset_well_3(degLat2, degLon2, 200 , 200, color);
+  // offset_well_3(degLat2, degLon2, -200 , 200, color);
+
+  // offset_well_3(degLat2, degLon2, 200 , 0, color);
+  // offset_well_3(degLat2, degLon2, -200 , 0, color);  
+
+  // offset_well_3(degLat2, degLon2, 0 , 0, color);
+
+  // offset_well_3(degLat2, degLon2, 100 , -100, color);
+  // offset_well_3(degLat2, degLon2, -100 , -100, color);
+
+  // offset_well_3(degLat2, degLon2, 300 , 100, color);
+  // offset_well_3(degLat2, degLon2, -300 , 100, color);
+
+  // offset_well_3(degLat2, degLon2, 300 , -100, color);
+  // offset_well_3(degLat2, degLon2, -300 , -100, color);  
+
+  // offset_well_3(degLat2, degLon2, 0 , -200, color);
+
+  // offset_well_3(degLat2, degLon2, 200 , -200, color);
+  // offset_well_3(degLat2, degLon2, -200 , -200, color);
+
+  // offset_well_3(degLat2, degLon2, 400 , 200, color);
+  // offset_well_3(degLat2, degLon2, -400 , 200, color);
+
+  // offset_well_3(degLat2, degLon2, 400 , -200, color);
+  // offset_well_3(degLat2, degLon2, -400 , -200, color);
+
+  // offset_well_3(degLat2, degLon2, 400 , 0, color);
+  // offset_well_3(degLat2, degLon2, -400 , 0, color);
+
+
+
+  offset_well_3(degLat2, degLon2, 100 , -200, color);
+  offset_well_3(degLat2, degLon2, -100 , -200, color);
+  offset_well_3(degLat2, degLon2, 100 , 0, color);
+  offset_well_3(degLat2, degLon2, -100 , 0, color);
   offset_well_3(degLat2, degLon2, 0 , 200, color);
-
-  offset_well_3(degLat2, degLon2, 200 , 200, color);
-  offset_well_3(degLat2, degLon2, -200 , 200, color);
-
-  offset_well_3(degLat2, degLon2, 200 , 0, color);
-  offset_well_3(degLat2, degLon2, -200 , 0, color);  
-
-  offset_well_3(degLat2, degLon2, 0 , 0, color);
-
-  offset_well_3(degLat2, degLon2, 100 , -100, color);
-  offset_well_3(degLat2, degLon2, -100 , -100, color);
-
   offset_well_3(degLat2, degLon2, 300 , 100, color);
   offset_well_3(degLat2, degLon2, -300 , 100, color);
-
-  offset_well_3(degLat2, degLon2, 300 , -100, color);
-  offset_well_3(degLat2, degLon2, -300 , -100, color);  
-
-  offset_well_3(degLat2, degLon2, 0 , -200, color);
-
-  offset_well_3(degLat2, degLon2, 200 , -200, color);
-  offset_well_3(degLat2, degLon2, -200 , -200, color);
-
+  offset_well_3(degLat2, degLon2, 200 , 200, color);
+  offset_well_3(degLat2, degLon2, -200 , 200, color);
   offset_well_3(degLat2, degLon2, 400 , 200, color);
   offset_well_3(degLat2, degLon2, -400 , 200, color);
-
-  offset_well_3(degLat2, degLon2, 400 , -200, color);
-  offset_well_3(degLat2, degLon2, -400 , -200, color);
-
+  offset_well_3(degLat2, degLon2, 0 , 0, color);
+  offset_well_3(degLat2, degLon2, 200 , 0, color);
+  offset_well_3(degLat2, degLon2, -200 , 0, color);
   offset_well_3(degLat2, degLon2, 400 , 0, color);
   offset_well_3(degLat2, degLon2, -400 , 0, color);
+  offset_well_3(degLat2, degLon2, 100 , -100, color);
+  offset_well_3(degLat2, degLon2, -100 , -100, color);
+  offset_well_3(degLat2, degLon2, 300 , -100, color);
+  offset_well_3(degLat2, degLon2, -300 , -100, color);
+  offset_well_3(degLat2, degLon2, 0 , -200, color);
+  offset_well_3(degLat2, degLon2, 200 , -200, color);
+  offset_well_3(degLat2, degLon2, -200 , -200, color);
+  offset_well_3(degLat2, degLon2, 400 , -200, color);
+  offset_well_3(degLat2, degLon2, -400 , -200, color);
 
   //======================================================
   
@@ -239,11 +267,21 @@ document.getElementById('btnBuscar').addEventListener('click',function(){
   // Naranjas:--------------------------------------------
   color = 'orange'
 
-  offset_well_3(degLat2, degLon2, 500 , 200, color);
-  offset_well_3(degLat2, degLon2, -500 , 200, color);  
+  // offset_well_3(degLat2, degLon2, 500 , 200, color);
+  // offset_well_3(degLat2, degLon2, -500 , 200, color);  
 
+  // offset_well_3(degLat2, degLon2, 100 , 100, color);
+  // offset_well_3(degLat2, degLon2, -100 , 100, color);
+
+
+  offset_well_3(degLat2, degLon2, 580 , 200, color);
+  offset_well_3(degLat2, degLon2, -580 , 200, color);
+  offset_well_3(degLat2, degLon2, 500 , 200, color);
+  offset_well_3(degLat2, degLon2, -500 , 200, color);
   offset_well_3(degLat2, degLon2, 100 , 100, color);
   offset_well_3(degLat2, degLon2, -100 , 100, color);
+
+
   //=======================================================
 
 
@@ -252,40 +290,72 @@ document.getElementById('btnBuscar').addEventListener('click',function(){
   // Rojos:-----------------------------------------------
   color = 'red'
 
+  // offset_well_3(degLat2, degLon2, 200 , 600, color);
+  // offset_well_3(degLat2, degLon2, -200 , 600, color);
+
+  // offset_well_3(degLat2, degLon2, 0 , 800, color);
+
+  // offset_well_3(degLat2, degLon2, 0 , 600, color);
+
+  // offset_well_3(degLat2, degLon2, 0 , 400, color); 
+
+  // offset_well_3(degLat2, degLon2, 200 , 400, color);
+  // offset_well_3(degLat2, degLon2, -200 , 400, color);
+
+  // offset_well_3(degLat2, degLon2, 200 , -400, color);
+  // offset_well_3(degLat2, degLon2, -200 , -400, color);
+
+  // offset_well_3(degLat2, degLon2, 100 , 300, color);
+  // offset_well_3(degLat2, degLon2, -100 , 300, color);
+
+  // offset_well_3(degLat2, degLon2, 100 , -300, color);
+  // offset_well_3(degLat2, degLon2, -100 , -300, color);
+
+  // offset_well_3(degLat2, degLon2, 300 , -300, color);
+  // offset_well_3(degLat2, degLon2, -300 , -300, color);
+
+  // offset_well_3(degLat2, degLon2, 300 , 300, color);
+  // offset_well_3(degLat2, degLon2, -300 , 300, color);
+
+  // offset_well_3(degLat2, degLon2, 400 , 400, color);
+  // offset_well_3(degLat2, degLon2, -400 , 400, color);
+
+  // offset_well_3(degLat2, degLon2, 400 , -400, color);
+  // offset_well_3(degLat2, degLon2, -400 , -400, color);
+  
+  // offset_well_3(degLat2, degLon2, 0 , -400, color);
+
+
+  offset_well_3(degLat2, degLon2, 100 , 200, color);
+  offset_well_3(degLat2, degLon2, -100 , 200, color);
+  offset_well_3(degLat2, degLon2, 500 , 300, color);
+  offset_well_3(degLat2, degLon2, -500 , 300, color);
+  offset_well_3(degLat2, degLon2, 680 , 200, color);
+  offset_well_3(degLat2, degLon2, -680 , 200, color);
   offset_well_3(degLat2, degLon2, 200 , 600, color);
   offset_well_3(degLat2, degLon2, -200 , 600, color);
-
   offset_well_3(degLat2, degLon2, 0 , 800, color);
-
   offset_well_3(degLat2, degLon2, 0 , 600, color);
-
-  offset_well_3(degLat2, degLon2, 0 , 400, color); 
-
+  offset_well_3(degLat2, degLon2, 0 , 400, color);
   offset_well_3(degLat2, degLon2, 200 , 400, color);
   offset_well_3(degLat2, degLon2, -200 , 400, color);
-
-  offset_well_3(degLat2, degLon2, 200 , -400, color);
-  offset_well_3(degLat2, degLon2, -200 , -400, color);
-
   offset_well_3(degLat2, degLon2, 100 , 300, color);
   offset_well_3(degLat2, degLon2, -100 , 300, color);
-
-  offset_well_3(degLat2, degLon2, 100 , -300, color);
-  offset_well_3(degLat2, degLon2, -100 , -300, color);
-
-  offset_well_3(degLat2, degLon2, 300 , -300, color);
-  offset_well_3(degLat2, degLon2, -300 , -300, color);
-
   offset_well_3(degLat2, degLon2, 300 , 300, color);
   offset_well_3(degLat2, degLon2, -300 , 300, color);
-
   offset_well_3(degLat2, degLon2, 400 , 400, color);
   offset_well_3(degLat2, degLon2, -400 , 400, color);
-
+  offset_well_3(degLat2, degLon2, 100 , -300, color);
+  offset_well_3(degLat2, degLon2, -100 , -300, color);
+  offset_well_3(degLat2, degLon2, 300 , -300, color);
+  offset_well_3(degLat2, degLon2, -300 , -300, color);
+  offset_well_3(degLat2, degLon2, 0 , -400, color);
+  offset_well_3(degLat2, degLon2, 200 , -400, color);
+  offset_well_3(degLat2, degLon2, -200 , -400, color);
   offset_well_3(degLat2, degLon2, 400 , -400, color);
   offset_well_3(degLat2, degLon2, -400 , -400, color);
-  
-  offset_well_3(degLat2, degLon2, 0 , -400, color);
+
+
 
   //=======================================================
   
