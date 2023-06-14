@@ -126,25 +126,25 @@ document.getElementById('btnBuscar').addEventListener('click',function(){
   }
 
 
-  function offset_well_2(lat1 , lon1 , d , Bearing , color){
-    d = d/1000
-    let R = 6371; // km
-    let radLatHeel = deg2rad(lat1);
-    let radLonHeel = deg2rad(lon1);
-    let rad_B = deg2rad(degNBearing + Bearing);
-    let dR = d/R;
-    let radLat2 = Math.asin( Math.sin(radLatHeel) * Math.cos(dR) + Math.cos(radLatHeel) * Math.sin(dR) * Math.cos(rad_B) );
-    let degLat2 = rad2deg(radLat2);
-    let radLon2 = radLonHeel + Math.atan2( Math.sin(rad_B) * Math.sin(dR) * Math.cos(radLatHeel) , Math.cos(dR) - Math.sin(radLatHeel) * Math.sin(radLat2) );
-    let degLon2 = rad2deg(radLon2);
-    let circle = L.circle([degLat2, degLon2], {
-      color: color,
-      fillColor: color,
-      fillOpacity: 0.5,
-      radius: 10
-    }).addTo(map);
-    return ([degLat2, degLon2])
-  }
+  // function offset_well_2(lat1 , lon1 , d , Bearing , color){
+  //   d = d/1000
+  //   let R = 6371; // km
+  //   let radLatHeel = deg2rad(lat1);
+  //   let radLonHeel = deg2rad(lon1);
+  //   let rad_B = deg2rad(degNBearing + Bearing);
+  //   let dR = d/R;
+  //   let radLat2 = Math.asin( Math.sin(radLatHeel) * Math.cos(dR) + Math.cos(radLatHeel) * Math.sin(dR) * Math.cos(rad_B) );
+  //   let degLat2 = rad2deg(radLat2);
+  //   let radLon2 = radLonHeel + Math.atan2( Math.sin(rad_B) * Math.sin(dR) * Math.cos(radLatHeel) , Math.cos(dR) - Math.sin(radLatHeel) * Math.sin(radLat2) );
+  //   let degLon2 = rad2deg(radLon2);
+  //   let circle = L.circle([degLat2, degLon2], {
+  //     color: color,
+  //     fillColor: color,
+  //     fillOpacity: 0.5,
+  //     radius: 10
+  //   }).addTo(map);
+  //   return ([degLat2, degLon2])
+  // }
 
 
 
@@ -171,16 +171,36 @@ document.getElementById('btnBuscar').addEventListener('click',function(){
     let circle = L.circle([degLat2, degLon2], {
       color: color,
       fillColor: color,
-      fillOpacity: 0.5,
+      fillOpacity: 1,
       radius: 10
     }).addTo(map);
+    if(x == 0 && y == 400){
+      let circuloRojo = L.circle([degLat2, degLon2], {
+        color: 'red',
+        fillColor: 'red',
+        fillOpacity: 0.2,
+        radius: 490,
+        stroke: false,
+      }).addTo(map);   
+    
+      let circuloNaranja = L.circle([degLat2, degLon2], {
+        color: 'orange',
+        fillColor: 'orange',
+        fillOpacity: 0.3,
+        radius: 390,
+        stroke: false,
+      }).addTo(map);    
+    
+      let circuloVerde = L.circle([degLat2, degLon2], {
+        color: 'green',
+        fillColor: 'green',
+        fillOpacity: 0.5,
+        radius: 300,
+        stroke: false,
+      }).addTo(map);
+    }   
     return ([degLat2, degLon2])
   }
-
-
-
-
-
 
 
   let color = 'black'
@@ -193,45 +213,33 @@ document.getElementById('btnBuscar').addEventListener('click',function(){
 
 
 
+  // var polygon = L.polygon(
+  //   [
+  //   [56.001752, -113.9963],
+  //   [56.001728, -114.003675],
+  //   [56.005448, -114.003675],
+  //   [56.0054, -114.001701],
+  //   [56.003672, -114.000842],
+  //   [56.005448, -114.00007],
+  //   [56.003648, -113.999083],
+  //   [56.005376, -113.998268],
+  //   [56.005448, -113.996337],
+  //   [56.001752, -113.9963]
+  // ],{
+  //   color: 'green',
+  //   stroke: false,
+  // }
+  // ).addTo(map);
+
+
+  
+
+
+
+
   // Verdes:--------------------------------------------
   color= 'green';
-  // offset_well_3(degLat2, degLon2, X , Y, color);
-
-  // offset_well_3(degLat2, degLon2, 0 , 200, color);
-
-  // offset_well_3(degLat2, degLon2, 200 , 200, color);
-  // offset_well_3(degLat2, degLon2, -200 , 200, color);
-
-  // offset_well_3(degLat2, degLon2, 200 , 0, color);
-  // offset_well_3(degLat2, degLon2, -200 , 0, color);  
-
-  // offset_well_3(degLat2, degLon2, 0 , 0, color);
-
-  // offset_well_3(degLat2, degLon2, 100 , -100, color);
-  // offset_well_3(degLat2, degLon2, -100 , -100, color);
-
-  // offset_well_3(degLat2, degLon2, 300 , 100, color);
-  // offset_well_3(degLat2, degLon2, -300 , 100, color);
-
-  // offset_well_3(degLat2, degLon2, 300 , -100, color);
-  // offset_well_3(degLat2, degLon2, -300 , -100, color);  
-
-  // offset_well_3(degLat2, degLon2, 0 , -200, color);
-
-  // offset_well_3(degLat2, degLon2, 200 , -200, color);
-  // offset_well_3(degLat2, degLon2, -200 , -200, color);
-
-  // offset_well_3(degLat2, degLon2, 400 , 200, color);
-  // offset_well_3(degLat2, degLon2, -400 , 200, color);
-
-  // offset_well_3(degLat2, degLon2, 400 , -200, color);
-  // offset_well_3(degLat2, degLon2, -400 , -200, color);
-
-  // offset_well_3(degLat2, degLon2, 400 , 0, color);
-  // offset_well_3(degLat2, degLon2, -400 , 0, color);
-
-
-
+  
   offset_well_3(degLat2, degLon2, 100 , -200, color);
   offset_well_3(degLat2, degLon2, -100 , -200, color);
   offset_well_3(degLat2, degLon2, 100 , 0, color);
@@ -257,22 +265,12 @@ document.getElementById('btnBuscar').addEventListener('click',function(){
   offset_well_3(degLat2, degLon2, -200 , -200, color);
   offset_well_3(degLat2, degLon2, 400 , -200, color);
   offset_well_3(degLat2, degLon2, -400 , -200, color);
-
   //======================================================
-  
-  
   
 
 
   // Naranjas:--------------------------------------------
   color = 'orange'
-
-  // offset_well_3(degLat2, degLon2, 500 , 200, color);
-  // offset_well_3(degLat2, degLon2, -500 , 200, color);  
-
-  // offset_well_3(degLat2, degLon2, 100 , 100, color);
-  // offset_well_3(degLat2, degLon2, -100 , 100, color);
-
 
   offset_well_3(degLat2, degLon2, 580 , 200, color);
   offset_well_3(degLat2, degLon2, -580 , 200, color);
@@ -280,51 +278,12 @@ document.getElementById('btnBuscar').addEventListener('click',function(){
   offset_well_3(degLat2, degLon2, -500 , 200, color);
   offset_well_3(degLat2, degLon2, 100 , 100, color);
   offset_well_3(degLat2, degLon2, -100 , 100, color);
-
-
   //=======================================================
-
 
 
 
   // Rojos:-----------------------------------------------
   color = 'red'
-
-  // offset_well_3(degLat2, degLon2, 200 , 600, color);
-  // offset_well_3(degLat2, degLon2, -200 , 600, color);
-
-  // offset_well_3(degLat2, degLon2, 0 , 800, color);
-
-  // offset_well_3(degLat2, degLon2, 0 , 600, color);
-
-  // offset_well_3(degLat2, degLon2, 0 , 400, color); 
-
-  // offset_well_3(degLat2, degLon2, 200 , 400, color);
-  // offset_well_3(degLat2, degLon2, -200 , 400, color);
-
-  // offset_well_3(degLat2, degLon2, 200 , -400, color);
-  // offset_well_3(degLat2, degLon2, -200 , -400, color);
-
-  // offset_well_3(degLat2, degLon2, 100 , 300, color);
-  // offset_well_3(degLat2, degLon2, -100 , 300, color);
-
-  // offset_well_3(degLat2, degLon2, 100 , -300, color);
-  // offset_well_3(degLat2, degLon2, -100 , -300, color);
-
-  // offset_well_3(degLat2, degLon2, 300 , -300, color);
-  // offset_well_3(degLat2, degLon2, -300 , -300, color);
-
-  // offset_well_3(degLat2, degLon2, 300 , 300, color);
-  // offset_well_3(degLat2, degLon2, -300 , 300, color);
-
-  // offset_well_3(degLat2, degLon2, 400 , 400, color);
-  // offset_well_3(degLat2, degLon2, -400 , 400, color);
-
-  // offset_well_3(degLat2, degLon2, 400 , -400, color);
-  // offset_well_3(degLat2, degLon2, -400 , -400, color);
-  
-  // offset_well_3(degLat2, degLon2, 0 , -400, color);
-
 
   offset_well_3(degLat2, degLon2, 100 , 200, color);
   offset_well_3(degLat2, degLon2, -100 , 200, color);
@@ -354,15 +313,7 @@ document.getElementById('btnBuscar').addEventListener('click',function(){
   offset_well_3(degLat2, degLon2, -200 , -400, color);
   offset_well_3(degLat2, degLon2, 400 , -400, color);
   offset_well_3(degLat2, degLon2, -400 , -400, color);
-
-
-
   //=======================================================
-  
-  
-
-  
-  
 
 
   map.flyTo([heelLatitude,heelLongitude],15);
