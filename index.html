@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <html>
@@ -24,52 +23,82 @@
   </head>
 
 
+
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <div class="container-fluid">
-        <div class="card mb-3" XXXstyle="max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="https://res.cloudinary.com/metacortexjohn/image/upload/v1682003229/bull001_mdmn7b.png" 
-                class="img-fluid rounded-start" alt="...">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <div class="row p-2">
-                  <div class="col">
-                    <input type="text" class="form-control me-sm-2 my-2" placeholder="Heel Latitude (Eg. 56.00)" aria-label="Latitude" id="heelLat" XXXvalue="56">
-                    <input type="text" class="form-control me-sm-2 my-2" placeholder="Heel Longitude (Eg. -114.00)" aria-label="Longitude" id="heelLon" XXXvalue="-114">
-                  </div>
-                  <div class="col">
-                    <input type="text" class="form-control me-sm-2 my-2" placeholder="Toe Latitude (Eg. 55.99)" aria-label="Latitude" id="toeLat" XXXvalue="55.99">
-                    <input type="text" class="form-control me-sm-2 my-2" placeholder="Toe Longitude (Eg. -114.00)" aria-label="Longitude" id="toeLon" XXXvalue="-114">
-                  </div>
-                  <a class="btn btn-secondary my-2 Xmy-sm-0 me-sm-2" fdprocessedid="lwcnfo" id="btnBuscar">Find</a>
-                </div>
+    <div class="row px-4 pt-2">
+
+      <div class="col-1">
+        <img src="https://res.cloudinary.com/metacortexjohn/image/upload/v1690302600/toro_rojo_noxvwg.png"
+            class="img-fluid rounded-start" alt="..." style="position: absolute; top: 30px; margin-right: 0%;width: 150px;z-index: 3;">
+      </div>
+      
+
+      <div class="col-6">
+        <div class="card mb-1 ms-4 border-0" style="background-color: transparent;">
+          <h5 class="card-header bg-primary">Targets</h5>
+          <div class="card-body">
+            <div class="row p-0">
+              <div class="col-3">
+                <p class="text-center"><br></p>
+                <p class="text-center">Latitude</p>
+                <p class="text-center">Longitude</p>
               </div>
+              <div class="col">
+                <p class="text-center">Heel</p>
+                <input type="text" class="form-control me-sm-2 my-0" placeholder="Eg. 56.00" aria-label="Latitude" id="heelLat">
+                <input type="text" class="form-control me-sm-2 my-1" placeholder="Eg. -114.00" aria-label="Longitude" id="heelLon">
+              </div>
+              <div class="col">
+                <p class="text-center">Toe</p>
+                <input type="text" class="form-control me-sm-2 my-0" placeholder="Eg. 55.99" aria-label="Latitude" id="toeLat">
+                <input type="text" class="form-control me-sm-2 my-1" placeholder="Eg. -114.00" aria-label="Longitude" id="toeLon">
+              </div>
+              <a class="btn btn-success my-2 Xmy-sm-0 me-sm-2 text-black" id="btnBuscar">Find</a>
             </div>
           </div>
         </div>
-        <!-- <img src="https://res.cloudinary.com/metacortexjohn/image/upload/v1658373762/XXXLogo_Metacortex_fzh4by.png" height="80px"> -->
       </div>
-    </nav>
 
 
-    <div class="container-fluid">
-
-      <div class="alert alert-dismissible alert-secondary" id="alertClick" hidden>
-        <button type="button" class="btn-close" data-bs-dismiss="alert" fdprocessedid="g4d7c"></button>
-        <h5 id="alertText">.</h5>
+      <div class="col-5">
+        <div class="card mb-0 border-0" style="background-color: transparent;">
+          <h5 class="card-header bg-warning">Surface</h5>
+          <div class="card-body">
+            <div class="row p-0">
+              <div class="col-3">
+                <p class="text-center"><small>Latitude</small></p>
+                <p class="text-center"><small>Longitude</small></p>
+              </div>
+              <div class="col">
+                <input type="text" class="form-control me-sm-2 my-0" placeholder="Eg. 56.005" aria-label="Latitude" id="rigLat">
+                <input type="text" class="form-control me-sm-2 my-1" placeholder="Eg. -114.002" aria-label="Longitude"id="rigLon">
+              </div>
+              <a class="btn btn-success my-2 Xmy-sm-0 me-sm-2 text-black" id="btnShow">Show</a>
+            </div>
+          </div>
+        </div>
       </div>
-  
-      <h6 class="mx-2" id="az">...</h6>
-  
-      <div id="map"></div>
-  
-      <div><h6>Created by Metacortex @ www.metacortex.tech</h6></div>
 
     </div>
+
+
+
+
+
+    <!-- <div class="container-fluid"> -->
+      <div class="alert alert-dismissible alert-secondary" id="alertClick" hidden>
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <small><h6 id="alertText">.</h6></small>
+      </div>
+      <h6 class="mx-2" id="az"></h6>
+      <div id="map"></div>
+      <div><h6>Created by Metacortex @ www.metacortex.tech</h6></div>
+    <!-- </div> -->
+
+
+
+
 
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
       integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
@@ -79,8 +108,8 @@
     <script src="bullseye.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"></script>
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+      </script>
 
   </body>
 

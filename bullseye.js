@@ -16,6 +16,24 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
 
 
 
+document.getElementById('btnShow').addEventListener('click',function(){
+  let rigLatitude = Number(document.getElementById('rigLat').value)
+  let rigLongitude = Number(document.getElementById('rigLon').value)
+  if(rigLatitude == 0 && rigLongitude == 0){
+    rigLatitude = 56.005;
+    document.getElementById('rigLat').value = 56.005;
+    rigLongitude = -114.002;
+    document.getElementById('rigLon').value = -114.002;
+  }
+  let rigIcon = L.icon({
+    iconUrl: 'https://res.cloudinary.com/metacortexjohn/image/upload/v1682359935/rig01_vgeizw.png',
+    iconSize: [15, 25],
+  });
+  L.marker([rigLatitude, rigLongitude], {icon: rigIcon}).addTo(map);
+});
+
+
+
 document.getElementById('btnBuscar').addEventListener('click',function(){
 
   let heelLatitude = Number(document.getElementById('heelLat').value)
@@ -76,16 +94,38 @@ document.getElementById('btnBuscar').addEventListener('click',function(){
 
   let textAz = document.getElementById('az').innerText = " Distance: " + distance.toFixed(2) + " m | Bearing: " + Bearing.toFixed(2) + " deg";
 
-  let rigIcon = L.icon({
-    iconUrl: 'https://res.cloudinary.com/metacortexjohn/image/upload/v1682359935/rig01_vgeizw.png',
-    iconSize: [15, 25],
-  });
-  L.marker([heelLatitude, heelLongitude], {icon: rigIcon}).addTo(map);
 
-  let line1 = L.polygon([
+
+  let heelIcon = L.icon({
+    iconUrl: 'https://res.cloudinary.com/metacortexjohn/image/upload/v1690300661/position_ikv9ce.png',
+    iconSize: [20, 20],
+  });
+  L.marker([heelLatitude, heelLongitude], {icon: heelIcon}).addTo(map);
+
+  let toeIcon = L.icon({
+    iconUrl: 'https://res.cloudinary.com/metacortexjohn/image/upload/v1690300661/position_ikv9ce.png',
+    iconSize: [20, 20],
+  });
+  L.marker([toeLatitude, toeLongitude], {icon: toeIcon}).addTo(map);
+
+  let well_trajectory = L.polygon([
     [heelLatitude, heelLongitude],
     [toeLatitude, toeLongitude]
   ]).addTo(map);
+
+
+
+
+  // let rigIcon = L.icon({
+  //   iconUrl: 'https://res.cloudinary.com/metacortexjohn/image/upload/v1682359935/rig01_vgeizw.png',
+  //   iconSize: [15, 25],
+  // });
+  // L.marker([heelLatitude, heelLongitude], {icon: rigIcon}).addTo(map);
+
+  // let line1 = L.polygon([
+  //   [heelLatitude, heelLongitude],
+  //   [toeLatitude, toeLongitude]
+  // ]).addTo(map);
 
   // Notes:------------------------------------------
     // R = 6371e3; // metres
@@ -112,10 +152,10 @@ document.getElementById('btnBuscar').addEventListener('click',function(){
     let degLat2 = rad2deg(radLat2);
     let radLon2 = radLonHeel + Math.atan2( Math.sin(rad_B) * Math.sin(dR) * Math.cos(radLatHeel) , Math.cos(dR) - Math.sin(radLatHeel) * Math.sin(radLat2) );
     let degLon2 = rad2deg(radLon2);
-    console.log("Offset Bearing: " + Bearing);
-    console.log("Offset Distance: " + d);
-    console.log("Offset lat: " + degLat2);
-    console.log("Offset lon: " + degLon2);
+    // console.log("Offset Bearing: " + Bearing);
+    // console.log("Offset Distance: " + d);
+    // console.log("Offset lat: " + degLat2);
+    // console.log("Offset lon: " + degLon2);
     let circle = L.circle([degLat2, degLon2], {
       color: color,
       fillColor: color,
@@ -126,39 +166,18 @@ document.getElementById('btnBuscar').addEventListener('click',function(){
   }
 
 
-  // function offset_well_2(lat1 , lon1 , d , Bearing , color){
-  //   d = d/1000
-  //   let R = 6371; // km
-  //   let radLatHeel = deg2rad(lat1);
-  //   let radLonHeel = deg2rad(lon1);
-  //   let rad_B = deg2rad(degNBearing + Bearing);
-  //   let dR = d/R;
-  //   let radLat2 = Math.asin( Math.sin(radLatHeel) * Math.cos(dR) + Math.cos(radLatHeel) * Math.sin(dR) * Math.cos(rad_B) );
-  //   let degLat2 = rad2deg(radLat2);
-  //   let radLon2 = radLonHeel + Math.atan2( Math.sin(rad_B) * Math.sin(dR) * Math.cos(radLatHeel) , Math.cos(dR) - Math.sin(radLatHeel) * Math.sin(radLat2) );
-  //   let degLon2 = rad2deg(radLon2);
-  //   let circle = L.circle([degLat2, degLon2], {
-  //     color: color,
-  //     fillColor: color,
-  //     fillOpacity: 0.5,
-  //     radius: 10
-  //   }).addTo(map);
-  //   return ([degLat2, degLon2])
-  // }
-
-
 
   function offset_well_3(lat1 , lon1 , x , y , color){
     y = y + 400;
     let lat2 = lat1 + (y * 0.000009);
     let lon2 = lon1 + (x * 0.000009);
-    console.log("offset 3 lat2: " + lat2);
-    console.log("offset 3 lon2: " + lon2);    
+    // console.log("offset 3 lat2: " + lat2);
+    // console.log("offset 3 lon2: " + lon2);    
     let d = getDistance(lat1, lon1, lat2, lon2);
     let Bearing = getBearing(lat1, lon1, lat2, lon2);
     d = d/1000
-    console.log("offset 3 distance: " + d + "km");
-    console.log("offset 3 bearing: " + Bearing + "deg Az."); 
+    // console.log("offset 3 distance: " + d + "km");
+    // console.log("offset 3 bearing: " + Bearing + "deg Az."); 
     let R = 6371; // km
     let radLatHeel = deg2rad(lat1);
     let radLonHeel = deg2rad(lon1);
@@ -168,12 +187,15 @@ document.getElementById('btnBuscar').addEventListener('click',function(){
     let degLat2 = rad2deg(radLat2);
     let radLon2 = radLonHeel + Math.atan2( Math.sin(rad_B) * Math.sin(dR) * Math.cos(radLatHeel) , Math.cos(dR) - Math.sin(radLatHeel) * Math.sin(radLat2) );
     let degLon2 = rad2deg(radLon2);
+
     let circle = L.circle([degLat2, degLon2], {
       color: color,
       fillColor: color,
       fillOpacity: 1,
       radius: 10
-    }).addTo(map);
+    })
+    // .addTo(map);
+
     if(x == 0 && y == 400){
       let circuloRojo = L.circle([degLat2, degLon2], {
         color: 'red',
@@ -213,58 +235,39 @@ document.getElementById('btnBuscar').addEventListener('click',function(){
 
 
 
-  // var polygon = L.polygon(
-  //   [
-  //   [56.001752, -113.9963],
-  //   [56.001728, -114.003675],
-  //   [56.005448, -114.003675],
-  //   [56.0054, -114.001701],
-  //   [56.003672, -114.000842],
-  //   [56.005448, -114.00007],
-  //   [56.003648, -113.999083],
-  //   [56.005376, -113.998268],
-  //   [56.005448, -113.996337],
-  //   [56.001752, -113.9963]
-  // ],{
-  //   color: 'green',
-  //   stroke: false,
-  // }
-  // ).addTo(map);
-
-
-  
-
-
-
-
   // Verdes:--------------------------------------------
   color= 'green';
   
-  offset_well_3(degLat2, degLon2, 100 , -200, color);
-  offset_well_3(degLat2, degLon2, -100 , -200, color);
-  offset_well_3(degLat2, degLon2, 100 , 0, color);
-  offset_well_3(degLat2, degLon2, -100 , 0, color);
-  offset_well_3(degLat2, degLon2, 0 , 200, color);
-  offset_well_3(degLat2, degLon2, 300 , 100, color);
-  offset_well_3(degLat2, degLon2, -300 , 100, color);
-  offset_well_3(degLat2, degLon2, 200 , 200, color);
-  offset_well_3(degLat2, degLon2, -200 , 200, color);
-  offset_well_3(degLat2, degLon2, 400 , 200, color);
-  offset_well_3(degLat2, degLon2, -400 , 200, color);
-  offset_well_3(degLat2, degLon2, 0 , 0, color);
-  offset_well_3(degLat2, degLon2, 200 , 0, color);
-  offset_well_3(degLat2, degLon2, -200 , 0, color);
-  offset_well_3(degLat2, degLon2, 400 , 0, color);
-  offset_well_3(degLat2, degLon2, -400 , 0, color);
-  offset_well_3(degLat2, degLon2, 100 , -100, color);
-  offset_well_3(degLat2, degLon2, -100 , -100, color);
-  offset_well_3(degLat2, degLon2, 300 , -100, color);
-  offset_well_3(degLat2, degLon2, -300 , -100, color);
-  offset_well_3(degLat2, degLon2, 0 , -200, color);
-  offset_well_3(degLat2, degLon2, 200 , -200, color);
-  offset_well_3(degLat2, degLon2, -200 , -200, color);
-  offset_well_3(degLat2, degLon2, 400 , -200, color);
-  offset_well_3(degLat2, degLon2, -400 , -200, color);
+    // offset_well_3(degLat2, degLon2, 375 , 60, color);
+    // offset_well_3(degLat2, degLon2, 375 , -150, color);
+    // offset_well_3(degLat2, degLon2, -375 , 60, color);
+    // offset_well_3(degLat2, degLon2, -375 , -150, color);
+
+    let NW_lat = offset_well_3(degLat2, degLon2, -375 , 60, color)[0];
+    let NW_lon = offset_well_3(degLat2, degLon2, -375 , 60, color)[1];
+
+    let NE_lat = offset_well_3(degLat2, degLon2, 375 , 60, color)[0];
+    let NE_lon = offset_well_3(degLat2, degLon2, 375 , 60, color)[1];
+
+    let SE_lat = offset_well_3(degLat2, degLon2, 375 , -150, color)[0];
+    let SE_lon = offset_well_3(degLat2, degLon2, 375 , -150, color)[1];
+
+    let SW_lat = offset_well_3(degLat2, degLon2, -375 , -150, color)[0];
+    let SW_lon = offset_well_3(degLat2, degLon2, -375 , -150, color)[1];
+
+    L.polygon([
+      [NW_lat, NW_lon],
+      [NE_lat, NE_lon],
+      [SE_lat, SE_lon],
+      [SW_lat, SW_lon]
+  ], {
+    color: color,
+    fillColor: color,
+    fillOpacity: 0.7,
+  }).addTo(map);
+
+    
+
   //======================================================
   
 
@@ -272,12 +275,35 @@ document.getElementById('btnBuscar').addEventListener('click',function(){
   // Naranjas:--------------------------------------------
   color = 'orange'
 
-  offset_well_3(degLat2, degLon2, 580 , 200, color);
-  offset_well_3(degLat2, degLon2, -580 , 200, color);
-  offset_well_3(degLat2, degLon2, 500 , 200, color);
-  offset_well_3(degLat2, degLon2, -500 , 200, color);
-  offset_well_3(degLat2, degLon2, 100 , 100, color);
-  offset_well_3(degLat2, degLon2, -100 , 100, color);
+  // offset_well_3(degLat2, degLon2, 610 , 190, color);
+  // offset_well_3(degLat2, degLon2, 610 , -270, color);
+  // offset_well_3(degLat2, degLon2, -610 , 190, color);
+  // offset_well_3(degLat2, degLon2, -610 , -270, color);
+
+  NW_lat = offset_well_3(degLat2, degLon2, 610 , -270, color)[0];
+  NW_lon = offset_well_3(degLat2, degLon2, 610 , -270, color)[1];
+
+  NE_lat = offset_well_3(degLat2, degLon2, 610 , 190, color)[0];
+  NE_lon = offset_well_3(degLat2, degLon2, 610 , 190, color)[1];
+
+  SE_lat = offset_well_3(degLat2, degLon2, -610 , 190, color)[0];
+  SE_lon = offset_well_3(degLat2, degLon2, -610 , 190, color)[1];
+
+  SW_lat = offset_well_3(degLat2, degLon2, -610 , -270, color)[0];
+  SW_lon = offset_well_3(degLat2, degLon2, -610 , -270, color)[1];
+
+  L.polygon([
+      [NW_lat, NW_lon],
+      [NE_lat, NE_lon],
+      [SE_lat, SE_lon],
+      [SW_lat, SW_lon]
+  ], {
+    color: color,
+    fillColor: color,
+    fillOpacity: 0.3,
+  }).addTo(map);
+
+
   //=======================================================
 
 
@@ -285,34 +311,34 @@ document.getElementById('btnBuscar').addEventListener('click',function(){
   // Rojos:-----------------------------------------------
   color = 'red'
 
-  offset_well_3(degLat2, degLon2, 100 , 200, color);
-  offset_well_3(degLat2, degLon2, -100 , 200, color);
-  offset_well_3(degLat2, degLon2, 500 , 300, color);
-  offset_well_3(degLat2, degLon2, -500 , 300, color);
-  offset_well_3(degLat2, degLon2, 680 , 200, color);
-  offset_well_3(degLat2, degLon2, -680 , 200, color);
-  offset_well_3(degLat2, degLon2, 200 , 600, color);
-  offset_well_3(degLat2, degLon2, -200 , 600, color);
-  offset_well_3(degLat2, degLon2, 0 , 800, color);
-  offset_well_3(degLat2, degLon2, 0 , 600, color);
-  offset_well_3(degLat2, degLon2, 0 , 400, color);
-  offset_well_3(degLat2, degLon2, 200 , 400, color);
-  offset_well_3(degLat2, degLon2, -200 , 400, color);
-  offset_well_3(degLat2, degLon2, 100 , 300, color);
-  offset_well_3(degLat2, degLon2, -100 , 300, color);
-  offset_well_3(degLat2, degLon2, 300 , 300, color);
-  offset_well_3(degLat2, degLon2, -300 , 300, color);
-  offset_well_3(degLat2, degLon2, 400 , 400, color);
-  offset_well_3(degLat2, degLon2, -400 , 400, color);
-  offset_well_3(degLat2, degLon2, 100 , -300, color);
-  offset_well_3(degLat2, degLon2, -100 , -300, color);
-  offset_well_3(degLat2, degLon2, 300 , -300, color);
-  offset_well_3(degLat2, degLon2, -300 , -300, color);
-  offset_well_3(degLat2, degLon2, 0 , -400, color);
-  offset_well_3(degLat2, degLon2, 200 , -400, color);
-  offset_well_3(degLat2, degLon2, -200 , -400, color);
-  offset_well_3(degLat2, degLon2, 400 , -400, color);
-  offset_well_3(degLat2, degLon2, -400 , -400, color);
+  // offset_well_3(degLat2, degLon2, 700 , 400, color);
+  // offset_well_3(degLat2, degLon2, 700 , -400, color);
+  // offset_well_3(degLat2, degLon2, -700 , 400, color);
+  // offset_well_3(degLat2, degLon2, -700 , -400, color);
+
+  NW_lat = offset_well_3(degLat2, degLon2, 700 , -400, color)[0];
+  NW_lon = offset_well_3(degLat2, degLon2, 700 , -400, color)[1];
+
+  NE_lat = offset_well_3(degLat2, degLon2, 700 , 400, color)[0];
+  NE_lon = offset_well_3(degLat2, degLon2, 700 , 400, color)[1];
+
+  SE_lat = offset_well_3(degLat2, degLon2, -700 , 400, color)[0];
+  SE_lon = offset_well_3(degLat2, degLon2, -700 , 400, color)[1];
+
+  SW_lat = offset_well_3(degLat2, degLon2, -700 , -400, color)[0];
+  SW_lon = offset_well_3(degLat2, degLon2, -700 , -400, color)[1];
+
+  L.polygon([
+    [NW_lat, NW_lon],
+    [NE_lat, NE_lon],
+    [SE_lat, SE_lon],
+    [SW_lat, SW_lon]
+  ], {
+    color: color,
+    fillColor: color,
+    fillOpacity: 0.1,
+  }).addTo(map);
+
   //=======================================================
 
 
@@ -325,4 +351,3 @@ function onMapClick(e) {
   document.getElementById('alertClick').hidden=false
 }
 map.on('click', onMapClick);
-
