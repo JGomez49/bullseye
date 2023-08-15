@@ -203,7 +203,8 @@ document.getElementById('btnBuscar').addEventListener('click',function(){
         fillOpacity: 0.2,
         radius: 490,
         stroke: false,
-      }).addTo(map);   
+      })
+      // .addTo(map);   
     
       let circuloNaranja = L.circle([degLat2, degLon2], {
         color: 'orange',
@@ -211,7 +212,8 @@ document.getElementById('btnBuscar').addEventListener('click',function(){
         fillOpacity: 0.3,
         radius: 390,
         stroke: false,
-      }).addTo(map);    
+      })
+      // .addTo(map);    
     
       let circuloVerde = L.circle([degLat2, degLon2], {
         color: 'green',
@@ -219,14 +221,14 @@ document.getElementById('btnBuscar').addEventListener('click',function(){
         fillOpacity: 0.5,
         radius: 300,
         stroke: false,
-      }).addTo(map);
+      })
+      // .addTo(map);
     }   
     return ([degLat2, degLon2])
   }
 
 
   let color = 'black'
-
   // Cabezal de referencia:
   let latNlon2 = offset_well(0 , degNBearing, color); //-400,0
   let degLat2 = latNlon2[0]
@@ -234,99 +236,20 @@ document.getElementById('btnBuscar').addEventListener('click',function(){
 
 
 
-
-  // Verdes:--------------------------------------------
-  color= 'green';
-  
-    // offset_well_3(degLat2, degLon2, 375 , 60, color);
-    // offset_well_3(degLat2, degLon2, 375 , -150, color);
-    // offset_well_3(degLat2, degLon2, -375 , 60, color);
-    // offset_well_3(degLat2, degLon2, -375 , -150, color);
-
-    let NW_lat = offset_well_3(degLat2, degLon2, -375 , 60, color)[0];
-    let NW_lon = offset_well_3(degLat2, degLon2, -375 , 60, color)[1];
-
-    let NE_lat = offset_well_3(degLat2, degLon2, 375 , 60, color)[0];
-    let NE_lon = offset_well_3(degLat2, degLon2, 375 , 60, color)[1];
-
-    let SE_lat = offset_well_3(degLat2, degLon2, 375 , -150, color)[0];
-    let SE_lon = offset_well_3(degLat2, degLon2, 375 , -150, color)[1];
-
-    let SW_lat = offset_well_3(degLat2, degLon2, -375 , -150, color)[0];
-    let SW_lon = offset_well_3(degLat2, degLon2, -375 , -150, color)[1];
-
-    L.polygon([
-      [NW_lat, NW_lon],
-      [NE_lat, NE_lon],
-      [SE_lat, SE_lon],
-      [SW_lat, SW_lon]
-  ], {
-    color: color,
-    fillColor: color,
-    fillOpacity: 0.7,
-  }).addTo(map);
-
-    
-
-  //======================================================
-  
-
-
-  // Naranjas:--------------------------------------------
-  color = 'orange'
-
-  // offset_well_3(degLat2, degLon2, 610 , 190, color);
-  // offset_well_3(degLat2, degLon2, 610 , -270, color);
-  // offset_well_3(degLat2, degLon2, -610 , 190, color);
-  // offset_well_3(degLat2, degLon2, -610 , -270, color);
-
-  NW_lat = offset_well_3(degLat2, degLon2, 610 , -270, color)[0];
-  NW_lon = offset_well_3(degLat2, degLon2, 610 , -270, color)[1];
-
-  NE_lat = offset_well_3(degLat2, degLon2, 610 , 190, color)[0];
-  NE_lon = offset_well_3(degLat2, degLon2, 610 , 190, color)[1];
-
-  SE_lat = offset_well_3(degLat2, degLon2, -610 , 190, color)[0];
-  SE_lon = offset_well_3(degLat2, degLon2, -610 , 190, color)[1];
-
-  SW_lat = offset_well_3(degLat2, degLon2, -610 , -270, color)[0];
-  SW_lon = offset_well_3(degLat2, degLon2, -610 , -270, color)[1];
-
-  L.polygon([
-      [NW_lat, NW_lon],
-      [NE_lat, NE_lon],
-      [SE_lat, SE_lon],
-      [SW_lat, SW_lon]
-  ], {
-    color: color,
-    fillColor: color,
-    fillOpacity: 0.3,
-  }).addTo(map);
-
-
-  //=======================================================
-
-
-
   // Rojos:-----------------------------------------------
   color = 'red'
 
-  // offset_well_3(degLat2, degLon2, 700 , 400, color);
-  // offset_well_3(degLat2, degLon2, 700 , -400, color);
-  // offset_well_3(degLat2, degLon2, -700 , 400, color);
-  // offset_well_3(degLat2, degLon2, -700 , -400, color);
+  var NW_lat = offset_well_3(degLat2, degLon2, 700 , -400, color)[0];
+  var NW_lon = offset_well_3(degLat2, degLon2, 700 , -400, color)[1];
 
-  NW_lat = offset_well_3(degLat2, degLon2, 700 , -400, color)[0];
-  NW_lon = offset_well_3(degLat2, degLon2, 700 , -400, color)[1];
+  var NE_lat = offset_well_3(degLat2, degLon2, 700 , 400, color)[0];
+  var NE_lon = offset_well_3(degLat2, degLon2, 700 , 400, color)[1];
 
-  NE_lat = offset_well_3(degLat2, degLon2, 700 , 400, color)[0];
-  NE_lon = offset_well_3(degLat2, degLon2, 700 , 400, color)[1];
+  var SE_lat = offset_well_3(degLat2, degLon2, -700 , 400, color)[0];
+  var SE_lon = offset_well_3(degLat2, degLon2, -700 , 400, color)[1];
 
-  SE_lat = offset_well_3(degLat2, degLon2, -700 , 400, color)[0];
-  SE_lon = offset_well_3(degLat2, degLon2, -700 , 400, color)[1];
-
-  SW_lat = offset_well_3(degLat2, degLon2, -700 , -400, color)[0];
-  SW_lon = offset_well_3(degLat2, degLon2, -700 , -400, color)[1];
+  var SW_lat = offset_well_3(degLat2, degLon2, -700 , -400, color)[0];
+  var SW_lon = offset_well_3(degLat2, degLon2, -700 , -400, color)[1];
 
   L.polygon([
     [NW_lat, NW_lon],
@@ -338,8 +261,141 @@ document.getElementById('btnBuscar').addEventListener('click',function(){
     fillColor: color,
     fillOpacity: 0.1,
   }).addTo(map);
-
   //=======================================================
+
+  
+
+
+  // Naranjas:--------------------------------------------
+  color = 'orange'
+
+  P1_lat = offset_well_3(degLat2, degLon2, 0 , 200, color)[0];
+  P1_lon = offset_well_3(degLat2, degLon2, 0 , 200, color)[1];
+
+  P2_lat = offset_well_3(degLat2, degLon2, 100 , 100, color)[0];
+  P2_lon = offset_well_3(degLat2, degLon2, 100 , 100, color)[1];
+
+  P3_lat = offset_well_3(degLat2, degLon2, 300 , 100, color)[0];
+  P3_lon = offset_well_3(degLat2, degLon2, 300 , 100, color)[1];
+
+  P4_lat = offset_well_3(degLat2, degLon2, 400 , 200, color)[0];
+  P4_lon = offset_well_3(degLat2, degLon2, 400 , 200, color)[1];
+
+  P5_lat = offset_well_3(degLat2, degLon2, 500 , 200, color)[0];
+  P5_lon = offset_well_3(degLat2, degLon2, 500 , 200, color)[1];
+
+  P6_lat = offset_well_3(degLat2, degLon2, 500 , 100, color)[0];
+  P6_lon = offset_well_3(degLat2, degLon2, 500 , 100, color)[1];
+
+  P7_lat = offset_well_3(degLat2, degLon2, 580 , 40, color)[0];
+  P7_lon = offset_well_3(degLat2, degLon2, 580 , 40, color)[1];
+
+  P8_lat = offset_well_3(degLat2, degLon2, 600 , -100, color)[0];
+  P8_lon = offset_well_3(degLat2, degLon2, 600 , -100, color)[1];
+
+  P9_lat = offset_well_3(degLat2, degLon2, 500 , -200, color)[0];
+  P9_lon = offset_well_3(degLat2, degLon2, 500 , -200, color)[1];
+
+  P10_lat = offset_well_3(degLat2, degLon2, 0 , -200, color)[0];
+  P10_lon = offset_well_3(degLat2, degLon2, 0 , -200, color)[1];
+
+  P11_lat = offset_well_3(degLat2, degLon2, -500 , -200, color)[0];
+  P11_lon = offset_well_3(degLat2, degLon2, -500 , -200, color)[1];
+
+  P12_lat = offset_well_3(degLat2, degLon2, -600 , -100, color)[0];
+  P12_lon = offset_well_3(degLat2, degLon2, -600 , -100, color)[1];
+
+  P13_lat = offset_well_3(degLat2, degLon2, -580 , 40, color)[0];
+  P13_lon = offset_well_3(degLat2, degLon2, -580 , 40, color)[1];
+
+  P14_lat = offset_well_3(degLat2, degLon2, -500 , 100, color)[0];
+  P14_lon = offset_well_3(degLat2, degLon2, -500 , 100, color)[1];
+
+  P15_lat = offset_well_3(degLat2, degLon2, -500 , 200, color)[0];
+  P15_lon = offset_well_3(degLat2, degLon2, -500 , 200, color)[1];
+
+  P16_lat = offset_well_3(degLat2, degLon2, -400 , 200, color)[0];
+  P16_lon = offset_well_3(degLat2, degLon2, -400 , 200, color)[1];
+
+  P17_lat = offset_well_3(degLat2, degLon2, -300 , 100, color)[0];
+  P17_lon = offset_well_3(degLat2, degLon2, -300 , 100, color)[1];
+
+  P18_lat = offset_well_3(degLat2, degLon2, -100 , 100, color)[0];
+  P18_lon = offset_well_3(degLat2, degLon2, -100 , 100, color)[1];
+
+  P19_lat = offset_well_3(degLat2, degLon2, 0 , 200, color)[0];
+  P19_lon = offset_well_3(degLat2, degLon2, 0 , 200, color)[1];
+
+  L.polygon([
+    [P1_lat, P1_lon],
+    [P2_lat, P2_lon],
+    [P3_lat, P3_lon],
+    [P4_lat, P4_lon],
+    [P5_lat, P5_lon],
+    [P6_lat, P6_lon],
+    [P7_lat, P7_lon],
+    [P8_lat, P8_lon],
+    [P9_lat, P9_lon],
+    [P10_lat, P10_lon],
+    [P11_lat, P11_lon],
+    [P12_lat, P12_lon],
+    [P13_lat, P13_lon],
+    [P14_lat, P14_lon],
+    [P15_lat, P15_lon],
+    [P16_lat, P16_lon],
+    [P17_lat, P17_lon],
+    [P18_lat, P18_lon],
+    [P19_lat, P19_lon]
+], {
+  color: color,
+  fillColor: color,
+  fillOpacity: 0.7,
+}).addTo(map);
+  //=======================================================
+
+
+
+
+
+
+  // Verdes:--------------------------------------------
+    color= 'green';
+
+    P1_lat = offset_well_3(degLat2, degLon2, -200 , 0, color)[0];
+    P1_lon = offset_well_3(degLat2, degLon2, -200 , 0, color)[1];
+  
+    P2_lat = offset_well_3(degLat2, degLon2, 200 , 0, color)[0];
+    P2_lon = offset_well_3(degLat2, degLon2, 200 , 0, color)[1];
+  
+    P3_lat = offset_well_3(degLat2, degLon2, 300 , -100, color)[0];
+    P3_lon = offset_well_3(degLat2, degLon2, 300 , -100, color)[1];
+  
+    P4_lat = offset_well_3(degLat2, degLon2, 100 , -100, color)[0];
+    P4_lon = offset_well_3(degLat2, degLon2, 100 , -100, color)[1];
+  
+    P5_lat = offset_well_3(degLat2, degLon2, 0 , -20, color)[0];
+    P5_lon = offset_well_3(degLat2, degLon2, 0 , -20, color)[1];
+  
+    P6_lat = offset_well_3(degLat2, degLon2, -100 , -100, color)[0];
+    P6_lon = offset_well_3(degLat2, degLon2, -100 , -100, color)[1];
+  
+    P7_lat = offset_well_3(degLat2, degLon2, -300 , -100, color)[0];
+    P7_lon = offset_well_3(degLat2, degLon2, -300 , -100, color)[1];
+  
+    L.polygon([
+      [P1_lat, P1_lon],
+      [P2_lat, P2_lon],
+      [P3_lat, P3_lon],
+      [P4_lat, P4_lon],
+      [P5_lat, P5_lon],
+      [P6_lat, P6_lon],
+      [P7_lat, P7_lon]
+  ], {
+    color: color,
+    fillColor: color,
+    fillOpacity: 0.7,
+  }).addTo(map);
+  //======================================================
 
 
   map.flyTo([heelLatitude,heelLongitude],15);
