@@ -902,962 +902,513 @@ document.getElementById('btnBuscar').addEventListener('click',function(){
   // Verdes:--------------------------------------------
     color= 'green';
 
-    P1_lat = offset_well_3(degLat2, degLon2, 0 , 20, color)[0];	 P1_lon = offset_well_3(degLat2, degLon2, 0 , 20, color)[1];
-    P2_lat = offset_well_3(degLat2, degLon2, 3.09 , 21.9, color)[0];	 P2_lon = offset_well_3(degLat2, degLon2, 3.09 , 21.9, color)[1];
-    P3_lat = offset_well_3(degLat2, degLon2, 7.2 , 24.48, color)[0];	 P3_lon = offset_well_3(degLat2, degLon2, 7.2 , 24.48, color)[1];
-    P4_lat = offset_well_3(degLat2, degLon2, 12.11 , 27.58, color)[0];	 P4_lon = offset_well_3(degLat2, degLon2, 12.11 , 27.58, color)[1];
-    P5_lat = offset_well_3(degLat2, degLon2, 17.6 , 31.04, color)[0];	 P5_lon = offset_well_3(degLat2, degLon2, 17.6 , 31.04, color)[1];
-    P6_lat = offset_well_3(degLat2, degLon2, 23.44 , 34.69, color)[0];	 P6_lon = offset_well_3(degLat2, degLon2, 23.44 , 34.69, color)[1];
-    P7_lat = offset_well_3(degLat2, degLon2, 29.4 , 38.36, color)[0];	 P7_lon = offset_well_3(degLat2, degLon2, 29.4 , 38.36, color)[1];
-    P8_lat = offset_well_3(degLat2, degLon2, 35.26 , 41.89, color)[0];	 P8_lon = offset_well_3(degLat2, degLon2, 35.26 , 41.89, color)[1];
-    P9_lat = offset_well_3(degLat2, degLon2, 40.8 , 45.12, color)[0];	 P9_lon = offset_well_3(degLat2, degLon2, 40.8 , 45.12, color)[1];
-    P10_lat = offset_well_3(degLat2, degLon2, 50 , 50, color)[0];	 P10_lon = offset_well_3(degLat2, degLon2, 50 , 50, color)[1];
-    P11_lat = offset_well_3(degLat2, degLon2, 53.51 , 51.56, color)[0];	 P11_lon = offset_well_3(degLat2, degLon2, 53.51 , 51.56, color)[1];
-    P12_lat = offset_well_3(degLat2, degLon2, 56.6 , 52.76, color)[0];	 P12_lon = offset_well_3(degLat2, degLon2, 56.6 , 52.76, color)[1];
-    P13_lat = offset_well_3(degLat2, degLon2, 59.34 , 53.65, color)[0];	 P13_lon = offset_well_3(degLat2, degLon2, 59.34 , 53.65, color)[1];
-    P14_lat = offset_well_3(degLat2, degLon2, 61.8 , 54.28, color)[0];	 P14_lon = offset_well_3(degLat2, degLon2, 61.8 , 54.28, color)[1];
-    P15_lat = offset_well_3(degLat2, degLon2, 64.06 , 54.69, color)[0];	 P15_lon = offset_well_3(degLat2, degLon2, 64.06 , 54.69, color)[1];
-    P16_lat = offset_well_3(degLat2, degLon2, 66.2 , 54.92, color)[0];	 P16_lon = offset_well_3(degLat2, degLon2, 66.2 , 54.92, color)[1];
-    P17_lat = offset_well_3(degLat2, degLon2, 68.29 , 55.02, color)[0];	 P17_lon = offset_well_3(degLat2, degLon2, 68.29 , 55.02, color)[1];
-    P18_lat = offset_well_3(degLat2, degLon2, 70.4 , 55.04, color)[0];	 P18_lon = offset_well_3(degLat2, degLon2, 70.4 , 55.04, color)[1];
-    P19_lat = offset_well_3(degLat2, degLon2, 72.61 , 55.02, color)[0];	 P19_lon = offset_well_3(degLat2, degLon2, 72.61 , 55.02, color)[1];
-    P20_lat = offset_well_3(degLat2, degLon2, 75 , 55, color)[0];	 P20_lon = offset_well_3(degLat2, degLon2, 75 , 55, color)[1];
-    P21_lat = offset_well_3(degLat2, degLon2, 77.52 , 54.88, color)[0];	 P21_lon = offset_well_3(degLat2, degLon2, 77.52 , 54.88, color)[1];
-    P22_lat = offset_well_3(degLat2, degLon2, 80.08 , 54.56, color)[0];	 P22_lon = offset_well_3(degLat2, degLon2, 80.08 , 54.56, color)[1];
-    P23_lat = offset_well_3(degLat2, degLon2, 82.66 , 54.08, color)[0];	 P23_lon = offset_well_3(degLat2, degLon2, 82.66 , 54.08, color)[1];
-    P24_lat = offset_well_3(degLat2, degLon2, 85.24 , 53.48, color)[0];	 P24_lon = offset_well_3(degLat2, degLon2, 85.24 , 53.48, color)[1];
-    P25_lat = offset_well_3(degLat2, degLon2, 87.81 , 52.81, color)[0];	 P25_lon = offset_well_3(degLat2, degLon2, 87.81 , 52.81, color)[1];
-    P26_lat = offset_well_3(degLat2, degLon2, 90.36 , 52.12, color)[0];	 P26_lon = offset_well_3(degLat2, degLon2, 90.36 , 52.12, color)[1];
-    P27_lat = offset_well_3(degLat2, degLon2, 92.87 , 51.45, color)[0];	 P27_lon = offset_well_3(degLat2, degLon2, 92.87 , 51.45, color)[1];
-    P28_lat = offset_well_3(degLat2, degLon2, 95.32 , 50.84, color)[0];	 P28_lon = offset_well_3(degLat2, degLon2, 95.32 , 50.84, color)[1];
-    P29_lat = offset_well_3(degLat2, degLon2, 97.7 , 50.34, color)[0];	 P29_lon = offset_well_3(degLat2, degLon2, 97.7 , 50.34, color)[1];
-    P30_lat = offset_well_3(degLat2, degLon2, 100 , 50, color)[0];	 P30_lon = offset_well_3(degLat2, degLon2, 100 , 50, color)[1];
-    P31_lat = offset_well_3(degLat2, degLon2, 101.93 , 49.75, color)[0];	 P31_lon = offset_well_3(degLat2, degLon2, 101.93 , 49.75, color)[1];
-    P32_lat = offset_well_3(degLat2, degLon2, 103.36 , 49.52, color)[0];	 P32_lon = offset_well_3(degLat2, degLon2, 103.36 , 49.52, color)[1];
-    P33_lat = offset_well_3(degLat2, degLon2, 104.48 , 49.32, color)[0];	 P33_lon = offset_well_3(degLat2, degLon2, 104.48 , 49.32, color)[1];
-    P34_lat = offset_well_3(degLat2, degLon2, 105.48 , 49.16, color)[0];	 P34_lon = offset_well_3(degLat2, degLon2, 105.48 , 49.16, color)[1];
-    P35_lat = offset_well_3(degLat2, degLon2, 106.56 , 49.06, color)[0];	 P35_lon = offset_well_3(degLat2, degLon2, 106.56 , 49.06, color)[1];
-    P36_lat = offset_well_3(degLat2, degLon2, 107.92 , 49.04, color)[0];	 P36_lon = offset_well_3(degLat2, degLon2, 107.92 , 49.04, color)[1];
-    P37_lat = offset_well_3(degLat2, degLon2, 109.75 , 49.11, color)[0];	 P37_lon = offset_well_3(degLat2, degLon2, 109.75 , 49.11, color)[1];
-    P38_lat = offset_well_3(degLat2, degLon2, 112.24 , 49.28, color)[0];	 P38_lon = offset_well_3(degLat2, degLon2, 112.24 , 49.28, color)[1];
-    P39_lat = offset_well_3(degLat2, degLon2, 115.59 , 49.57, color)[0];	 P39_lon = offset_well_3(degLat2, degLon2, 115.59 , 49.57, color)[1];
-    P40_lat = offset_well_3(degLat2, degLon2, 120 , 50, color)[0];	 P40_lon = offset_well_3(degLat2, degLon2, 120 , 50, color)[1];
-    P41_lat = offset_well_3(degLat2, degLon2, 125.84 , 50.64, color)[0];	 P41_lon = offset_well_3(degLat2, degLon2, 125.84 , 50.64, color)[1];
-    P42_lat = offset_well_3(degLat2, degLon2, 133.12 , 51.52, color)[0];	 P42_lon = offset_well_3(degLat2, degLon2, 133.12 , 51.52, color)[1];
-    P43_lat = offset_well_3(degLat2, degLon2, 141.48 , 52.58, color)[0];	 P43_lon = offset_well_3(degLat2, degLon2, 141.48 , 52.58, color)[1];
-    P44_lat = offset_well_3(degLat2, degLon2, 150.56 , 53.76, color)[0];	 P44_lon = offset_well_3(degLat2, degLon2, 150.56 , 53.76, color)[1];
-    P45_lat = offset_well_3(degLat2, degLon2, 160 , 55, color)[0];	 P45_lon = offset_well_3(degLat2, degLon2, 160 , 55, color)[1];
-    P46_lat = offset_well_3(degLat2, degLon2, 169.44 , 56.24, color)[0];	 P46_lon = offset_well_3(degLat2, degLon2, 169.44 , 56.24, color)[1];
-    P47_lat = offset_well_3(degLat2, degLon2, 178.52 , 57.42, color)[0];	 P47_lon = offset_well_3(degLat2, degLon2, 178.52 , 57.42, color)[1];
-    P48_lat = offset_well_3(degLat2, degLon2, 186.88 , 58.48, color)[0];	 P48_lon = offset_well_3(degLat2, degLon2, 186.88 , 58.48, color)[1];
-    P49_lat = offset_well_3(degLat2, degLon2, 194.16 , 59.36, color)[0];	 P49_lon = offset_well_3(degLat2, degLon2, 194.16 , 59.36, color)[1];
-    P50_lat = offset_well_3(degLat2, degLon2, 200 , 60, color)[0];	 P50_lon = offset_well_3(degLat2, degLon2, 200 , 60, color)[1];
-    P51_lat = offset_well_3(degLat2, degLon2, 204.16 , 60.43, color)[0];	 P51_lon = offset_well_3(degLat2, degLon2, 204.16 , 60.43, color)[1];
-    P52_lat = offset_well_3(degLat2, degLon2, 206.88 , 60.72, color)[0];	 P52_lon = offset_well_3(degLat2, degLon2, 206.88 , 60.72, color)[1];
-    P53_lat = offset_well_3(degLat2, degLon2, 208.52 , 60.89, color)[0];	 P53_lon = offset_well_3(degLat2, degLon2, 208.52 , 60.89, color)[1];
-    P54_lat = offset_well_3(degLat2, degLon2, 209.44 , 60.96, color)[0];	 P54_lon = offset_well_3(degLat2, degLon2, 209.44 , 60.96, color)[1];
-    P55_lat = offset_well_3(degLat2, degLon2, 210 , 60.94, color)[0];	 P55_lon = offset_well_3(degLat2, degLon2, 210 , 60.94, color)[1];
-    P56_lat = offset_well_3(degLat2, degLon2, 210.56 , 60.84, color)[0];	 P56_lon = offset_well_3(degLat2, degLon2, 210.56 , 60.84, color)[1];
-    P57_lat = offset_well_3(degLat2, degLon2, 211.48 , 60.68, color)[0];	 P57_lon = offset_well_3(degLat2, degLon2, 211.48 , 60.68, color)[1];
-    P58_lat = offset_well_3(degLat2, degLon2, 213.12 , 60.48, color)[0];	 P58_lon = offset_well_3(degLat2, degLon2, 213.12 , 60.48, color)[1];
-    P59_lat = offset_well_3(degLat2, degLon2, 215.84 , 60.25, color)[0];	 P59_lon = offset_well_3(degLat2, degLon2, 215.84 , 60.25, color)[1];
-    P60_lat = offset_well_3(degLat2, degLon2, 220 , 60, color)[0];	 P60_lon = offset_well_3(degLat2, degLon2, 220 , 60, color)[1];
-    P61_lat = offset_well_3(degLat2, degLon2, 225.71 , 59.68, color)[0];	 P61_lon = offset_well_3(degLat2, degLon2, 225.71 , 59.68, color)[1];
-    P62_lat = offset_well_3(degLat2, degLon2, 232.64 , 59.26, color)[0];	 P62_lon = offset_well_3(degLat2, degLon2, 232.64 , 59.26, color)[1];
-    P63_lat = offset_well_3(degLat2, degLon2, 240.54 , 58.74, color)[0];	 P63_lon = offset_well_3(degLat2, degLon2, 240.54 , 58.74, color)[1];
-    P64_lat = offset_well_3(degLat2, degLon2, 249.12 , 58.17, color)[0];	 P64_lon = offset_well_3(degLat2, degLon2, 249.12 , 58.17, color)[1];
-    P65_lat = offset_well_3(degLat2, degLon2, 258.13 , 57.56, color)[0];	 P65_lon = offset_well_3(degLat2, degLon2, 258.13 , 57.56, color)[1];
-    P66_lat = offset_well_3(degLat2, degLon2, 267.28 , 56.95, color)[0];	 P66_lon = offset_well_3(degLat2, degLon2, 267.28 , 56.95, color)[1];
-    P67_lat = offset_well_3(degLat2, degLon2, 276.32 , 56.36, color)[0];	 P67_lon = offset_well_3(degLat2, degLon2, 276.32 , 56.36, color)[1];
-    P68_lat = offset_well_3(degLat2, degLon2, 284.96 , 55.82, color)[0];	 P68_lon = offset_well_3(degLat2, degLon2, 284.96 , 55.82, color)[1];
-    P69_lat = offset_well_3(degLat2, degLon2, 292.95 , 55.36, color)[0];	 P69_lon = offset_well_3(degLat2, degLon2, 292.95 , 55.36, color)[1];
-    P70_lat = offset_well_3(degLat2, degLon2, 300 , 55, color)[0];	 P70_lon = offset_well_3(degLat2, degLon2, 300 , 55, color)[1];
-    P71_lat = offset_well_3(degLat2, degLon2, 306.33 , 54.75, color)[0];	 P71_lon = offset_well_3(degLat2, degLon2, 306.33 , 54.75, color)[1];
-    P72_lat = offset_well_3(degLat2, degLon2, 312.32 , 54.59, color)[0];	 P72_lon = offset_well_3(degLat2, degLon2, 312.32 , 54.59, color)[1];
-    P73_lat = offset_well_3(degLat2, degLon2, 317.99 , 54.5, color)[0];	 P73_lon = offset_well_3(degLat2, degLon2, 317.99 , 54.5, color)[1];
-    P74_lat = offset_well_3(degLat2, degLon2, 323.36 , 54.46, color)[0];	 P74_lon = offset_well_3(degLat2, degLon2, 323.36 , 54.46, color)[1];
-    P75_lat = offset_well_3(degLat2, degLon2, 328.44 , 54.44, color)[0];	 P75_lon = offset_well_3(degLat2, degLon2, 328.44 , 54.44, color)[1];
-    P76_lat = offset_well_3(degLat2, degLon2, 333.24 , 54.42, color)[0];	 P76_lon = offset_well_3(degLat2, degLon2, 333.24 , 54.42, color)[1];
-    P77_lat = offset_well_3(degLat2, degLon2, 337.78 , 54.39, color)[0];	 P77_lon = offset_well_3(degLat2, degLon2, 337.78 , 54.39, color)[1];
-    P78_lat = offset_well_3(degLat2, degLon2, 342.08 , 54.33, color)[0];	 P78_lon = offset_well_3(degLat2, degLon2, 342.08 , 54.33, color)[1];
-    P79_lat = offset_well_3(degLat2, degLon2, 346.15 , 54.2, color)[0];	 P79_lon = offset_well_3(degLat2, degLon2, 346.15 , 54.2, color)[1];
-    P80_lat = offset_well_3(degLat2, degLon2, 350 , 54, color)[0];	 P80_lon = offset_well_3(degLat2, degLon2, 350 , 54, color)[1];
-    P81_lat = offset_well_3(degLat2, degLon2, 353.51 , 53.75, color)[0];	 P81_lon = offset_well_3(degLat2, degLon2, 353.51 , 53.75, color)[1];
-    P82_lat = offset_well_3(degLat2, degLon2, 356.6 , 53.49, color)[0];	 P82_lon = offset_well_3(degLat2, degLon2, 356.6 , 53.49, color)[1];
-    P83_lat = offset_well_3(degLat2, degLon2, 359.34 , 53.21, color)[0];	 P83_lon = offset_well_3(degLat2, degLon2, 359.34 , 53.21, color)[1];
-    P84_lat = offset_well_3(degLat2, degLon2, 361.8 , 52.9, color)[0];	 P84_lon = offset_well_3(degLat2, degLon2, 361.8 , 52.9, color)[1];
-    P85_lat = offset_well_3(degLat2, degLon2, 364.06 , 52.56, color)[0];	 P85_lon = offset_well_3(degLat2, degLon2, 364.06 , 52.56, color)[1];
-    P86_lat = offset_well_3(degLat2, degLon2, 366.2 , 52.18, color)[0];	 P86_lon = offset_well_3(degLat2, degLon2, 366.2 , 52.18, color)[1];
-    P87_lat = offset_well_3(degLat2, degLon2, 368.29 , 51.74, color)[0];	 P87_lon = offset_well_3(degLat2, degLon2, 368.29 , 51.74, color)[1];
-    P88_lat = offset_well_3(degLat2, degLon2, 370.4 , 51.23, color)[0];	 P88_lon = offset_well_3(degLat2, degLon2, 370.4 , 51.23, color)[1];
-    P89_lat = offset_well_3(degLat2, degLon2, 372.61 , 50.66, color)[0];	 P89_lon = offset_well_3(degLat2, degLon2, 372.61 , 50.66, color)[1];
-    P90_lat = offset_well_3(degLat2, degLon2, 375 , 50, color)[0];	 P90_lon = offset_well_3(degLat2, degLon2, 375 , 50, color)[1];
-    P91_lat = offset_well_3(degLat2, degLon2, 377.57 , 49.29, color)[0];	 P91_lon = offset_well_3(degLat2, degLon2, 377.57 , 49.29, color)[1];
-    P92_lat = offset_well_3(degLat2, degLon2, 380.24 , 48.54, color)[0];	 P92_lon = offset_well_3(degLat2, degLon2, 380.24 , 48.54, color)[1];
-    P93_lat = offset_well_3(degLat2, degLon2, 382.97 , 47.76, color)[0];	 P93_lon = offset_well_3(degLat2, degLon2, 382.97 , 47.76, color)[1];
-    P94_lat = offset_well_3(degLat2, degLon2, 385.72 , 46.91, color)[0];	 P94_lon = offset_well_3(degLat2, degLon2, 385.72 , 46.91, color)[1];
-    P95_lat = offset_well_3(degLat2, degLon2, 388.44 , 46, color)[0];	 P95_lon = offset_well_3(degLat2, degLon2, 388.44 , 46, color)[1];
-    P96_lat = offset_well_3(degLat2, degLon2, 391.08 , 45.01, color)[0];	 P96_lon = offset_well_3(degLat2, degLon2, 391.08 , 45.01, color)[1];
-    P97_lat = offset_well_3(degLat2, degLon2, 393.6 , 43.92, color)[0];	 P97_lon = offset_well_3(degLat2, degLon2, 393.6 , 43.92, color)[1];
-    P98_lat = offset_well_3(degLat2, degLon2, 395.96 , 42.74, color)[0];	 P98_lon = offset_well_3(degLat2, degLon2, 395.96 , 42.74, color)[1];
-    P99_lat = offset_well_3(degLat2, degLon2, 398.11 , 41.43, color)[0];	 P99_lon = offset_well_3(degLat2, degLon2, 398.11 , 41.43, color)[1];
-    P100_lat = offset_well_3(degLat2, degLon2, 400 , 40, color)[0];	 P100_lon = offset_well_3(degLat2, degLon2, 400 , 40, color)[1];
-    P101_lat = offset_well_3(degLat2, degLon2, 401.61 , 38.41, color)[0];	 P101_lon = offset_well_3(degLat2, degLon2, 401.61 , 38.41, color)[1];
-    P102_lat = offset_well_3(degLat2, degLon2, 402.96 , 36.64, color)[0];	 P102_lon = offset_well_3(degLat2, degLon2, 402.96 , 36.64, color)[1];
-    P103_lat = offset_well_3(degLat2, degLon2, 404.1 , 34.74, color)[0];	 P103_lon = offset_well_3(degLat2, degLon2, 404.1 , 34.74, color)[1];
-    P104_lat = offset_well_3(degLat2, degLon2, 405.08 , 32.72, color)[0];	 P104_lon = offset_well_3(degLat2, degLon2, 405.08 , 32.72, color)[1];
-    P105_lat = offset_well_3(degLat2, degLon2, 405.94 , 30.63, color)[0];	 P105_lon = offset_well_3(degLat2, degLon2, 405.94 , 30.63, color)[1];
-    P106_lat = offset_well_3(degLat2, degLon2, 406.72 , 28.48, color)[0];	 P106_lon = offset_well_3(degLat2, degLon2, 406.72 , 28.48, color)[1];
-    P107_lat = offset_well_3(degLat2, degLon2, 407.47 , 26.32, color)[0];	 P107_lon = offset_well_3(degLat2, degLon2, 407.47 , 26.32, color)[1];
-    P108_lat = offset_well_3(degLat2, degLon2, 408.24 , 24.16, color)[0];	 P108_lon = offset_well_3(degLat2, degLon2, 408.24 , 24.16, color)[1];
-    P109_lat = offset_well_3(degLat2, degLon2, 409.07 , 22.05, color)[0];	 P109_lon = offset_well_3(degLat2, degLon2, 409.07 , 22.05, color)[1];
-    P110_lat = offset_well_3(degLat2, degLon2, 410 , 20, color)[0];	 P110_lon = offset_well_3(degLat2, degLon2, 410 , 20, color)[1];
-    P111_lat = offset_well_3(degLat2, degLon2, 411.05 , 17.91, color)[0];	 P111_lon = offset_well_3(degLat2, degLon2, 411.05 , 17.91, color)[1];
-    P112_lat = offset_well_3(degLat2, degLon2, 412.16 , 15.68, color)[0];	 P112_lon = offset_well_3(degLat2, degLon2, 412.16 , 15.68, color)[1];
-    P113_lat = offset_well_3(degLat2, degLon2, 413.32 , 13.37, color)[0];	 P113_lon = offset_well_3(degLat2, degLon2, 413.32 , 13.37, color)[1];
-    P114_lat = offset_well_3(degLat2, degLon2, 414.48 , 11.04, color)[0];	 P114_lon = offset_well_3(degLat2, degLon2, 414.48 , 11.04, color)[1];
-    P115_lat = offset_well_3(degLat2, degLon2, 415.63 , 8.75, color)[0];	 P115_lon = offset_well_3(degLat2, degLon2, 415.63 , 8.75, color)[1];
-    P116_lat = offset_well_3(degLat2, degLon2, 416.72 , 6.56, color)[0];	 P116_lon = offset_well_3(degLat2, degLon2, 416.72 , 6.56, color)[1];
-    P117_lat = offset_well_3(degLat2, degLon2, 417.74 , 4.53, color)[0];	 P117_lon = offset_well_3(degLat2, degLon2, 417.74 , 4.53, color)[1];
-    P118_lat = offset_well_3(degLat2, degLon2, 418.64 , 2.72, color)[0];	 P118_lon = offset_well_3(degLat2, degLon2, 418.64 , 2.72, color)[1];
-    P119_lat = offset_well_3(degLat2, degLon2, 420 , 0, color)[0];	 P119_lon = offset_well_3(degLat2, degLon2, 420 , 0, color)[1];
-    P120_lat = offset_well_3(degLat2, degLon2, 420 , 0, color)[0];	 P120_lon = offset_well_3(degLat2, degLon2, 420 , 0, color)[1];
-    P121_lat = offset_well_3(degLat2, degLon2, 418.64 , -2.72, color)[0];	 P121_lon = offset_well_3(degLat2, degLon2, 418.64 , -2.72, color)[1];
-    P122_lat = offset_well_3(degLat2, degLon2, 417.74 , -4.53, color)[0];	 P122_lon = offset_well_3(degLat2, degLon2, 417.74 , -4.53, color)[1];
-    P123_lat = offset_well_3(degLat2, degLon2, 416.72 , -6.56, color)[0];	 P123_lon = offset_well_3(degLat2, degLon2, 416.72 , -6.56, color)[1];
-    P124_lat = offset_well_3(degLat2, degLon2, 415.63 , -8.75, color)[0];	 P124_lon = offset_well_3(degLat2, degLon2, 415.63 , -8.75, color)[1];
-    P125_lat = offset_well_3(degLat2, degLon2, 414.48 , -11.04, color)[0];	 P125_lon = offset_well_3(degLat2, degLon2, 414.48 , -11.04, color)[1];
-    P126_lat = offset_well_3(degLat2, degLon2, 413.32 , -13.37, color)[0];	 P126_lon = offset_well_3(degLat2, degLon2, 413.32 , -13.37, color)[1];
-    P127_lat = offset_well_3(degLat2, degLon2, 412.16 , -15.68, color)[0];	 P127_lon = offset_well_3(degLat2, degLon2, 412.16 , -15.68, color)[1];
-    P128_lat = offset_well_3(degLat2, degLon2, 411.05 , -17.91, color)[0];	 P128_lon = offset_well_3(degLat2, degLon2, 411.05 , -17.91, color)[1];
-    P129_lat = offset_well_3(degLat2, degLon2, 410 , -20, color)[0];	 P129_lon = offset_well_3(degLat2, degLon2, 410 , -20, color)[1];
-    P130_lat = offset_well_3(degLat2, degLon2, 409.07 , -22.05, color)[0];	 P130_lon = offset_well_3(degLat2, degLon2, 409.07 , -22.05, color)[1];
-    P131_lat = offset_well_3(degLat2, degLon2, 408.24 , -24.16, color)[0];	 P131_lon = offset_well_3(degLat2, degLon2, 408.24 , -24.16, color)[1];
-    P132_lat = offset_well_3(degLat2, degLon2, 407.47 , -26.32, color)[0];	 P132_lon = offset_well_3(degLat2, degLon2, 407.47 , -26.32, color)[1];
-    P133_lat = offset_well_3(degLat2, degLon2, 406.72 , -28.48, color)[0];	 P133_lon = offset_well_3(degLat2, degLon2, 406.72 , -28.48, color)[1];
-    P134_lat = offset_well_3(degLat2, degLon2, 405.94 , -30.63, color)[0];	 P134_lon = offset_well_3(degLat2, degLon2, 405.94 , -30.63, color)[1];
-    P135_lat = offset_well_3(degLat2, degLon2, 405.08 , -32.72, color)[0];	 P135_lon = offset_well_3(degLat2, degLon2, 405.08 , -32.72, color)[1];
-    P136_lat = offset_well_3(degLat2, degLon2, 404.1 , -34.74, color)[0];	 P136_lon = offset_well_3(degLat2, degLon2, 404.1 , -34.74, color)[1];
-    P137_lat = offset_well_3(degLat2, degLon2, 402.96 , -36.64, color)[0];	 P137_lon = offset_well_3(degLat2, degLon2, 402.96 , -36.64, color)[1];
-    P138_lat = offset_well_3(degLat2, degLon2, 401.61 , -38.41, color)[0];	 P138_lon = offset_well_3(degLat2, degLon2, 401.61 , -38.41, color)[1];
-    P139_lat = offset_well_3(degLat2, degLon2, 400 , -40, color)[0];	 P139_lon = offset_well_3(degLat2, degLon2, 400 , -40, color)[1];
-    P140_lat = offset_well_3(degLat2, degLon2, 398.11 , -41.43, color)[0];	 P140_lon = offset_well_3(degLat2, degLon2, 398.11 , -41.43, color)[1];
-    P141_lat = offset_well_3(degLat2, degLon2, 395.96 , -42.74, color)[0];	 P141_lon = offset_well_3(degLat2, degLon2, 395.96 , -42.74, color)[1];
-    P142_lat = offset_well_3(degLat2, degLon2, 393.6 , -43.92, color)[0];	 P142_lon = offset_well_3(degLat2, degLon2, 393.6 , -43.92, color)[1];
-    P143_lat = offset_well_3(degLat2, degLon2, 391.08 , -45.01, color)[0];	 P143_lon = offset_well_3(degLat2, degLon2, 391.08 , -45.01, color)[1];
-    P144_lat = offset_well_3(degLat2, degLon2, 388.44 , -46, color)[0];	 P144_lon = offset_well_3(degLat2, degLon2, 388.44 , -46, color)[1];
-    P145_lat = offset_well_3(degLat2, degLon2, 385.72 , -46.91, color)[0];	 P145_lon = offset_well_3(degLat2, degLon2, 385.72 , -46.91, color)[1];
-    P146_lat = offset_well_3(degLat2, degLon2, 382.97 , -47.76, color)[0];	 P146_lon = offset_well_3(degLat2, degLon2, 382.97 , -47.76, color)[1];
-    P147_lat = offset_well_3(degLat2, degLon2, 380.24 , -48.54, color)[0];	 P147_lon = offset_well_3(degLat2, degLon2, 380.24 , -48.54, color)[1];
-    P148_lat = offset_well_3(degLat2, degLon2, 377.57 , -49.29, color)[0];	 P148_lon = offset_well_3(degLat2, degLon2, 377.57 , -49.29, color)[1];
-    P149_lat = offset_well_3(degLat2, degLon2, 375 , -50, color)[0];	 P149_lon = offset_well_3(degLat2, degLon2, 375 , -50, color)[1];
-    P150_lat = offset_well_3(degLat2, degLon2, 372.61 , -50.66, color)[0];	 P150_lon = offset_well_3(degLat2, degLon2, 372.61 , -50.66, color)[1];
-    P151_lat = offset_well_3(degLat2, degLon2, 370.4 , -51.23, color)[0];	 P151_lon = offset_well_3(degLat2, degLon2, 370.4 , -51.23, color)[1];
-    P152_lat = offset_well_3(degLat2, degLon2, 368.29 , -51.74, color)[0];	 P152_lon = offset_well_3(degLat2, degLon2, 368.29 , -51.74, color)[1];
-    P153_lat = offset_well_3(degLat2, degLon2, 366.2 , -52.18, color)[0];	 P153_lon = offset_well_3(degLat2, degLon2, 366.2 , -52.18, color)[1];
-    P154_lat = offset_well_3(degLat2, degLon2, 364.06 , -52.56, color)[0];	 P154_lon = offset_well_3(degLat2, degLon2, 364.06 , -52.56, color)[1];
-    P155_lat = offset_well_3(degLat2, degLon2, 361.8 , -52.9, color)[0];	 P155_lon = offset_well_3(degLat2, degLon2, 361.8 , -52.9, color)[1];
-    P156_lat = offset_well_3(degLat2, degLon2, 359.34 , -53.21, color)[0];	 P156_lon = offset_well_3(degLat2, degLon2, 359.34 , -53.21, color)[1];
-    P157_lat = offset_well_3(degLat2, degLon2, 356.6 , -53.49, color)[0];	 P157_lon = offset_well_3(degLat2, degLon2, 356.6 , -53.49, color)[1];
-    P158_lat = offset_well_3(degLat2, degLon2, 353.51 , -53.75, color)[0];	 P158_lon = offset_well_3(degLat2, degLon2, 353.51 , -53.75, color)[1];
-    P159_lat = offset_well_3(degLat2, degLon2, 350 , -54, color)[0];	 P159_lon = offset_well_3(degLat2, degLon2, 350 , -54, color)[1];
-    P160_lat = offset_well_3(degLat2, degLon2, 346.15 , -54.2, color)[0];	 P160_lon = offset_well_3(degLat2, degLon2, 346.15 , -54.2, color)[1];
-    P161_lat = offset_well_3(degLat2, degLon2, 342.08 , -54.33, color)[0];	 P161_lon = offset_well_3(degLat2, degLon2, 342.08 , -54.33, color)[1];
-    P162_lat = offset_well_3(degLat2, degLon2, 337.78 , -54.39, color)[0];	 P162_lon = offset_well_3(degLat2, degLon2, 337.78 , -54.39, color)[1];
-    P163_lat = offset_well_3(degLat2, degLon2, 333.24 , -54.42, color)[0];	 P163_lon = offset_well_3(degLat2, degLon2, 333.24 , -54.42, color)[1];
-    P164_lat = offset_well_3(degLat2, degLon2, 328.44 , -54.44, color)[0];	 P164_lon = offset_well_3(degLat2, degLon2, 328.44 , -54.44, color)[1];
-    P165_lat = offset_well_3(degLat2, degLon2, 323.36 , -54.46, color)[0];	 P165_lon = offset_well_3(degLat2, degLon2, 323.36 , -54.46, color)[1];
-    P166_lat = offset_well_3(degLat2, degLon2, 317.99 , -54.5, color)[0];	 P166_lon = offset_well_3(degLat2, degLon2, 317.99 , -54.5, color)[1];
-    P167_lat = offset_well_3(degLat2, degLon2, 312.32 , -54.59, color)[0];	 P167_lon = offset_well_3(degLat2, degLon2, 312.32 , -54.59, color)[1];
-    P168_lat = offset_well_3(degLat2, degLon2, 306.33 , -54.75, color)[0];	 P168_lon = offset_well_3(degLat2, degLon2, 306.33 , -54.75, color)[1];
-    P169_lat = offset_well_3(degLat2, degLon2, 300 , -55, color)[0];	 P169_lon = offset_well_3(degLat2, degLon2, 300 , -55, color)[1];
-    P170_lat = offset_well_3(degLat2, degLon2, 292.95 , -55.36, color)[0];	 P170_lon = offset_well_3(degLat2, degLon2, 292.95 , -55.36, color)[1];
-    P171_lat = offset_well_3(degLat2, degLon2, 284.96 , -55.82, color)[0];	 P171_lon = offset_well_3(degLat2, degLon2, 284.96 , -55.82, color)[1];
-    P172_lat = offset_well_3(degLat2, degLon2, 276.32 , -56.36, color)[0];	 P172_lon = offset_well_3(degLat2, degLon2, 276.32 , -56.36, color)[1];
-    P173_lat = offset_well_3(degLat2, degLon2, 267.28 , -56.95, color)[0];	 P173_lon = offset_well_3(degLat2, degLon2, 267.28 , -56.95, color)[1];
-    P174_lat = offset_well_3(degLat2, degLon2, 258.13 , -57.56, color)[0];	 P174_lon = offset_well_3(degLat2, degLon2, 258.13 , -57.56, color)[1];
-    P175_lat = offset_well_3(degLat2, degLon2, 249.12 , -58.17, color)[0];	 P175_lon = offset_well_3(degLat2, degLon2, 249.12 , -58.17, color)[1];
-    P176_lat = offset_well_3(degLat2, degLon2, 240.54 , -58.74, color)[0];	 P176_lon = offset_well_3(degLat2, degLon2, 240.54 , -58.74, color)[1];
-    P177_lat = offset_well_3(degLat2, degLon2, 232.64 , -59.26, color)[0];	 P177_lon = offset_well_3(degLat2, degLon2, 232.64 , -59.26, color)[1];
-    P178_lat = offset_well_3(degLat2, degLon2, 225.71 , -59.68, color)[0];	 P178_lon = offset_well_3(degLat2, degLon2, 225.71 , -59.68, color)[1];
-    P179_lat = offset_well_3(degLat2, degLon2, 220 , -60, color)[0];	 P179_lon = offset_well_3(degLat2, degLon2, 220 , -60, color)[1];
-    P180_lat = offset_well_3(degLat2, degLon2, 215.84 , -60.25, color)[0];	 P180_lon = offset_well_3(degLat2, degLon2, 215.84 , -60.25, color)[1];
-    P181_lat = offset_well_3(degLat2, degLon2, 213.12 , -60.48, color)[0];	 P181_lon = offset_well_3(degLat2, degLon2, 213.12 , -60.48, color)[1];
-    P182_lat = offset_well_3(degLat2, degLon2, 211.48 , -60.68, color)[0];	 P182_lon = offset_well_3(degLat2, degLon2, 211.48 , -60.68, color)[1];
-    P183_lat = offset_well_3(degLat2, degLon2, 210.56 , -60.84, color)[0];	 P183_lon = offset_well_3(degLat2, degLon2, 210.56 , -60.84, color)[1];
-    P184_lat = offset_well_3(degLat2, degLon2, 210 , -60.94, color)[0];	 P184_lon = offset_well_3(degLat2, degLon2, 210 , -60.94, color)[1];
-    P185_lat = offset_well_3(degLat2, degLon2, 209.44 , -60.96, color)[0];	 P185_lon = offset_well_3(degLat2, degLon2, 209.44 , -60.96, color)[1];
-    P186_lat = offset_well_3(degLat2, degLon2, 208.52 , -60.89, color)[0];	 P186_lon = offset_well_3(degLat2, degLon2, 208.52 , -60.89, color)[1];
-    P187_lat = offset_well_3(degLat2, degLon2, 206.88 , -60.72, color)[0];	 P187_lon = offset_well_3(degLat2, degLon2, 206.88 , -60.72, color)[1];
-    P188_lat = offset_well_3(degLat2, degLon2, 204.16 , -60.43, color)[0];	 P188_lon = offset_well_3(degLat2, degLon2, 204.16 , -60.43, color)[1];
-    P189_lat = offset_well_3(degLat2, degLon2, 200 , -60, color)[0];	 P189_lon = offset_well_3(degLat2, degLon2, 200 , -60, color)[1];
-    P190_lat = offset_well_3(degLat2, degLon2, 194.16 , -59.36, color)[0];	 P190_lon = offset_well_3(degLat2, degLon2, 194.16 , -59.36, color)[1];
-    P191_lat = offset_well_3(degLat2, degLon2, 186.88 , -58.48, color)[0];	 P191_lon = offset_well_3(degLat2, degLon2, 186.88 , -58.48, color)[1];
-    P192_lat = offset_well_3(degLat2, degLon2, 178.52 , -57.42, color)[0];	 P192_lon = offset_well_3(degLat2, degLon2, 178.52 , -57.42, color)[1];
-    P193_lat = offset_well_3(degLat2, degLon2, 169.44 , -56.24, color)[0];	 P193_lon = offset_well_3(degLat2, degLon2, 169.44 , -56.24, color)[1];
-    P194_lat = offset_well_3(degLat2, degLon2, 160 , -55, color)[0];	 P194_lon = offset_well_3(degLat2, degLon2, 160 , -55, color)[1];
-    P195_lat = offset_well_3(degLat2, degLon2, 150.56 , -53.76, color)[0];	 P195_lon = offset_well_3(degLat2, degLon2, 150.56 , -53.76, color)[1];
-    P196_lat = offset_well_3(degLat2, degLon2, 141.48 , -52.58, color)[0];	 P196_lon = offset_well_3(degLat2, degLon2, 141.48 , -52.58, color)[1];
-    P197_lat = offset_well_3(degLat2, degLon2, 133.12 , -51.52, color)[0];	 P197_lon = offset_well_3(degLat2, degLon2, 133.12 , -51.52, color)[1];
-    P198_lat = offset_well_3(degLat2, degLon2, 125.84 , -50.64, color)[0];	 P198_lon = offset_well_3(degLat2, degLon2, 125.84 , -50.64, color)[1];
-    P199_lat = offset_well_3(degLat2, degLon2, 120 , -50, color)[0];	 P199_lon = offset_well_3(degLat2, degLon2, 120 , -50, color)[1];
-    P200_lat = offset_well_3(degLat2, degLon2, 115.59 , -49.57, color)[0];	 P200_lon = offset_well_3(degLat2, degLon2, 115.59 , -49.57, color)[1];
-    P201_lat = offset_well_3(degLat2, degLon2, 112.24 , -49.28, color)[0];	 P201_lon = offset_well_3(degLat2, degLon2, 112.24 , -49.28, color)[1];
-    P202_lat = offset_well_3(degLat2, degLon2, 109.75 , -49.11, color)[0];	 P202_lon = offset_well_3(degLat2, degLon2, 109.75 , -49.11, color)[1];
-    P203_lat = offset_well_3(degLat2, degLon2, 107.92 , -49.04, color)[0];	 P203_lon = offset_well_3(degLat2, degLon2, 107.92 , -49.04, color)[1];
-    P204_lat = offset_well_3(degLat2, degLon2, 106.56 , -49.06, color)[0];	 P204_lon = offset_well_3(degLat2, degLon2, 106.56 , -49.06, color)[1];
-    P205_lat = offset_well_3(degLat2, degLon2, 105.48 , -49.16, color)[0];	 P205_lon = offset_well_3(degLat2, degLon2, 105.48 , -49.16, color)[1];
-    P206_lat = offset_well_3(degLat2, degLon2, 104.48 , -49.32, color)[0];	 P206_lon = offset_well_3(degLat2, degLon2, 104.48 , -49.32, color)[1];
-    P207_lat = offset_well_3(degLat2, degLon2, 103.36 , -49.52, color)[0];	 P207_lon = offset_well_3(degLat2, degLon2, 103.36 , -49.52, color)[1];
-    P208_lat = offset_well_3(degLat2, degLon2, 101.93 , -49.75, color)[0];	 P208_lon = offset_well_3(degLat2, degLon2, 101.93 , -49.75, color)[1];
-    P209_lat = offset_well_3(degLat2, degLon2, 100 , -50, color)[0];	 P209_lon = offset_well_3(degLat2, degLon2, 100 , -50, color)[1];
-    P210_lat = offset_well_3(degLat2, degLon2, 97.7 , -50.34, color)[0];	 P210_lon = offset_well_3(degLat2, degLon2, 97.7 , -50.34, color)[1];
-    P211_lat = offset_well_3(degLat2, degLon2, 95.32 , -50.84, color)[0];	 P211_lon = offset_well_3(degLat2, degLon2, 95.32 , -50.84, color)[1];
-    P212_lat = offset_well_3(degLat2, degLon2, 92.87 , -51.45, color)[0];	 P212_lon = offset_well_3(degLat2, degLon2, 92.87 , -51.45, color)[1];
-    P213_lat = offset_well_3(degLat2, degLon2, 90.36 , -52.12, color)[0];	 P213_lon = offset_well_3(degLat2, degLon2, 90.36 , -52.12, color)[1];
-    P214_lat = offset_well_3(degLat2, degLon2, 87.81 , -52.81, color)[0];	 P214_lon = offset_well_3(degLat2, degLon2, 87.81 , -52.81, color)[1];
-    P215_lat = offset_well_3(degLat2, degLon2, 85.24 , -53.48, color)[0];	 P215_lon = offset_well_3(degLat2, degLon2, 85.24 , -53.48, color)[1];
-    P216_lat = offset_well_3(degLat2, degLon2, 82.66 , -54.08, color)[0];	 P216_lon = offset_well_3(degLat2, degLon2, 82.66 , -54.08, color)[1];
-    P217_lat = offset_well_3(degLat2, degLon2, 80.08 , -54.56, color)[0];	 P217_lon = offset_well_3(degLat2, degLon2, 80.08 , -54.56, color)[1];
-    P218_lat = offset_well_3(degLat2, degLon2, 77.52 , -54.88, color)[0];	 P218_lon = offset_well_3(degLat2, degLon2, 77.52 , -54.88, color)[1];
-    P219_lat = offset_well_3(degLat2, degLon2, 75 , -55, color)[0];	 P219_lon = offset_well_3(degLat2, degLon2, 75 , -55, color)[1];
-    P220_lat = offset_well_3(degLat2, degLon2, 72.61 , -55.02, color)[0];	 P220_lon = offset_well_3(degLat2, degLon2, 72.61 , -55.02, color)[1];
-    P221_lat = offset_well_3(degLat2, degLon2, 70.4 , -55.04, color)[0];	 P221_lon = offset_well_3(degLat2, degLon2, 70.4 , -55.04, color)[1];
-    P222_lat = offset_well_3(degLat2, degLon2, 68.29 , -55.02, color)[0];	 P222_lon = offset_well_3(degLat2, degLon2, 68.29 , -55.02, color)[1];
-    P223_lat = offset_well_3(degLat2, degLon2, 66.2 , -54.92, color)[0];	 P223_lon = offset_well_3(degLat2, degLon2, 66.2 , -54.92, color)[1];
-    P224_lat = offset_well_3(degLat2, degLon2, 64.06 , -54.69, color)[0];	 P224_lon = offset_well_3(degLat2, degLon2, 64.06 , -54.69, color)[1];
-    P225_lat = offset_well_3(degLat2, degLon2, 61.8 , -54.28, color)[0];	 P225_lon = offset_well_3(degLat2, degLon2, 61.8 , -54.28, color)[1];
-    P226_lat = offset_well_3(degLat2, degLon2, 59.34 , -53.65, color)[0];	 P226_lon = offset_well_3(degLat2, degLon2, 59.34 , -53.65, color)[1];
-    P227_lat = offset_well_3(degLat2, degLon2, 56.6 , -52.76, color)[0];	 P227_lon = offset_well_3(degLat2, degLon2, 56.6 , -52.76, color)[1];
-    P228_lat = offset_well_3(degLat2, degLon2, 53.51 , -51.56, color)[0];	 P228_lon = offset_well_3(degLat2, degLon2, 53.51 , -51.56, color)[1];
-    P229_lat = offset_well_3(degLat2, degLon2, 50 , -50, color)[0];	 P229_lon = offset_well_3(degLat2, degLon2, 50 , -50, color)[1];
-    P230_lat = offset_well_3(degLat2, degLon2, 40.8 , -45.12, color)[0];	 P230_lon = offset_well_3(degLat2, degLon2, 40.8 , -45.12, color)[1];
-    P231_lat = offset_well_3(degLat2, degLon2, 35.26 , -41.89, color)[0];	 P231_lon = offset_well_3(degLat2, degLon2, 35.26 , -41.89, color)[1];
-    P232_lat = offset_well_3(degLat2, degLon2, 29.4 , -38.36, color)[0];	 P232_lon = offset_well_3(degLat2, degLon2, 29.4 , -38.36, color)[1];
-    P233_lat = offset_well_3(degLat2, degLon2, 23.44 , -34.69, color)[0];	 P233_lon = offset_well_3(degLat2, degLon2, 23.44 , -34.69, color)[1];
-    P234_lat = offset_well_3(degLat2, degLon2, 17.6 , -31.04, color)[0];	 P234_lon = offset_well_3(degLat2, degLon2, 17.6 , -31.04, color)[1];
-    P235_lat = offset_well_3(degLat2, degLon2, 12.11 , -27.58, color)[0];	 P235_lon = offset_well_3(degLat2, degLon2, 12.11 , -27.58, color)[1];
-    P236_lat = offset_well_3(degLat2, degLon2, 7.2 , -24.48, color)[0];	 P236_lon = offset_well_3(degLat2, degLon2, 7.2 , -24.48, color)[1];
-    P237_lat = offset_well_3(degLat2, degLon2, 3.09 , -21.9, color)[0];	 P237_lon = offset_well_3(degLat2, degLon2, 3.09 , -21.9, color)[1];
-    P238_lat = offset_well_3(degLat2, degLon2, 0 , -20, color)[0];	 P238_lon = offset_well_3(degLat2, degLon2, 0 , -20, color)[1];
-    P239_lat = offset_well_3(degLat2, degLon2, 0 , -20, color)[0];	 P239_lon = offset_well_3(degLat2, degLon2, 0 , -20, color)[1];
-    P240_lat = offset_well_3(degLat2, degLon2, -3.09 , -21.9, color)[0];	 P240_lon = offset_well_3(degLat2, degLon2, -3.09 , -21.9, color)[1];
-    P241_lat = offset_well_3(degLat2, degLon2, -7.2 , -24.48, color)[0];	 P241_lon = offset_well_3(degLat2, degLon2, -7.2 , -24.48, color)[1];
-    P242_lat = offset_well_3(degLat2, degLon2, -12.11 , -27.58, color)[0];	 P242_lon = offset_well_3(degLat2, degLon2, -12.11 , -27.58, color)[1];
-    P243_lat = offset_well_3(degLat2, degLon2, -17.6 , -31.04, color)[0];	 P243_lon = offset_well_3(degLat2, degLon2, -17.6 , -31.04, color)[1];
-    P244_lat = offset_well_3(degLat2, degLon2, -23.44 , -34.69, color)[0];	 P244_lon = offset_well_3(degLat2, degLon2, -23.44 , -34.69, color)[1];
-    P245_lat = offset_well_3(degLat2, degLon2, -29.4 , -38.36, color)[0];	 P245_lon = offset_well_3(degLat2, degLon2, -29.4 , -38.36, color)[1];
-    P246_lat = offset_well_3(degLat2, degLon2, -35.26 , -41.89, color)[0];	 P246_lon = offset_well_3(degLat2, degLon2, -35.26 , -41.89, color)[1];
-    P247_lat = offset_well_3(degLat2, degLon2, -40.8 , -45.12, color)[0];	 P247_lon = offset_well_3(degLat2, degLon2, -40.8 , -45.12, color)[1];
-    P248_lat = offset_well_3(degLat2, degLon2, -50 , -50, color)[0];	 P248_lon = offset_well_3(degLat2, degLon2, -50 , -50, color)[1];
-    P249_lat = offset_well_3(degLat2, degLon2, -53.51 , -51.56, color)[0];	 P249_lon = offset_well_3(degLat2, degLon2, -53.51 , -51.56, color)[1];
-    P250_lat = offset_well_3(degLat2, degLon2, -56.6 , -52.76, color)[0];	 P250_lon = offset_well_3(degLat2, degLon2, -56.6 , -52.76, color)[1];
-    P251_lat = offset_well_3(degLat2, degLon2, -59.34 , -53.65, color)[0];	 P251_lon = offset_well_3(degLat2, degLon2, -59.34 , -53.65, color)[1];
-    P252_lat = offset_well_3(degLat2, degLon2, -61.8 , -54.28, color)[0];	 P252_lon = offset_well_3(degLat2, degLon2, -61.8 , -54.28, color)[1];
-    P253_lat = offset_well_3(degLat2, degLon2, -64.06 , -54.69, color)[0];	 P253_lon = offset_well_3(degLat2, degLon2, -64.06 , -54.69, color)[1];
-    P254_lat = offset_well_3(degLat2, degLon2, -66.2 , -54.92, color)[0];	 P254_lon = offset_well_3(degLat2, degLon2, -66.2 , -54.92, color)[1];
-    P255_lat = offset_well_3(degLat2, degLon2, -68.29 , -55.02, color)[0];	 P255_lon = offset_well_3(degLat2, degLon2, -68.29 , -55.02, color)[1];
-    P256_lat = offset_well_3(degLat2, degLon2, -70.4 , -55.04, color)[0];	 P256_lon = offset_well_3(degLat2, degLon2, -70.4 , -55.04, color)[1];
-    P257_lat = offset_well_3(degLat2, degLon2, -72.61 , -55.02, color)[0];	 P257_lon = offset_well_3(degLat2, degLon2, -72.61 , -55.02, color)[1];
-    P258_lat = offset_well_3(degLat2, degLon2, -75 , -55, color)[0];	 P258_lon = offset_well_3(degLat2, degLon2, -75 , -55, color)[1];
-    P259_lat = offset_well_3(degLat2, degLon2, -77.52 , -54.88, color)[0];	 P259_lon = offset_well_3(degLat2, degLon2, -77.52 , -54.88, color)[1];
-    P260_lat = offset_well_3(degLat2, degLon2, -80.08 , -54.56, color)[0];	 P260_lon = offset_well_3(degLat2, degLon2, -80.08 , -54.56, color)[1];
-    P261_lat = offset_well_3(degLat2, degLon2, -82.66 , -54.08, color)[0];	 P261_lon = offset_well_3(degLat2, degLon2, -82.66 , -54.08, color)[1];
-    P262_lat = offset_well_3(degLat2, degLon2, -85.24 , -53.48, color)[0];	 P262_lon = offset_well_3(degLat2, degLon2, -85.24 , -53.48, color)[1];
-    P263_lat = offset_well_3(degLat2, degLon2, -87.81 , -52.81, color)[0];	 P263_lon = offset_well_3(degLat2, degLon2, -87.81 , -52.81, color)[1];
-    P264_lat = offset_well_3(degLat2, degLon2, -90.36 , -52.12, color)[0];	 P264_lon = offset_well_3(degLat2, degLon2, -90.36 , -52.12, color)[1];
-    P265_lat = offset_well_3(degLat2, degLon2, -92.87 , -51.45, color)[0];	 P265_lon = offset_well_3(degLat2, degLon2, -92.87 , -51.45, color)[1];
-    P266_lat = offset_well_3(degLat2, degLon2, -95.32 , -50.84, color)[0];	 P266_lon = offset_well_3(degLat2, degLon2, -95.32 , -50.84, color)[1];
-    P267_lat = offset_well_3(degLat2, degLon2, -97.7 , -50.34, color)[0];	 P267_lon = offset_well_3(degLat2, degLon2, -97.7 , -50.34, color)[1];
-    P268_lat = offset_well_3(degLat2, degLon2, -100 , -50, color)[0];	 P268_lon = offset_well_3(degLat2, degLon2, -100 , -50, color)[1];
-    P269_lat = offset_well_3(degLat2, degLon2, -101.93 , -49.75, color)[0];	 P269_lon = offset_well_3(degLat2, degLon2, -101.93 , -49.75, color)[1];
-    P270_lat = offset_well_3(degLat2, degLon2, -103.36 , -49.52, color)[0];	 P270_lon = offset_well_3(degLat2, degLon2, -103.36 , -49.52, color)[1];
-    P271_lat = offset_well_3(degLat2, degLon2, -104.48 , -49.32, color)[0];	 P271_lon = offset_well_3(degLat2, degLon2, -104.48 , -49.32, color)[1];
-    P272_lat = offset_well_3(degLat2, degLon2, -105.48 , -49.16, color)[0];	 P272_lon = offset_well_3(degLat2, degLon2, -105.48 , -49.16, color)[1];
-    P273_lat = offset_well_3(degLat2, degLon2, -106.56 , -49.06, color)[0];	 P273_lon = offset_well_3(degLat2, degLon2, -106.56 , -49.06, color)[1];
-    P274_lat = offset_well_3(degLat2, degLon2, -107.92 , -49.04, color)[0];	 P274_lon = offset_well_3(degLat2, degLon2, -107.92 , -49.04, color)[1];
-    P275_lat = offset_well_3(degLat2, degLon2, -109.75 , -49.11, color)[0];	 P275_lon = offset_well_3(degLat2, degLon2, -109.75 , -49.11, color)[1];
-    P276_lat = offset_well_3(degLat2, degLon2, -112.24 , -49.28, color)[0];	 P276_lon = offset_well_3(degLat2, degLon2, -112.24 , -49.28, color)[1];
-    P277_lat = offset_well_3(degLat2, degLon2, -115.59 , -49.57, color)[0];	 P277_lon = offset_well_3(degLat2, degLon2, -115.59 , -49.57, color)[1];
-    P278_lat = offset_well_3(degLat2, degLon2, -120 , -50, color)[0];	 P278_lon = offset_well_3(degLat2, degLon2, -120 , -50, color)[1];
-    P279_lat = offset_well_3(degLat2, degLon2, -125.84 , -50.64, color)[0];	 P279_lon = offset_well_3(degLat2, degLon2, -125.84 , -50.64, color)[1];
-    P280_lat = offset_well_3(degLat2, degLon2, -133.12 , -51.52, color)[0];	 P280_lon = offset_well_3(degLat2, degLon2, -133.12 , -51.52, color)[1];
-    P281_lat = offset_well_3(degLat2, degLon2, -141.48 , -52.58, color)[0];	 P281_lon = offset_well_3(degLat2, degLon2, -141.48 , -52.58, color)[1];
-    P282_lat = offset_well_3(degLat2, degLon2, -150.56 , -53.76, color)[0];	 P282_lon = offset_well_3(degLat2, degLon2, -150.56 , -53.76, color)[1];
-    P283_lat = offset_well_3(degLat2, degLon2, -160 , -55, color)[0];	 P283_lon = offset_well_3(degLat2, degLon2, -160 , -55, color)[1];
-    P284_lat = offset_well_3(degLat2, degLon2, -169.44 , -56.24, color)[0];	 P284_lon = offset_well_3(degLat2, degLon2, -169.44 , -56.24, color)[1];
-    P285_lat = offset_well_3(degLat2, degLon2, -178.52 , -57.42, color)[0];	 P285_lon = offset_well_3(degLat2, degLon2, -178.52 , -57.42, color)[1];
-    P286_lat = offset_well_3(degLat2, degLon2, -186.88 , -58.48, color)[0];	 P286_lon = offset_well_3(degLat2, degLon2, -186.88 , -58.48, color)[1];
-    P287_lat = offset_well_3(degLat2, degLon2, -194.16 , -59.36, color)[0];	 P287_lon = offset_well_3(degLat2, degLon2, -194.16 , -59.36, color)[1];
-    P288_lat = offset_well_3(degLat2, degLon2, -200 , -60, color)[0];	 P288_lon = offset_well_3(degLat2, degLon2, -200 , -60, color)[1];
-    P289_lat = offset_well_3(degLat2, degLon2, -204.16 , -60.43, color)[0];	 P289_lon = offset_well_3(degLat2, degLon2, -204.16 , -60.43, color)[1];
-    P290_lat = offset_well_3(degLat2, degLon2, -206.88 , -60.72, color)[0];	 P290_lon = offset_well_3(degLat2, degLon2, -206.88 , -60.72, color)[1];
-    P291_lat = offset_well_3(degLat2, degLon2, -208.52 , -60.89, color)[0];	 P291_lon = offset_well_3(degLat2, degLon2, -208.52 , -60.89, color)[1];
-    P292_lat = offset_well_3(degLat2, degLon2, -209.44 , -60.96, color)[0];	 P292_lon = offset_well_3(degLat2, degLon2, -209.44 , -60.96, color)[1];
-    P293_lat = offset_well_3(degLat2, degLon2, -210 , -60.94, color)[0];	 P293_lon = offset_well_3(degLat2, degLon2, -210 , -60.94, color)[1];
-    P294_lat = offset_well_3(degLat2, degLon2, -210.56 , -60.84, color)[0];	 P294_lon = offset_well_3(degLat2, degLon2, -210.56 , -60.84, color)[1];
-    P295_lat = offset_well_3(degLat2, degLon2, -211.48 , -60.68, color)[0];	 P295_lon = offset_well_3(degLat2, degLon2, -211.48 , -60.68, color)[1];
-    P296_lat = offset_well_3(degLat2, degLon2, -213.12 , -60.48, color)[0];	 P296_lon = offset_well_3(degLat2, degLon2, -213.12 , -60.48, color)[1];
-    P297_lat = offset_well_3(degLat2, degLon2, -215.84 , -60.25, color)[0];	 P297_lon = offset_well_3(degLat2, degLon2, -215.84 , -60.25, color)[1];
-    P298_lat = offset_well_3(degLat2, degLon2, -220 , -60, color)[0];	 P298_lon = offset_well_3(degLat2, degLon2, -220 , -60, color)[1];
-    P299_lat = offset_well_3(degLat2, degLon2, -225.71 , -59.68, color)[0];	 P299_lon = offset_well_3(degLat2, degLon2, -225.71 , -59.68, color)[1];
-    P300_lat = offset_well_3(degLat2, degLon2, -232.64 , -59.26, color)[0];	 P300_lon = offset_well_3(degLat2, degLon2, -232.64 , -59.26, color)[1];
-    P301_lat = offset_well_3(degLat2, degLon2, -240.54 , -58.74, color)[0];	 P301_lon = offset_well_3(degLat2, degLon2, -240.54 , -58.74, color)[1];
-    P302_lat = offset_well_3(degLat2, degLon2, -249.12 , -58.17, color)[0];	 P302_lon = offset_well_3(degLat2, degLon2, -249.12 , -58.17, color)[1];
-    P303_lat = offset_well_3(degLat2, degLon2, -258.13 , -57.56, color)[0];	 P303_lon = offset_well_3(degLat2, degLon2, -258.13 , -57.56, color)[1];
-    P304_lat = offset_well_3(degLat2, degLon2, -267.28 , -56.95, color)[0];	 P304_lon = offset_well_3(degLat2, degLon2, -267.28 , -56.95, color)[1];
-    P305_lat = offset_well_3(degLat2, degLon2, -276.32 , -56.36, color)[0];	 P305_lon = offset_well_3(degLat2, degLon2, -276.32 , -56.36, color)[1];
-    P306_lat = offset_well_3(degLat2, degLon2, -284.96 , -55.82, color)[0];	 P306_lon = offset_well_3(degLat2, degLon2, -284.96 , -55.82, color)[1];
-    P307_lat = offset_well_3(degLat2, degLon2, -292.95 , -55.36, color)[0];	 P307_lon = offset_well_3(degLat2, degLon2, -292.95 , -55.36, color)[1];
-    P308_lat = offset_well_3(degLat2, degLon2, -300 , -55, color)[0];	 P308_lon = offset_well_3(degLat2, degLon2, -300 , -55, color)[1];
-    P309_lat = offset_well_3(degLat2, degLon2, -306.33 , -54.75, color)[0];	 P309_lon = offset_well_3(degLat2, degLon2, -306.33 , -54.75, color)[1];
-    P310_lat = offset_well_3(degLat2, degLon2, -312.32 , -54.59, color)[0];	 P310_lon = offset_well_3(degLat2, degLon2, -312.32 , -54.59, color)[1];
-    P311_lat = offset_well_3(degLat2, degLon2, -317.99 , -54.5, color)[0];	 P311_lon = offset_well_3(degLat2, degLon2, -317.99 , -54.5, color)[1];
-    P312_lat = offset_well_3(degLat2, degLon2, -323.36 , -54.46, color)[0];	 P312_lon = offset_well_3(degLat2, degLon2, -323.36 , -54.46, color)[1];
-    P313_lat = offset_well_3(degLat2, degLon2, -328.44 , -54.44, color)[0];	 P313_lon = offset_well_3(degLat2, degLon2, -328.44 , -54.44, color)[1];
-    P314_lat = offset_well_3(degLat2, degLon2, -333.24 , -54.42, color)[0];	 P314_lon = offset_well_3(degLat2, degLon2, -333.24 , -54.42, color)[1];
-    P315_lat = offset_well_3(degLat2, degLon2, -337.78 , -54.39, color)[0];	 P315_lon = offset_well_3(degLat2, degLon2, -337.78 , -54.39, color)[1];
-    P316_lat = offset_well_3(degLat2, degLon2, -342.08 , -54.33, color)[0];	 P316_lon = offset_well_3(degLat2, degLon2, -342.08 , -54.33, color)[1];
-    P317_lat = offset_well_3(degLat2, degLon2, -346.15 , -54.2, color)[0];	 P317_lon = offset_well_3(degLat2, degLon2, -346.15 , -54.2, color)[1];
-    P318_lat = offset_well_3(degLat2, degLon2, -350 , -54, color)[0];	 P318_lon = offset_well_3(degLat2, degLon2, -350 , -54, color)[1];
-    P319_lat = offset_well_3(degLat2, degLon2, -353.51 , -53.75, color)[0];	 P319_lon = offset_well_3(degLat2, degLon2, -353.51 , -53.75, color)[1];
-    P320_lat = offset_well_3(degLat2, degLon2, -356.6 , -53.49, color)[0];	 P320_lon = offset_well_3(degLat2, degLon2, -356.6 , -53.49, color)[1];
-    P321_lat = offset_well_3(degLat2, degLon2, -359.34 , -53.21, color)[0];	 P321_lon = offset_well_3(degLat2, degLon2, -359.34 , -53.21, color)[1];
-    P322_lat = offset_well_3(degLat2, degLon2, -361.8 , -52.9, color)[0];	 P322_lon = offset_well_3(degLat2, degLon2, -361.8 , -52.9, color)[1];
-    P323_lat = offset_well_3(degLat2, degLon2, -364.06 , -52.56, color)[0];	 P323_lon = offset_well_3(degLat2, degLon2, -364.06 , -52.56, color)[1];
-    P324_lat = offset_well_3(degLat2, degLon2, -366.2 , -52.18, color)[0];	 P324_lon = offset_well_3(degLat2, degLon2, -366.2 , -52.18, color)[1];
-    P325_lat = offset_well_3(degLat2, degLon2, -368.29 , -51.74, color)[0];	 P325_lon = offset_well_3(degLat2, degLon2, -368.29 , -51.74, color)[1];
-    P326_lat = offset_well_3(degLat2, degLon2, -370.4 , -51.23, color)[0];	 P326_lon = offset_well_3(degLat2, degLon2, -370.4 , -51.23, color)[1];
-    P327_lat = offset_well_3(degLat2, degLon2, -372.61 , -50.66, color)[0];	 P327_lon = offset_well_3(degLat2, degLon2, -372.61 , -50.66, color)[1];
-    P328_lat = offset_well_3(degLat2, degLon2, -375 , -50, color)[0];	 P328_lon = offset_well_3(degLat2, degLon2, -375 , -50, color)[1];
-    P329_lat = offset_well_3(degLat2, degLon2, -377.57 , -49.29, color)[0];	 P329_lon = offset_well_3(degLat2, degLon2, -377.57 , -49.29, color)[1];
-    P330_lat = offset_well_3(degLat2, degLon2, -380.24 , -48.54, color)[0];	 P330_lon = offset_well_3(degLat2, degLon2, -380.24 , -48.54, color)[1];
-    P331_lat = offset_well_3(degLat2, degLon2, -382.97 , -47.76, color)[0];	 P331_lon = offset_well_3(degLat2, degLon2, -382.97 , -47.76, color)[1];
-    P332_lat = offset_well_3(degLat2, degLon2, -385.72 , -46.91, color)[0];	 P332_lon = offset_well_3(degLat2, degLon2, -385.72 , -46.91, color)[1];
-    P333_lat = offset_well_3(degLat2, degLon2, -388.44 , -46, color)[0];	 P333_lon = offset_well_3(degLat2, degLon2, -388.44 , -46, color)[1];
-    P334_lat = offset_well_3(degLat2, degLon2, -391.08 , -45.01, color)[0];	 P334_lon = offset_well_3(degLat2, degLon2, -391.08 , -45.01, color)[1];
-    P335_lat = offset_well_3(degLat2, degLon2, -393.6 , -43.92, color)[0];	 P335_lon = offset_well_3(degLat2, degLon2, -393.6 , -43.92, color)[1];
-    P336_lat = offset_well_3(degLat2, degLon2, -395.96 , -42.74, color)[0];	 P336_lon = offset_well_3(degLat2, degLon2, -395.96 , -42.74, color)[1];
-    P337_lat = offset_well_3(degLat2, degLon2, -398.11 , -41.43, color)[0];	 P337_lon = offset_well_3(degLat2, degLon2, -398.11 , -41.43, color)[1];
-    P338_lat = offset_well_3(degLat2, degLon2, -400 , -40, color)[0];	 P338_lon = offset_well_3(degLat2, degLon2, -400 , -40, color)[1];
-    P339_lat = offset_well_3(degLat2, degLon2, -401.61 , -38.41, color)[0];	 P339_lon = offset_well_3(degLat2, degLon2, -401.61 , -38.41, color)[1];
-    P340_lat = offset_well_3(degLat2, degLon2, -402.96 , -36.64, color)[0];	 P340_lon = offset_well_3(degLat2, degLon2, -402.96 , -36.64, color)[1];
-    P341_lat = offset_well_3(degLat2, degLon2, -404.1 , -34.74, color)[0];	 P341_lon = offset_well_3(degLat2, degLon2, -404.1 , -34.74, color)[1];
-    P342_lat = offset_well_3(degLat2, degLon2, -405.08 , -32.72, color)[0];	 P342_lon = offset_well_3(degLat2, degLon2, -405.08 , -32.72, color)[1];
-    P343_lat = offset_well_3(degLat2, degLon2, -405.94 , -30.63, color)[0];	 P343_lon = offset_well_3(degLat2, degLon2, -405.94 , -30.63, color)[1];
-    P344_lat = offset_well_3(degLat2, degLon2, -406.72 , -28.48, color)[0];	 P344_lon = offset_well_3(degLat2, degLon2, -406.72 , -28.48, color)[1];
-    P345_lat = offset_well_3(degLat2, degLon2, -407.47 , -26.32, color)[0];	 P345_lon = offset_well_3(degLat2, degLon2, -407.47 , -26.32, color)[1];
-    P346_lat = offset_well_3(degLat2, degLon2, -408.24 , -24.16, color)[0];	 P346_lon = offset_well_3(degLat2, degLon2, -408.24 , -24.16, color)[1];
-    P347_lat = offset_well_3(degLat2, degLon2, -409.07 , -22.05, color)[0];	 P347_lon = offset_well_3(degLat2, degLon2, -409.07 , -22.05, color)[1];
-    P348_lat = offset_well_3(degLat2, degLon2, -410 , -20, color)[0];	 P348_lon = offset_well_3(degLat2, degLon2, -410 , -20, color)[1];
-    P349_lat = offset_well_3(degLat2, degLon2, -411.05 , -17.91, color)[0];	 P349_lon = offset_well_3(degLat2, degLon2, -411.05 , -17.91, color)[1];
-    P350_lat = offset_well_3(degLat2, degLon2, -412.16 , -15.68, color)[0];	 P350_lon = offset_well_3(degLat2, degLon2, -412.16 , -15.68, color)[1];
-    P351_lat = offset_well_3(degLat2, degLon2, -413.32 , -13.37, color)[0];	 P351_lon = offset_well_3(degLat2, degLon2, -413.32 , -13.37, color)[1];
-    P352_lat = offset_well_3(degLat2, degLon2, -414.48 , -11.04, color)[0];	 P352_lon = offset_well_3(degLat2, degLon2, -414.48 , -11.04, color)[1];
-    P353_lat = offset_well_3(degLat2, degLon2, -415.63 , -8.75, color)[0];	 P353_lon = offset_well_3(degLat2, degLon2, -415.63 , -8.75, color)[1];
-    P354_lat = offset_well_3(degLat2, degLon2, -416.72 , -6.56, color)[0];	 P354_lon = offset_well_3(degLat2, degLon2, -416.72 , -6.56, color)[1];
-    P355_lat = offset_well_3(degLat2, degLon2, -417.74 , -4.53, color)[0];	 P355_lon = offset_well_3(degLat2, degLon2, -417.74 , -4.53, color)[1];
-    P356_lat = offset_well_3(degLat2, degLon2, -418.64 , -2.72, color)[0];	 P356_lon = offset_well_3(degLat2, degLon2, -418.64 , -2.72, color)[1];
-    P357_lat = offset_well_3(degLat2, degLon2, -420 , 0, color)[0];	 P357_lon = offset_well_3(degLat2, degLon2, -420 , 0, color)[1];
-    P358_lat = offset_well_3(degLat2, degLon2, -420 , 0, color)[0];	 P358_lon = offset_well_3(degLat2, degLon2, -420 , 0, color)[1];
-    P359_lat = offset_well_3(degLat2, degLon2, -418.64 , 2.72, color)[0];	 P359_lon = offset_well_3(degLat2, degLon2, -418.64 , 2.72, color)[1];
-    P360_lat = offset_well_3(degLat2, degLon2, -417.74 , 4.53, color)[0];	 P360_lon = offset_well_3(degLat2, degLon2, -417.74 , 4.53, color)[1];
-    P361_lat = offset_well_3(degLat2, degLon2, -416.72 , 6.56, color)[0];	 P361_lon = offset_well_3(degLat2, degLon2, -416.72 , 6.56, color)[1];
-    P362_lat = offset_well_3(degLat2, degLon2, -415.63 , 8.75, color)[0];	 P362_lon = offset_well_3(degLat2, degLon2, -415.63 , 8.75, color)[1];
-    P363_lat = offset_well_3(degLat2, degLon2, -414.48 , 11.04, color)[0];	 P363_lon = offset_well_3(degLat2, degLon2, -414.48 , 11.04, color)[1];
-    P364_lat = offset_well_3(degLat2, degLon2, -413.32 , 13.37, color)[0];	 P364_lon = offset_well_3(degLat2, degLon2, -413.32 , 13.37, color)[1];
-    P365_lat = offset_well_3(degLat2, degLon2, -412.16 , 15.68, color)[0];	 P365_lon = offset_well_3(degLat2, degLon2, -412.16 , 15.68, color)[1];
-    P366_lat = offset_well_3(degLat2, degLon2, -411.05 , 17.91, color)[0];	 P366_lon = offset_well_3(degLat2, degLon2, -411.05 , 17.91, color)[1];
-    P367_lat = offset_well_3(degLat2, degLon2, -410 , 20, color)[0];	 P367_lon = offset_well_3(degLat2, degLon2, -410 , 20, color)[1];
-    P368_lat = offset_well_3(degLat2, degLon2, -409.07 , 22.05, color)[0];	 P368_lon = offset_well_3(degLat2, degLon2, -409.07 , 22.05, color)[1];
-    P369_lat = offset_well_3(degLat2, degLon2, -408.24 , 24.16, color)[0];	 P369_lon = offset_well_3(degLat2, degLon2, -408.24 , 24.16, color)[1];
-    P370_lat = offset_well_3(degLat2, degLon2, -407.47 , 26.32, color)[0];	 P370_lon = offset_well_3(degLat2, degLon2, -407.47 , 26.32, color)[1];
-    P371_lat = offset_well_3(degLat2, degLon2, -406.72 , 28.48, color)[0];	 P371_lon = offset_well_3(degLat2, degLon2, -406.72 , 28.48, color)[1];
-    P372_lat = offset_well_3(degLat2, degLon2, -405.94 , 30.63, color)[0];	 P372_lon = offset_well_3(degLat2, degLon2, -405.94 , 30.63, color)[1];
-    P373_lat = offset_well_3(degLat2, degLon2, -405.08 , 32.72, color)[0];	 P373_lon = offset_well_3(degLat2, degLon2, -405.08 , 32.72, color)[1];
-    P374_lat = offset_well_3(degLat2, degLon2, -404.1 , 34.74, color)[0];	 P374_lon = offset_well_3(degLat2, degLon2, -404.1 , 34.74, color)[1];
-    P375_lat = offset_well_3(degLat2, degLon2, -402.96 , 36.64, color)[0];	 P375_lon = offset_well_3(degLat2, degLon2, -402.96 , 36.64, color)[1];
-    P376_lat = offset_well_3(degLat2, degLon2, -401.61 , 38.41, color)[0];	 P376_lon = offset_well_3(degLat2, degLon2, -401.61 , 38.41, color)[1];
-    P377_lat = offset_well_3(degLat2, degLon2, -400 , 40, color)[0];	 P377_lon = offset_well_3(degLat2, degLon2, -400 , 40, color)[1];
-    P378_lat = offset_well_3(degLat2, degLon2, -398.11 , 41.43, color)[0];	 P378_lon = offset_well_3(degLat2, degLon2, -398.11 , 41.43, color)[1];
-    P379_lat = offset_well_3(degLat2, degLon2, -395.96 , 42.74, color)[0];	 P379_lon = offset_well_3(degLat2, degLon2, -395.96 , 42.74, color)[1];
-    P380_lat = offset_well_3(degLat2, degLon2, -393.6 , 43.92, color)[0];	 P380_lon = offset_well_3(degLat2, degLon2, -393.6 , 43.92, color)[1];
-    P381_lat = offset_well_3(degLat2, degLon2, -391.08 , 45.01, color)[0];	 P381_lon = offset_well_3(degLat2, degLon2, -391.08 , 45.01, color)[1];
-    P382_lat = offset_well_3(degLat2, degLon2, -388.44 , 46, color)[0];	 P382_lon = offset_well_3(degLat2, degLon2, -388.44 , 46, color)[1];
-    P383_lat = offset_well_3(degLat2, degLon2, -385.72 , 46.91, color)[0];	 P383_lon = offset_well_3(degLat2, degLon2, -385.72 , 46.91, color)[1];
-    P384_lat = offset_well_3(degLat2, degLon2, -382.97 , 47.76, color)[0];	 P384_lon = offset_well_3(degLat2, degLon2, -382.97 , 47.76, color)[1];
-    P385_lat = offset_well_3(degLat2, degLon2, -380.24 , 48.54, color)[0];	 P385_lon = offset_well_3(degLat2, degLon2, -380.24 , 48.54, color)[1];
-    P386_lat = offset_well_3(degLat2, degLon2, -377.57 , 49.29, color)[0];	 P386_lon = offset_well_3(degLat2, degLon2, -377.57 , 49.29, color)[1];
-    P387_lat = offset_well_3(degLat2, degLon2, -375 , 50, color)[0];	 P387_lon = offset_well_3(degLat2, degLon2, -375 , 50, color)[1];
-    P388_lat = offset_well_3(degLat2, degLon2, -372.61 , 50.66, color)[0];	 P388_lon = offset_well_3(degLat2, degLon2, -372.61 , 50.66, color)[1];
-    P389_lat = offset_well_3(degLat2, degLon2, -370.4 , 51.23, color)[0];	 P389_lon = offset_well_3(degLat2, degLon2, -370.4 , 51.23, color)[1];
-    P390_lat = offset_well_3(degLat2, degLon2, -368.29 , 51.74, color)[0];	 P390_lon = offset_well_3(degLat2, degLon2, -368.29 , 51.74, color)[1];
-    P391_lat = offset_well_3(degLat2, degLon2, -366.2 , 52.18, color)[0];	 P391_lon = offset_well_3(degLat2, degLon2, -366.2 , 52.18, color)[1];
-    P392_lat = offset_well_3(degLat2, degLon2, -364.06 , 52.56, color)[0];	 P392_lon = offset_well_3(degLat2, degLon2, -364.06 , 52.56, color)[1];
-    P393_lat = offset_well_3(degLat2, degLon2, -361.8 , 52.9, color)[0];	 P393_lon = offset_well_3(degLat2, degLon2, -361.8 , 52.9, color)[1];
-    P394_lat = offset_well_3(degLat2, degLon2, -359.34 , 53.21, color)[0];	 P394_lon = offset_well_3(degLat2, degLon2, -359.34 , 53.21, color)[1];
-    P395_lat = offset_well_3(degLat2, degLon2, -356.6 , 53.49, color)[0];	 P395_lon = offset_well_3(degLat2, degLon2, -356.6 , 53.49, color)[1];
-    P396_lat = offset_well_3(degLat2, degLon2, -353.51 , 53.75, color)[0];	 P396_lon = offset_well_3(degLat2, degLon2, -353.51 , 53.75, color)[1];
-    P397_lat = offset_well_3(degLat2, degLon2, -350 , 54, color)[0];	 P397_lon = offset_well_3(degLat2, degLon2, -350 , 54, color)[1];
-    P398_lat = offset_well_3(degLat2, degLon2, -346.15 , 54.2, color)[0];	 P398_lon = offset_well_3(degLat2, degLon2, -346.15 , 54.2, color)[1];
-    P399_lat = offset_well_3(degLat2, degLon2, -342.08 , 54.33, color)[0];	 P399_lon = offset_well_3(degLat2, degLon2, -342.08 , 54.33, color)[1];
-    P400_lat = offset_well_3(degLat2, degLon2, -337.78 , 54.39, color)[0];	 P400_lon = offset_well_3(degLat2, degLon2, -337.78 , 54.39, color)[1];
-    P401_lat = offset_well_3(degLat2, degLon2, -333.24 , 54.42, color)[0];	 P401_lon = offset_well_3(degLat2, degLon2, -333.24 , 54.42, color)[1];
-    P402_lat = offset_well_3(degLat2, degLon2, -328.44 , 54.44, color)[0];	 P402_lon = offset_well_3(degLat2, degLon2, -328.44 , 54.44, color)[1];
-    P403_lat = offset_well_3(degLat2, degLon2, -323.36 , 54.46, color)[0];	 P403_lon = offset_well_3(degLat2, degLon2, -323.36 , 54.46, color)[1];
-    P404_lat = offset_well_3(degLat2, degLon2, -317.99 , 54.5, color)[0];	 P404_lon = offset_well_3(degLat2, degLon2, -317.99 , 54.5, color)[1];
-    P405_lat = offset_well_3(degLat2, degLon2, -312.32 , 54.59, color)[0];	 P405_lon = offset_well_3(degLat2, degLon2, -312.32 , 54.59, color)[1];
-    P406_lat = offset_well_3(degLat2, degLon2, -306.33 , 54.75, color)[0];	 P406_lon = offset_well_3(degLat2, degLon2, -306.33 , 54.75, color)[1];
-    P407_lat = offset_well_3(degLat2, degLon2, -300 , 55, color)[0];	 P407_lon = offset_well_3(degLat2, degLon2, -300 , 55, color)[1];
-    P408_lat = offset_well_3(degLat2, degLon2, -292.95 , 55.36, color)[0];	 P408_lon = offset_well_3(degLat2, degLon2, -292.95 , 55.36, color)[1];
-    P409_lat = offset_well_3(degLat2, degLon2, -284.96 , 55.82, color)[0];	 P409_lon = offset_well_3(degLat2, degLon2, -284.96 , 55.82, color)[1];
-    P410_lat = offset_well_3(degLat2, degLon2, -276.32 , 56.36, color)[0];	 P410_lon = offset_well_3(degLat2, degLon2, -276.32 , 56.36, color)[1];
-    P411_lat = offset_well_3(degLat2, degLon2, -267.28 , 56.95, color)[0];	 P411_lon = offset_well_3(degLat2, degLon2, -267.28 , 56.95, color)[1];
-    P412_lat = offset_well_3(degLat2, degLon2, -258.13 , 57.56, color)[0];	 P412_lon = offset_well_3(degLat2, degLon2, -258.13 , 57.56, color)[1];
-    P413_lat = offset_well_3(degLat2, degLon2, -249.12 , 58.17, color)[0];	 P413_lon = offset_well_3(degLat2, degLon2, -249.12 , 58.17, color)[1];
-    P414_lat = offset_well_3(degLat2, degLon2, -240.54 , 58.74, color)[0];	 P414_lon = offset_well_3(degLat2, degLon2, -240.54 , 58.74, color)[1];
-    P415_lat = offset_well_3(degLat2, degLon2, -232.64 , 59.26, color)[0];	 P415_lon = offset_well_3(degLat2, degLon2, -232.64 , 59.26, color)[1];
-    P416_lat = offset_well_3(degLat2, degLon2, -225.71 , 59.68, color)[0];	 P416_lon = offset_well_3(degLat2, degLon2, -225.71 , 59.68, color)[1];
-    P417_lat = offset_well_3(degLat2, degLon2, -220 , 60, color)[0];	 P417_lon = offset_well_3(degLat2, degLon2, -220 , 60, color)[1];
-    P418_lat = offset_well_3(degLat2, degLon2, -215.84 , 60.25, color)[0];	 P418_lon = offset_well_3(degLat2, degLon2, -215.84 , 60.25, color)[1];
-    P419_lat = offset_well_3(degLat2, degLon2, -213.12 , 60.48, color)[0];	 P419_lon = offset_well_3(degLat2, degLon2, -213.12 , 60.48, color)[1];
-    P420_lat = offset_well_3(degLat2, degLon2, -211.48 , 60.68, color)[0];	 P420_lon = offset_well_3(degLat2, degLon2, -211.48 , 60.68, color)[1];
-    P421_lat = offset_well_3(degLat2, degLon2, -210.56 , 60.84, color)[0];	 P421_lon = offset_well_3(degLat2, degLon2, -210.56 , 60.84, color)[1];
-    P422_lat = offset_well_3(degLat2, degLon2, -210 , 60.94, color)[0];	 P422_lon = offset_well_3(degLat2, degLon2, -210 , 60.94, color)[1];
-    P423_lat = offset_well_3(degLat2, degLon2, -209.44 , 60.96, color)[0];	 P423_lon = offset_well_3(degLat2, degLon2, -209.44 , 60.96, color)[1];
-    P424_lat = offset_well_3(degLat2, degLon2, -208.52 , 60.89, color)[0];	 P424_lon = offset_well_3(degLat2, degLon2, -208.52 , 60.89, color)[1];
-    P425_lat = offset_well_3(degLat2, degLon2, -206.88 , 60.72, color)[0];	 P425_lon = offset_well_3(degLat2, degLon2, -206.88 , 60.72, color)[1];
-    P426_lat = offset_well_3(degLat2, degLon2, -204.16 , 60.43, color)[0];	 P426_lon = offset_well_3(degLat2, degLon2, -204.16 , 60.43, color)[1];
-    P427_lat = offset_well_3(degLat2, degLon2, -200 , 60, color)[0];	 P427_lon = offset_well_3(degLat2, degLon2, -200 , 60, color)[1];
-    P428_lat = offset_well_3(degLat2, degLon2, -194.16 , 59.36, color)[0];	 P428_lon = offset_well_3(degLat2, degLon2, -194.16 , 59.36, color)[1];
-    P429_lat = offset_well_3(degLat2, degLon2, -186.88 , 58.48, color)[0];	 P429_lon = offset_well_3(degLat2, degLon2, -186.88 , 58.48, color)[1];
-    P430_lat = offset_well_3(degLat2, degLon2, -178.52 , 57.42, color)[0];	 P430_lon = offset_well_3(degLat2, degLon2, -178.52 , 57.42, color)[1];
-    P431_lat = offset_well_3(degLat2, degLon2, -169.44 , 56.24, color)[0];	 P431_lon = offset_well_3(degLat2, degLon2, -169.44 , 56.24, color)[1];
-    P432_lat = offset_well_3(degLat2, degLon2, -160 , 55, color)[0];	 P432_lon = offset_well_3(degLat2, degLon2, -160 , 55, color)[1];
-    P433_lat = offset_well_3(degLat2, degLon2, -150.56 , 53.76, color)[0];	 P433_lon = offset_well_3(degLat2, degLon2, -150.56 , 53.76, color)[1];
-    P434_lat = offset_well_3(degLat2, degLon2, -141.48 , 52.58, color)[0];	 P434_lon = offset_well_3(degLat2, degLon2, -141.48 , 52.58, color)[1];
-    P435_lat = offset_well_3(degLat2, degLon2, -133.12 , 51.52, color)[0];	 P435_lon = offset_well_3(degLat2, degLon2, -133.12 , 51.52, color)[1];
-    P436_lat = offset_well_3(degLat2, degLon2, -125.84 , 50.64, color)[0];	 P436_lon = offset_well_3(degLat2, degLon2, -125.84 , 50.64, color)[1];
-    P437_lat = offset_well_3(degLat2, degLon2, -120 , 50, color)[0];	 P437_lon = offset_well_3(degLat2, degLon2, -120 , 50, color)[1];
-    P438_lat = offset_well_3(degLat2, degLon2, -115.59 , 49.57, color)[0];	 P438_lon = offset_well_3(degLat2, degLon2, -115.59 , 49.57, color)[1];
-    P439_lat = offset_well_3(degLat2, degLon2, -112.24 , 49.28, color)[0];	 P439_lon = offset_well_3(degLat2, degLon2, -112.24 , 49.28, color)[1];
-    P440_lat = offset_well_3(degLat2, degLon2, -109.75 , 49.11, color)[0];	 P440_lon = offset_well_3(degLat2, degLon2, -109.75 , 49.11, color)[1];
-    P441_lat = offset_well_3(degLat2, degLon2, -107.92 , 49.04, color)[0];	 P441_lon = offset_well_3(degLat2, degLon2, -107.92 , 49.04, color)[1];
-    P442_lat = offset_well_3(degLat2, degLon2, -106.56 , 49.06, color)[0];	 P442_lon = offset_well_3(degLat2, degLon2, -106.56 , 49.06, color)[1];
-    P443_lat = offset_well_3(degLat2, degLon2, -105.48 , 49.16, color)[0];	 P443_lon = offset_well_3(degLat2, degLon2, -105.48 , 49.16, color)[1];
-    P444_lat = offset_well_3(degLat2, degLon2, -104.48 , 49.32, color)[0];	 P444_lon = offset_well_3(degLat2, degLon2, -104.48 , 49.32, color)[1];
-    P445_lat = offset_well_3(degLat2, degLon2, -103.36 , 49.52, color)[0];	 P445_lon = offset_well_3(degLat2, degLon2, -103.36 , 49.52, color)[1];
-    P446_lat = offset_well_3(degLat2, degLon2, -101.93 , 49.75, color)[0];	 P446_lon = offset_well_3(degLat2, degLon2, -101.93 , 49.75, color)[1];
-    P447_lat = offset_well_3(degLat2, degLon2, -100 , 50, color)[0];	 P447_lon = offset_well_3(degLat2, degLon2, -100 , 50, color)[1];
-    P448_lat = offset_well_3(degLat2, degLon2, -97.7 , 50.34, color)[0];	 P448_lon = offset_well_3(degLat2, degLon2, -97.7 , 50.34, color)[1];
-    P449_lat = offset_well_3(degLat2, degLon2, -95.32 , 50.84, color)[0];	 P449_lon = offset_well_3(degLat2, degLon2, -95.32 , 50.84, color)[1];
-    P450_lat = offset_well_3(degLat2, degLon2, -92.87 , 51.45, color)[0];	 P450_lon = offset_well_3(degLat2, degLon2, -92.87 , 51.45, color)[1];
-    P451_lat = offset_well_3(degLat2, degLon2, -90.36 , 52.12, color)[0];	 P451_lon = offset_well_3(degLat2, degLon2, -90.36 , 52.12, color)[1];
-    P452_lat = offset_well_3(degLat2, degLon2, -87.81 , 52.81, color)[0];	 P452_lon = offset_well_3(degLat2, degLon2, -87.81 , 52.81, color)[1];
-    P453_lat = offset_well_3(degLat2, degLon2, -85.24 , 53.48, color)[0];	 P453_lon = offset_well_3(degLat2, degLon2, -85.24 , 53.48, color)[1];
-    P454_lat = offset_well_3(degLat2, degLon2, -82.66 , 54.08, color)[0];	 P454_lon = offset_well_3(degLat2, degLon2, -82.66 , 54.08, color)[1];
-    P455_lat = offset_well_3(degLat2, degLon2, -80.08 , 54.56, color)[0];	 P455_lon = offset_well_3(degLat2, degLon2, -80.08 , 54.56, color)[1];
-    P456_lat = offset_well_3(degLat2, degLon2, -77.52 , 54.88, color)[0];	 P456_lon = offset_well_3(degLat2, degLon2, -77.52 , 54.88, color)[1];
-    P457_lat = offset_well_3(degLat2, degLon2, -75 , 55, color)[0];	 P457_lon = offset_well_3(degLat2, degLon2, -75 , 55, color)[1];
-    P458_lat = offset_well_3(degLat2, degLon2, -72.61 , 55.02, color)[0];	 P458_lon = offset_well_3(degLat2, degLon2, -72.61 , 55.02, color)[1];
-    P459_lat = offset_well_3(degLat2, degLon2, -70.4 , 55.04, color)[0];	 P459_lon = offset_well_3(degLat2, degLon2, -70.4 , 55.04, color)[1];
-    P460_lat = offset_well_3(degLat2, degLon2, -68.29 , 55.02, color)[0];	 P460_lon = offset_well_3(degLat2, degLon2, -68.29 , 55.02, color)[1];
-    P461_lat = offset_well_3(degLat2, degLon2, -66.2 , 54.92, color)[0];	 P461_lon = offset_well_3(degLat2, degLon2, -66.2 , 54.92, color)[1];
-    P462_lat = offset_well_3(degLat2, degLon2, -64.06 , 54.69, color)[0];	 P462_lon = offset_well_3(degLat2, degLon2, -64.06 , 54.69, color)[1];
-    P463_lat = offset_well_3(degLat2, degLon2, -61.8 , 54.28, color)[0];	 P463_lon = offset_well_3(degLat2, degLon2, -61.8 , 54.28, color)[1];
-    P464_lat = offset_well_3(degLat2, degLon2, -59.34 , 53.65, color)[0];	 P464_lon = offset_well_3(degLat2, degLon2, -59.34 , 53.65, color)[1];
-    P465_lat = offset_well_3(degLat2, degLon2, -56.6 , 52.76, color)[0];	 P465_lon = offset_well_3(degLat2, degLon2, -56.6 , 52.76, color)[1];
-    P466_lat = offset_well_3(degLat2, degLon2, -53.51 , 51.56, color)[0];	 P466_lon = offset_well_3(degLat2, degLon2, -53.51 , 51.56, color)[1];
-    P467_lat = offset_well_3(degLat2, degLon2, -50 , 50, color)[0];	 P467_lon = offset_well_3(degLat2, degLon2, -50 , 50, color)[1];
-    P468_lat = offset_well_3(degLat2, degLon2, -40.8 , 45.12, color)[0];	 P468_lon = offset_well_3(degLat2, degLon2, -40.8 , 45.12, color)[1];
-    P469_lat = offset_well_3(degLat2, degLon2, -35.26 , 41.89, color)[0];	 P469_lon = offset_well_3(degLat2, degLon2, -35.26 , 41.89, color)[1];
-    P470_lat = offset_well_3(degLat2, degLon2, -29.4 , 38.36, color)[0];	 P470_lon = offset_well_3(degLat2, degLon2, -29.4 , 38.36, color)[1];
-    P471_lat = offset_well_3(degLat2, degLon2, -23.44 , 34.69, color)[0];	 P471_lon = offset_well_3(degLat2, degLon2, -23.44 , 34.69, color)[1];
-    P472_lat = offset_well_3(degLat2, degLon2, -17.6 , 31.04, color)[0];	 P472_lon = offset_well_3(degLat2, degLon2, -17.6 , 31.04, color)[1];
-    P473_lat = offset_well_3(degLat2, degLon2, -12.11 , 27.58, color)[0];	 P473_lon = offset_well_3(degLat2, degLon2, -12.11 , 27.58, color)[1];
-    P474_lat = offset_well_3(degLat2, degLon2, -7.2 , 24.48, color)[0];	 P474_lon = offset_well_3(degLat2, degLon2, -7.2 , 24.48, color)[1];
-    P475_lat = offset_well_3(degLat2, degLon2, -3.09 , 21.9, color)[0];	 P475_lon = offset_well_3(degLat2, degLon2, -3.09 , 21.9, color)[1];
-    P476_lat = offset_well_3(degLat2, degLon2, 0 , 20, color)[0];	 P476_lon = offset_well_3(degLat2, degLon2, 0 , 20, color)[1];
-
+    P1_lat = offset_well_3(degLat2, degLon2, 0 , 0, color)[0];	 P1_lon = offset_well_3(degLat2, degLon2, 0 , 0, color)[1];
+    P2_lat = offset_well_3(degLat2, degLon2, 3.09 , 0.34, color)[0];	 P2_lon = offset_well_3(degLat2, degLon2, 3.09 , 0.34, color)[1];
+    P3_lat = offset_well_3(degLat2, degLon2, 7.2 , 0.84, color)[0];	 P3_lon = offset_well_3(degLat2, degLon2, 7.2 , 0.84, color)[1];
+    P4_lat = offset_well_3(degLat2, degLon2, 12.11 , 1.45, color)[0];	 P4_lon = offset_well_3(degLat2, degLon2, 12.11 , 1.45, color)[1];
+    P5_lat = offset_well_3(degLat2, degLon2, 17.6 , 2.12, color)[0];	 P5_lon = offset_well_3(degLat2, degLon2, 17.6 , 2.12, color)[1];
+    P6_lat = offset_well_3(degLat2, degLon2, 23.44 , 2.81, color)[0];	 P6_lon = offset_well_3(degLat2, degLon2, 23.44 , 2.81, color)[1];
+    P7_lat = offset_well_3(degLat2, degLon2, 29.4 , 3.48, color)[0];	 P7_lon = offset_well_3(degLat2, degLon2, 29.4 , 3.48, color)[1];
+    P8_lat = offset_well_3(degLat2, degLon2, 35.26 , 4.08, color)[0];	 P8_lon = offset_well_3(degLat2, degLon2, 35.26 , 4.08, color)[1];
+    P9_lat = offset_well_3(degLat2, degLon2, 40.8 , 4.56, color)[0];	 P9_lon = offset_well_3(degLat2, degLon2, 40.8 , 4.56, color)[1];
+    P10_lat = offset_well_3(degLat2, degLon2, 50 , 5, color)[0];	 P10_lon = offset_well_3(degLat2, degLon2, 50 , 5, color)[1];
+    P11_lat = offset_well_3(degLat2, degLon2, 53.51 , 4.86, color)[0];	 P11_lon = offset_well_3(degLat2, degLon2, 53.51 , 4.86, color)[1];
+    P12_lat = offset_well_3(degLat2, degLon2, 56.6 , 4.48, color)[0];	 P12_lon = offset_well_3(degLat2, degLon2, 56.6 , 4.48, color)[1];
+    P13_lat = offset_well_3(degLat2, degLon2, 59.34 , 3.92, color)[0];	 P13_lon = offset_well_3(degLat2, degLon2, 59.34 , 3.92, color)[1];
+    P14_lat = offset_well_3(degLat2, degLon2, 61.8 , 3.24, color)[0];	 P14_lon = offset_well_3(degLat2, degLon2, 61.8 , 3.24, color)[1];
+    P15_lat = offset_well_3(degLat2, degLon2, 64.06 , 2.5, color)[0];	 P15_lon = offset_well_3(degLat2, degLon2, 64.06 , 2.5, color)[1];
+    P16_lat = offset_well_3(degLat2, degLon2, 66.2 , 1.76, color)[0];	 P16_lon = offset_well_3(degLat2, degLon2, 66.2 , 1.76, color)[1];
+    P17_lat = offset_well_3(degLat2, degLon2, 68.29 , 1.08, color)[0];	 P17_lon = offset_well_3(degLat2, degLon2, 68.29 , 1.08, color)[1];
+    P18_lat = offset_well_3(degLat2, degLon2, 70.4 , 0.52, color)[0];	 P18_lon = offset_well_3(degLat2, degLon2, 70.4 , 0.52, color)[1];
+    P19_lat = offset_well_3(degLat2, degLon2, 72.61 , 0.14, color)[0];	 P19_lon = offset_well_3(degLat2, degLon2, 72.61 , 0.14, color)[1];
+    P20_lat = offset_well_3(degLat2, degLon2, 75 , 0, color)[0];	 P20_lon = offset_well_3(degLat2, degLon2, 75 , 0, color)[1];
+    P21_lat = offset_well_3(degLat2, degLon2, 77.52 , 0.13, color)[0];	 P21_lon = offset_well_3(degLat2, degLon2, 77.52 , 0.13, color)[1];
+    P22_lat = offset_well_3(degLat2, degLon2, 80.08 , 0.49, color)[0];	 P22_lon = offset_well_3(degLat2, degLon2, 80.08 , 0.49, color)[1];
+    P23_lat = offset_well_3(degLat2, degLon2, 82.66 , 1.02, color)[0];	 P23_lon = offset_well_3(degLat2, degLon2, 82.66 , 1.02, color)[1];
+    P24_lat = offset_well_3(degLat2, degLon2, 85.24 , 1.66, color)[0];	 P24_lon = offset_well_3(degLat2, degLon2, 85.24 , 1.66, color)[1];
+    P25_lat = offset_well_3(degLat2, degLon2, 87.81 , 2.38, color)[0];	 P25_lon = offset_well_3(degLat2, degLon2, 87.81 , 2.38, color)[1];
+    P26_lat = offset_well_3(degLat2, degLon2, 90.36 , 3.1, color)[0];	 P26_lon = offset_well_3(degLat2, degLon2, 90.36 , 3.1, color)[1];
+    P27_lat = offset_well_3(degLat2, degLon2, 92.87 , 3.77, color)[0];	 P27_lon = offset_well_3(degLat2, degLon2, 92.87 , 3.77, color)[1];
+    P28_lat = offset_well_3(degLat2, degLon2, 95.32 , 4.35, color)[0];	 P28_lon = offset_well_3(degLat2, degLon2, 95.32 , 4.35, color)[1];
+    P29_lat = offset_well_3(degLat2, degLon2, 97.7 , 4.78, color)[0];	 P29_lon = offset_well_3(degLat2, degLon2, 97.7 , 4.78, color)[1];
+    P30_lat = offset_well_3(degLat2, degLon2, 100 , 5, color)[0];	 P30_lon = offset_well_3(degLat2, degLon2, 100 , 5, color)[1];
+    P31_lat = offset_well_3(degLat2, degLon2, 101.93 , 5.02, color)[0];	 P31_lon = offset_well_3(degLat2, degLon2, 101.93 , 5.02, color)[1];
+    P32_lat = offset_well_3(degLat2, degLon2, 103.36 , 4.9, color)[0];	 P32_lon = offset_well_3(degLat2, degLon2, 103.36 , 4.9, color)[1];
+    P33_lat = offset_well_3(degLat2, degLon2, 104.48 , 4.66, color)[0];	 P33_lon = offset_well_3(degLat2, degLon2, 104.48 , 4.66, color)[1];
+    P34_lat = offset_well_3(degLat2, degLon2, 105.48 , 4.33, color)[0];	 P34_lon = offset_well_3(degLat2, degLon2, 105.48 , 4.33, color)[1];
+    P35_lat = offset_well_3(degLat2, degLon2, 106.56 , 3.94, color)[0];	 P35_lon = offset_well_3(degLat2, degLon2, 106.56 , 3.94, color)[1];
+    P36_lat = offset_well_3(degLat2, degLon2, 107.92 , 3.51, color)[0];	 P36_lon = offset_well_3(degLat2, degLon2, 107.92 , 3.51, color)[1];
+    P37_lat = offset_well_3(degLat2, degLon2, 109.75 , 3.08, color)[0];	 P37_lon = offset_well_3(degLat2, degLon2, 109.75 , 3.08, color)[1];
+    P38_lat = offset_well_3(degLat2, degLon2, 112.24 , 2.66, color)[0];	 P38_lon = offset_well_3(degLat2, degLon2, 112.24 , 2.66, color)[1];
+    P39_lat = offset_well_3(degLat2, degLon2, 115.59 , 2.3, color)[0];	 P39_lon = offset_well_3(degLat2, degLon2, 115.59 , 2.3, color)[1];
+    P40_lat = offset_well_3(degLat2, degLon2, 120 , 2, color)[0];	 P40_lon = offset_well_3(degLat2, degLon2, 120 , 2, color)[1];
+    P41_lat = offset_well_3(degLat2, degLon2, 125.84 , 1.8, color)[0];	 P41_lon = offset_well_3(degLat2, degLon2, 125.84 , 1.8, color)[1];
+    P42_lat = offset_well_3(degLat2, degLon2, 133.12 , 1.66, color)[0];	 P42_lon = offset_well_3(degLat2, degLon2, 133.12 , 1.66, color)[1];
+    P43_lat = offset_well_3(degLat2, degLon2, 141.48 , 1.58, color)[0];	 P43_lon = offset_well_3(degLat2, degLon2, 141.48 , 1.58, color)[1];
+    P44_lat = offset_well_3(degLat2, degLon2, 150.56 , 1.51, color)[0];	 P44_lon = offset_well_3(degLat2, degLon2, 150.56 , 1.51, color)[1];
+    P45_lat = offset_well_3(degLat2, degLon2, 160 , 1.44, color)[0];	 P45_lon = offset_well_3(degLat2, degLon2, 160 , 1.44, color)[1];
+    P46_lat = offset_well_3(degLat2, degLon2, 169.44 , 1.33, color)[0];	 P46_lon = offset_well_3(degLat2, degLon2, 169.44 , 1.33, color)[1];
+    P47_lat = offset_well_3(degLat2, degLon2, 178.52 , 1.16, color)[0];	 P47_lon = offset_well_3(degLat2, degLon2, 178.52 , 1.16, color)[1];
+    P48_lat = offset_well_3(degLat2, degLon2, 186.88 , 0.9, color)[0];	 P48_lon = offset_well_3(degLat2, degLon2, 186.88 , 0.9, color)[1];
+    P49_lat = offset_well_3(degLat2, degLon2, 194.16 , 0.52, color)[0];	 P49_lon = offset_well_3(degLat2, degLon2, 194.16 , 0.52, color)[1];
+    P50_lat = offset_well_3(degLat2, degLon2, 200 , 0, color)[0];	 P50_lon = offset_well_3(degLat2, degLon2, 200 , 0, color)[1];
+    P51_lat = offset_well_3(degLat2, degLon2, 204.16 , -0.59, color)[0];	 P51_lon = offset_well_3(degLat2, degLon2, 204.16 , -0.59, color)[1];
+    P52_lat = offset_well_3(degLat2, degLon2, 206.88 , -1.17, color)[0];	 P52_lon = offset_well_3(degLat2, degLon2, 206.88 , -1.17, color)[1];
+    P53_lat = offset_well_3(degLat2, degLon2, 208.52 , -1.78, color)[0];	 P53_lon = offset_well_3(degLat2, degLon2, 208.52 , -1.78, color)[1];
+    P54_lat = offset_well_3(degLat2, degLon2, 209.44 , -2.46, color)[0];	 P54_lon = offset_well_3(degLat2, degLon2, 209.44 , -2.46, color)[1];
+    P55_lat = offset_well_3(degLat2, degLon2, 210 , -3.25, color)[0];	 P55_lon = offset_well_3(degLat2, degLon2, 210 , -3.25, color)[1];
+    P56_lat = offset_well_3(degLat2, degLon2, 210.56 , -4.18, color)[0];	 P56_lon = offset_well_3(degLat2, degLon2, 210.56 , -4.18, color)[1];
+    P57_lat = offset_well_3(degLat2, degLon2, 211.48 , -5.28, color)[0];	 P57_lon = offset_well_3(degLat2, degLon2, 211.48 , -5.28, color)[1];
+    P58_lat = offset_well_3(degLat2, degLon2, 213.12 , -6.59, color)[0];	 P58_lon = offset_well_3(degLat2, degLon2, 213.12 , -6.59, color)[1];
+    P59_lat = offset_well_3(degLat2, degLon2, 215.84 , -8.15, color)[0];	 P59_lon = offset_well_3(degLat2, degLon2, 215.84 , -8.15, color)[1];
+    P60_lat = offset_well_3(degLat2, degLon2, 220 , -10, color)[0];	 P60_lon = offset_well_3(degLat2, degLon2, 220 , -10, color)[1];
+    P61_lat = offset_well_3(degLat2, degLon2, 225.71 , -12.24, color)[0];	 P61_lon = offset_well_3(degLat2, degLon2, 225.71 , -12.24, color)[1];
+    P62_lat = offset_well_3(degLat2, degLon2, 232.64 , -14.88, color)[0];	 P62_lon = offset_well_3(degLat2, degLon2, 232.64 , -14.88, color)[1];
+    P63_lat = offset_well_3(degLat2, degLon2, 240.54 , -17.85, color)[0];	 P63_lon = offset_well_3(degLat2, degLon2, 240.54 , -17.85, color)[1];
+    P64_lat = offset_well_3(degLat2, degLon2, 249.12 , -21.04, color)[0];	 P64_lon = offset_well_3(degLat2, degLon2, 249.12 , -21.04, color)[1];
+    P65_lat = offset_well_3(degLat2, degLon2, 258.13 , -24.38, color)[0];	 P65_lon = offset_well_3(degLat2, degLon2, 258.13 , -24.38, color)[1];
+    P66_lat = offset_well_3(degLat2, degLon2, 267.28 , -27.76, color)[0];	 P66_lon = offset_well_3(degLat2, degLon2, 267.28 , -27.76, color)[1];
+    P67_lat = offset_well_3(degLat2, degLon2, 276.32 , -31.11, color)[0];	 P67_lon = offset_well_3(degLat2, degLon2, 276.32 , -31.11, color)[1];
+    P68_lat = offset_well_3(degLat2, degLon2, 284.96 , -34.32, color)[0];	 P68_lon = offset_well_3(degLat2, degLon2, 284.96 , -34.32, color)[1];
+    P69_lat = offset_well_3(degLat2, degLon2, 292.95 , -37.32, color)[0];	 P69_lon = offset_well_3(degLat2, degLon2, 292.95 , -37.32, color)[1];
+    P70_lat = offset_well_3(degLat2, degLon2, 300 , -40, color)[0];	 P70_lon = offset_well_3(degLat2, degLon2, 300 , -40, color)[1];
+    P71_lat = offset_well_3(degLat2, degLon2, 306.33 , -42.41, color)[0];	 P71_lon = offset_well_3(degLat2, degLon2, 306.33 , -42.41, color)[1];
+    P72_lat = offset_well_3(degLat2, degLon2, 312.32 , -44.67, color)[0];	 P72_lon = offset_well_3(degLat2, degLon2, 312.32 , -44.67, color)[1];
+    P73_lat = offset_well_3(degLat2, degLon2, 317.99 , -46.8, color)[0];	 P73_lon = offset_well_3(degLat2, degLon2, 317.99 , -46.8, color)[1];
+    P74_lat = offset_well_3(degLat2, degLon2, 323.36 , -48.82, color)[0];	 P74_lon = offset_well_3(degLat2, degLon2, 323.36 , -48.82, color)[1];
+    P75_lat = offset_well_3(degLat2, degLon2, 328.44 , -50.75, color)[0];	 P75_lon = offset_well_3(degLat2, degLon2, 328.44 , -50.75, color)[1];
+    P76_lat = offset_well_3(degLat2, degLon2, 333.24 , -52.62, color)[0];	 P76_lon = offset_well_3(degLat2, degLon2, 333.24 , -52.62, color)[1];
+    P77_lat = offset_well_3(degLat2, degLon2, 337.78 , -54.46, color)[0];	 P77_lon = offset_well_3(degLat2, degLon2, 337.78 , -54.46, color)[1];
+    P78_lat = offset_well_3(degLat2, degLon2, 342.08 , -56.29, color)[0];	 P78_lon = offset_well_3(degLat2, degLon2, 342.08 , -56.29, color)[1];
+    P79_lat = offset_well_3(degLat2, degLon2, 346.15 , -58.13, color)[0];	 P79_lon = offset_well_3(degLat2, degLon2, 346.15 , -58.13, color)[1];
+    P80_lat = offset_well_3(degLat2, degLon2, 350 , -60, color)[0];	 P80_lon = offset_well_3(degLat2, degLon2, 350 , -60, color)[1];
+    P81_lat = offset_well_3(degLat2, degLon2, 353.51 , -61.91, color)[0];	 P81_lon = offset_well_3(degLat2, degLon2, 353.51 , -61.91, color)[1];
+    P82_lat = offset_well_3(degLat2, degLon2, 356.6 , -63.82, color)[0];	 P82_lon = offset_well_3(degLat2, degLon2, 356.6 , -63.82, color)[1];
+    P83_lat = offset_well_3(degLat2, degLon2, 359.34 , -65.74, color)[0];	 P83_lon = offset_well_3(degLat2, degLon2, 359.34 , -65.74, color)[1];
+    P84_lat = offset_well_3(degLat2, degLon2, 361.8 , -67.63, color)[0];	 P84_lon = offset_well_3(degLat2, degLon2, 361.8 , -67.63, color)[1];
+    P85_lat = offset_well_3(degLat2, degLon2, 364.06 , -69.5, color)[0];	 P85_lon = offset_well_3(degLat2, degLon2, 364.06 , -69.5, color)[1];
+    P86_lat = offset_well_3(degLat2, degLon2, 366.2 , -71.33, color)[0];	 P86_lon = offset_well_3(degLat2, degLon2, 366.2 , -71.33, color)[1];
+    P87_lat = offset_well_3(degLat2, degLon2, 368.29 , -73.1, color)[0];	 P87_lon = offset_well_3(degLat2, degLon2, 368.29 , -73.1, color)[1];
+    P88_lat = offset_well_3(degLat2, degLon2, 370.4 , -74.82, color)[0];	 P88_lon = offset_well_3(degLat2, degLon2, 370.4 , -74.82, color)[1];
+    P89_lat = offset_well_3(degLat2, degLon2, 372.61 , -76.45, color)[0];	 P89_lon = offset_well_3(degLat2, degLon2, 372.61 , -76.45, color)[1];
+    P90_lat = offset_well_3(degLat2, degLon2, 375 , -78, color)[0];	 P90_lon = offset_well_3(degLat2, degLon2, 375 , -78, color)[1];
+    P91_lat = offset_well_3(degLat2, degLon2, 377.57 , -79.47, color)[0];	 P91_lon = offset_well_3(degLat2, degLon2, 377.57 , -79.47, color)[1];
+    P92_lat = offset_well_3(degLat2, degLon2, 380.24 , -80.9, color)[0];	 P92_lon = offset_well_3(degLat2, degLon2, 380.24 , -80.9, color)[1];
+    P93_lat = offset_well_3(degLat2, degLon2, 382.97 , -82.26, color)[0];	 P93_lon = offset_well_3(degLat2, degLon2, 382.97 , -82.26, color)[1];
+    P94_lat = offset_well_3(degLat2, degLon2, 385.72 , -83.57, color)[0];	 P94_lon = offset_well_3(degLat2, degLon2, 385.72 , -83.57, color)[1];
+    P95_lat = offset_well_3(degLat2, degLon2, 388.44 , -84.81, color)[0];	 P95_lon = offset_well_3(degLat2, degLon2, 388.44 , -84.81, color)[1];
+    P96_lat = offset_well_3(degLat2, degLon2, 391.08 , -85.99, color)[0];	 P96_lon = offset_well_3(degLat2, degLon2, 391.08 , -85.99, color)[1];
+    P97_lat = offset_well_3(degLat2, degLon2, 393.6 , -87.1, color)[0];	 P97_lon = offset_well_3(degLat2, degLon2, 393.6 , -87.1, color)[1];
+    P98_lat = offset_well_3(degLat2, degLon2, 395.96 , -88.14, color)[0];	 P98_lon = offset_well_3(degLat2, degLon2, 395.96 , -88.14, color)[1];
+    P99_lat = offset_well_3(degLat2, degLon2, 398.11 , -89.11, color)[0];	 P99_lon = offset_well_3(degLat2, degLon2, 398.11 , -89.11, color)[1];
+    P100_lat = offset_well_3(degLat2, degLon2, 400 , -90, color)[0];	 P100_lon = offset_well_3(degLat2, degLon2, 400 , -90, color)[1];
+    P101_lat = offset_well_3(degLat2, degLon2, 401.61 , -90.78, color)[0];	 P101_lon = offset_well_3(degLat2, degLon2, 401.61 , -90.78, color)[1];
+    P102_lat = offset_well_3(degLat2, degLon2, 402.96 , -91.45, color)[0];	 P102_lon = offset_well_3(degLat2, degLon2, 402.96 , -91.45, color)[1];
+    P103_lat = offset_well_3(degLat2, degLon2, 404.1 , -92.01, color)[0];	 P103_lon = offset_well_3(degLat2, degLon2, 404.1 , -92.01, color)[1];
+    P104_lat = offset_well_3(degLat2, degLon2, 405.08 , -92.5, color)[0];	 P104_lon = offset_well_3(degLat2, degLon2, 405.08 , -92.5, color)[1];
+    P105_lat = offset_well_3(degLat2, degLon2, 405.94 , -92.94, color)[0];	 P105_lon = offset_well_3(degLat2, degLon2, 405.94 , -92.94, color)[1];
+    P106_lat = offset_well_3(degLat2, degLon2, 406.72 , -93.34, color)[0];	 P106_lon = offset_well_3(degLat2, degLon2, 406.72 , -93.34, color)[1];
+    P107_lat = offset_well_3(degLat2, degLon2, 407.47 , -93.72, color)[0];	 P107_lon = offset_well_3(degLat2, degLon2, 407.47 , -93.72, color)[1];
+    P108_lat = offset_well_3(degLat2, degLon2, 408.24 , -94.11, color)[0];	 P108_lon = offset_well_3(degLat2, degLon2, 408.24 , -94.11, color)[1];
+    P109_lat = offset_well_3(degLat2, degLon2, 409.07 , -94.53, color)[0];	 P109_lon = offset_well_3(degLat2, degLon2, 409.07 , -94.53, color)[1];
+    P110_lat = offset_well_3(degLat2, degLon2, 410 , -95, color)[0];	 P110_lon = offset_well_3(degLat2, degLon2, 410 , -95, color)[1];
+    P111_lat = offset_well_3(degLat2, degLon2, 411.05 , -95.52, color)[0];	 P111_lon = offset_well_3(degLat2, degLon2, 411.05 , -95.52, color)[1];
+    P112_lat = offset_well_3(degLat2, degLon2, 412.16 , -96.08, color)[0];	 P112_lon = offset_well_3(degLat2, degLon2, 412.16 , -96.08, color)[1];
+    P113_lat = offset_well_3(degLat2, degLon2, 413.32 , -96.66, color)[0];	 P113_lon = offset_well_3(degLat2, degLon2, 413.32 , -96.66, color)[1];
+    P114_lat = offset_well_3(degLat2, degLon2, 414.48 , -97.24, color)[0];	 P114_lon = offset_well_3(degLat2, degLon2, 414.48 , -97.24, color)[1];
+    P115_lat = offset_well_3(degLat2, degLon2, 415.63 , -97.81, color)[0];	 P115_lon = offset_well_3(degLat2, degLon2, 415.63 , -97.81, color)[1];
+    P116_lat = offset_well_3(degLat2, degLon2, 416.72 , -98.36, color)[0];	 P116_lon = offset_well_3(degLat2, degLon2, 416.72 , -98.36, color)[1];
+    P117_lat = offset_well_3(degLat2, degLon2, 417.74 , -98.87, color)[0];	 P117_lon = offset_well_3(degLat2, degLon2, 417.74 , -98.87, color)[1];
+    P118_lat = offset_well_3(degLat2, degLon2, 418.64 , -99.32, color)[0];	 P118_lon = offset_well_3(degLat2, degLon2, 418.64 , -99.32, color)[1];
+    P119_lat = offset_well_3(degLat2, degLon2, 419.41 , -99.7, color)[0];	 P119_lon = offset_well_3(degLat2, degLon2, 419.41 , -99.7, color)[1];
+    P120_lat = offset_well_3(degLat2, degLon2, 100 , -100, color)[0];	 P120_lon = offset_well_3(degLat2, degLon2, 100 , -100, color)[1];
+    P121_lat = offset_well_3(degLat2, degLon2, 80 , -99, color)[0];	 P121_lon = offset_well_3(degLat2, degLon2, 80 , -99, color)[1];
+    P122_lat = offset_well_3(degLat2, degLon2, 60 , -95, color)[0];	 P122_lon = offset_well_3(degLat2, degLon2, 60 , -95, color)[1];
+    P123_lat = offset_well_3(degLat2, degLon2, 40 , -80, color)[0];	 P123_lon = offset_well_3(degLat2, degLon2, 40 , -80, color)[1];
+    P124_lat = offset_well_3(degLat2, degLon2, 20 , -65, color)[0];	 P124_lon = offset_well_3(degLat2, degLon2, 20 , -65, color)[1];
+    P125_lat = offset_well_3(degLat2, degLon2, 10 , -45, color)[0];	 P125_lon = offset_well_3(degLat2, degLon2, 10 , -45, color)[1];
+    P126_lat = offset_well_3(degLat2, degLon2, 0 , -30, color)[0];	 P126_lon = offset_well_3(degLat2, degLon2, 0 , -30, color)[1];
+    P127_lat = offset_well_3(degLat2, degLon2, 0 , -30, color)[0];	 P127_lon = offset_well_3(degLat2, degLon2, 0 , -30, color)[1];
+    P128_lat = offset_well_3(degLat2, degLon2, -10 , -45, color)[0];	 P128_lon = offset_well_3(degLat2, degLon2, -10 , -45, color)[1];
+    P129_lat = offset_well_3(degLat2, degLon2, -20 , -65, color)[0];	 P129_lon = offset_well_3(degLat2, degLon2, -20 , -65, color)[1];
+    P130_lat = offset_well_3(degLat2, degLon2, -40 , -80, color)[0];	 P130_lon = offset_well_3(degLat2, degLon2, -40 , -80, color)[1];
+    P131_lat = offset_well_3(degLat2, degLon2, -60 , -95, color)[0];	 P131_lon = offset_well_3(degLat2, degLon2, -60 , -95, color)[1];
+    P132_lat = offset_well_3(degLat2, degLon2, -80 , -99, color)[0];	 P132_lon = offset_well_3(degLat2, degLon2, -80 , -99, color)[1];
+    P133_lat = offset_well_3(degLat2, degLon2, -100 , -100, color)[0];	 P133_lon = offset_well_3(degLat2, degLon2, -100 , -100, color)[1];
+    P134_lat = offset_well_3(degLat2, degLon2, -419.41 , -99.7, color)[0];	 P134_lon = offset_well_3(degLat2, degLon2, -419.41 , -99.7, color)[1];
+    P135_lat = offset_well_3(degLat2, degLon2, -418.64 , -99.32, color)[0];	 P135_lon = offset_well_3(degLat2, degLon2, -418.64 , -99.32, color)[1];
+    P136_lat = offset_well_3(degLat2, degLon2, -417.74 , -98.87, color)[0];	 P136_lon = offset_well_3(degLat2, degLon2, -417.74 , -98.87, color)[1];
+    P137_lat = offset_well_3(degLat2, degLon2, -416.72 , -98.36, color)[0];	 P137_lon = offset_well_3(degLat2, degLon2, -416.72 , -98.36, color)[1];
+    P138_lat = offset_well_3(degLat2, degLon2, -415.63 , -97.81, color)[0];	 P138_lon = offset_well_3(degLat2, degLon2, -415.63 , -97.81, color)[1];
+    P139_lat = offset_well_3(degLat2, degLon2, -414.48 , -97.24, color)[0];	 P139_lon = offset_well_3(degLat2, degLon2, -414.48 , -97.24, color)[1];
+    P140_lat = offset_well_3(degLat2, degLon2, -413.32 , -96.66, color)[0];	 P140_lon = offset_well_3(degLat2, degLon2, -413.32 , -96.66, color)[1];
+    P141_lat = offset_well_3(degLat2, degLon2, -412.16 , -96.08, color)[0];	 P141_lon = offset_well_3(degLat2, degLon2, -412.16 , -96.08, color)[1];
+    P142_lat = offset_well_3(degLat2, degLon2, -411.05 , -95.52, color)[0];	 P142_lon = offset_well_3(degLat2, degLon2, -411.05 , -95.52, color)[1];
+    P143_lat = offset_well_3(degLat2, degLon2, -410 , -95, color)[0];	 P143_lon = offset_well_3(degLat2, degLon2, -410 , -95, color)[1];
+    P144_lat = offset_well_3(degLat2, degLon2, -409.07 , -94.53, color)[0];	 P144_lon = offset_well_3(degLat2, degLon2, -409.07 , -94.53, color)[1];
+    P145_lat = offset_well_3(degLat2, degLon2, -408.24 , -94.11, color)[0];	 P145_lon = offset_well_3(degLat2, degLon2, -408.24 , -94.11, color)[1];
+    P146_lat = offset_well_3(degLat2, degLon2, -407.47 , -93.72, color)[0];	 P146_lon = offset_well_3(degLat2, degLon2, -407.47 , -93.72, color)[1];
+    P147_lat = offset_well_3(degLat2, degLon2, -406.72 , -93.34, color)[0];	 P147_lon = offset_well_3(degLat2, degLon2, -406.72 , -93.34, color)[1];
+    P148_lat = offset_well_3(degLat2, degLon2, -405.94 , -92.94, color)[0];	 P148_lon = offset_well_3(degLat2, degLon2, -405.94 , -92.94, color)[1];
+    P149_lat = offset_well_3(degLat2, degLon2, -405.08 , -92.5, color)[0];	 P149_lon = offset_well_3(degLat2, degLon2, -405.08 , -92.5, color)[1];
+    P150_lat = offset_well_3(degLat2, degLon2, -404.1 , -92.01, color)[0];	 P150_lon = offset_well_3(degLat2, degLon2, -404.1 , -92.01, color)[1];
+    P151_lat = offset_well_3(degLat2, degLon2, -402.96 , -91.45, color)[0];	 P151_lon = offset_well_3(degLat2, degLon2, -402.96 , -91.45, color)[1];
+    P152_lat = offset_well_3(degLat2, degLon2, -401.61 , -90.78, color)[0];	 P152_lon = offset_well_3(degLat2, degLon2, -401.61 , -90.78, color)[1];
+    P153_lat = offset_well_3(degLat2, degLon2, -400 , -90, color)[0];	 P153_lon = offset_well_3(degLat2, degLon2, -400 , -90, color)[1];
+    P154_lat = offset_well_3(degLat2, degLon2, -398.11 , -89.11, color)[0];	 P154_lon = offset_well_3(degLat2, degLon2, -398.11 , -89.11, color)[1];
+    P155_lat = offset_well_3(degLat2, degLon2, -395.96 , -88.14, color)[0];	 P155_lon = offset_well_3(degLat2, degLon2, -395.96 , -88.14, color)[1];
+    P156_lat = offset_well_3(degLat2, degLon2, -393.6 , -87.1, color)[0];	 P156_lon = offset_well_3(degLat2, degLon2, -393.6 , -87.1, color)[1];
+    P157_lat = offset_well_3(degLat2, degLon2, -391.08 , -85.99, color)[0];	 P157_lon = offset_well_3(degLat2, degLon2, -391.08 , -85.99, color)[1];
+    P158_lat = offset_well_3(degLat2, degLon2, -388.44 , -84.81, color)[0];	 P158_lon = offset_well_3(degLat2, degLon2, -388.44 , -84.81, color)[1];
+    P159_lat = offset_well_3(degLat2, degLon2, -385.72 , -83.57, color)[0];	 P159_lon = offset_well_3(degLat2, degLon2, -385.72 , -83.57, color)[1];
+    P160_lat = offset_well_3(degLat2, degLon2, -382.97 , -82.26, color)[0];	 P160_lon = offset_well_3(degLat2, degLon2, -382.97 , -82.26, color)[1];
+    P161_lat = offset_well_3(degLat2, degLon2, -380.24 , -80.9, color)[0];	 P161_lon = offset_well_3(degLat2, degLon2, -380.24 , -80.9, color)[1];
+    P162_lat = offset_well_3(degLat2, degLon2, -377.57 , -79.47, color)[0];	 P162_lon = offset_well_3(degLat2, degLon2, -377.57 , -79.47, color)[1];
+    P163_lat = offset_well_3(degLat2, degLon2, -375 , -78, color)[0];	 P163_lon = offset_well_3(degLat2, degLon2, -375 , -78, color)[1];
+    P164_lat = offset_well_3(degLat2, degLon2, -372.61 , -76.45, color)[0];	 P164_lon = offset_well_3(degLat2, degLon2, -372.61 , -76.45, color)[1];
+    P165_lat = offset_well_3(degLat2, degLon2, -370.4 , -74.82, color)[0];	 P165_lon = offset_well_3(degLat2, degLon2, -370.4 , -74.82, color)[1];
+    P166_lat = offset_well_3(degLat2, degLon2, -368.29 , -73.1, color)[0];	 P166_lon = offset_well_3(degLat2, degLon2, -368.29 , -73.1, color)[1];
+    P167_lat = offset_well_3(degLat2, degLon2, -366.2 , -71.33, color)[0];	 P167_lon = offset_well_3(degLat2, degLon2, -366.2 , -71.33, color)[1];
+    P168_lat = offset_well_3(degLat2, degLon2, -364.06 , -69.5, color)[0];	 P168_lon = offset_well_3(degLat2, degLon2, -364.06 , -69.5, color)[1];
+    P169_lat = offset_well_3(degLat2, degLon2, -361.8 , -67.63, color)[0];	 P169_lon = offset_well_3(degLat2, degLon2, -361.8 , -67.63, color)[1];
+    P170_lat = offset_well_3(degLat2, degLon2, -359.34 , -65.74, color)[0];	 P170_lon = offset_well_3(degLat2, degLon2, -359.34 , -65.74, color)[1];
+    P171_lat = offset_well_3(degLat2, degLon2, -356.6 , -63.82, color)[0];	 P171_lon = offset_well_3(degLat2, degLon2, -356.6 , -63.82, color)[1];
+    P172_lat = offset_well_3(degLat2, degLon2, -353.51 , -61.91, color)[0];	 P172_lon = offset_well_3(degLat2, degLon2, -353.51 , -61.91, color)[1];
+    P173_lat = offset_well_3(degLat2, degLon2, -350 , -60, color)[0];	 P173_lon = offset_well_3(degLat2, degLon2, -350 , -60, color)[1];
+    P174_lat = offset_well_3(degLat2, degLon2, -346.15 , -58.13, color)[0];	 P174_lon = offset_well_3(degLat2, degLon2, -346.15 , -58.13, color)[1];
+    P175_lat = offset_well_3(degLat2, degLon2, -342.08 , -56.29, color)[0];	 P175_lon = offset_well_3(degLat2, degLon2, -342.08 , -56.29, color)[1];
+    P176_lat = offset_well_3(degLat2, degLon2, -337.78 , -54.46, color)[0];	 P176_lon = offset_well_3(degLat2, degLon2, -337.78 , -54.46, color)[1];
+    P177_lat = offset_well_3(degLat2, degLon2, -333.24 , -52.62, color)[0];	 P177_lon = offset_well_3(degLat2, degLon2, -333.24 , -52.62, color)[1];
+    P178_lat = offset_well_3(degLat2, degLon2, -328.44 , -50.75, color)[0];	 P178_lon = offset_well_3(degLat2, degLon2, -328.44 , -50.75, color)[1];
+    P179_lat = offset_well_3(degLat2, degLon2, -323.36 , -48.82, color)[0];	 P179_lon = offset_well_3(degLat2, degLon2, -323.36 , -48.82, color)[1];
+    P180_lat = offset_well_3(degLat2, degLon2, -317.99 , -46.8, color)[0];	 P180_lon = offset_well_3(degLat2, degLon2, -317.99 , -46.8, color)[1];
+    P181_lat = offset_well_3(degLat2, degLon2, -312.32 , -44.67, color)[0];	 P181_lon = offset_well_3(degLat2, degLon2, -312.32 , -44.67, color)[1];
+    P182_lat = offset_well_3(degLat2, degLon2, -306.33 , -42.41, color)[0];	 P182_lon = offset_well_3(degLat2, degLon2, -306.33 , -42.41, color)[1];
+    P183_lat = offset_well_3(degLat2, degLon2, -300 , -40, color)[0];	 P183_lon = offset_well_3(degLat2, degLon2, -300 , -40, color)[1];
+    P184_lat = offset_well_3(degLat2, degLon2, -292.95 , -37.32, color)[0];	 P184_lon = offset_well_3(degLat2, degLon2, -292.95 , -37.32, color)[1];
+    P185_lat = offset_well_3(degLat2, degLon2, -284.96 , -34.32, color)[0];	 P185_lon = offset_well_3(degLat2, degLon2, -284.96 , -34.32, color)[1];
+    P186_lat = offset_well_3(degLat2, degLon2, -276.32 , -31.11, color)[0];	 P186_lon = offset_well_3(degLat2, degLon2, -276.32 , -31.11, color)[1];
+    P187_lat = offset_well_3(degLat2, degLon2, -267.28 , -27.76, color)[0];	 P187_lon = offset_well_3(degLat2, degLon2, -267.28 , -27.76, color)[1];
+    P188_lat = offset_well_3(degLat2, degLon2, -258.13 , -24.38, color)[0];	 P188_lon = offset_well_3(degLat2, degLon2, -258.13 , -24.38, color)[1];
+    P189_lat = offset_well_3(degLat2, degLon2, -249.12 , -21.04, color)[0];	 P189_lon = offset_well_3(degLat2, degLon2, -249.12 , -21.04, color)[1];
+    P190_lat = offset_well_3(degLat2, degLon2, -240.54 , -17.85, color)[0];	 P190_lon = offset_well_3(degLat2, degLon2, -240.54 , -17.85, color)[1];
+    P191_lat = offset_well_3(degLat2, degLon2, -232.64 , -14.88, color)[0];	 P191_lon = offset_well_3(degLat2, degLon2, -232.64 , -14.88, color)[1];
+    P192_lat = offset_well_3(degLat2, degLon2, -225.71 , -12.24, color)[0];	 P192_lon = offset_well_3(degLat2, degLon2, -225.71 , -12.24, color)[1];
+    P193_lat = offset_well_3(degLat2, degLon2, -220 , -10, color)[0];	 P193_lon = offset_well_3(degLat2, degLon2, -220 , -10, color)[1];
+    P194_lat = offset_well_3(degLat2, degLon2, -215.84 , -8.15, color)[0];	 P194_lon = offset_well_3(degLat2, degLon2, -215.84 , -8.15, color)[1];
+    P195_lat = offset_well_3(degLat2, degLon2, -213.12 , -6.59, color)[0];	 P195_lon = offset_well_3(degLat2, degLon2, -213.12 , -6.59, color)[1];
+    P196_lat = offset_well_3(degLat2, degLon2, -211.48 , -5.28, color)[0];	 P196_lon = offset_well_3(degLat2, degLon2, -211.48 , -5.28, color)[1];
+    P197_lat = offset_well_3(degLat2, degLon2, -210.56 , -4.18, color)[0];	 P197_lon = offset_well_3(degLat2, degLon2, -210.56 , -4.18, color)[1];
+    P198_lat = offset_well_3(degLat2, degLon2, -210 , -3.25, color)[0];	 P198_lon = offset_well_3(degLat2, degLon2, -210 , -3.25, color)[1];
+    P199_lat = offset_well_3(degLat2, degLon2, -209.44 , -2.46, color)[0];	 P199_lon = offset_well_3(degLat2, degLon2, -209.44 , -2.46, color)[1];
+    P200_lat = offset_well_3(degLat2, degLon2, -208.52 , -1.78, color)[0];	 P200_lon = offset_well_3(degLat2, degLon2, -208.52 , -1.78, color)[1];
+    P201_lat = offset_well_3(degLat2, degLon2, -206.88 , -1.17, color)[0];	 P201_lon = offset_well_3(degLat2, degLon2, -206.88 , -1.17, color)[1];
+    P202_lat = offset_well_3(degLat2, degLon2, -204.16 , -0.59, color)[0];	 P202_lon = offset_well_3(degLat2, degLon2, -204.16 , -0.59, color)[1];
+    P203_lat = offset_well_3(degLat2, degLon2, -200 , 0, color)[0];	 P203_lon = offset_well_3(degLat2, degLon2, -200 , 0, color)[1];
+    P204_lat = offset_well_3(degLat2, degLon2, -194.16 , 0.52, color)[0];	 P204_lon = offset_well_3(degLat2, degLon2, -194.16 , 0.52, color)[1];
+    P205_lat = offset_well_3(degLat2, degLon2, -186.88 , 0.9, color)[0];	 P205_lon = offset_well_3(degLat2, degLon2, -186.88 , 0.9, color)[1];
+    P206_lat = offset_well_3(degLat2, degLon2, -178.52 , 1.16, color)[0];	 P206_lon = offset_well_3(degLat2, degLon2, -178.52 , 1.16, color)[1];
+    P207_lat = offset_well_3(degLat2, degLon2, -169.44 , 1.33, color)[0];	 P207_lon = offset_well_3(degLat2, degLon2, -169.44 , 1.33, color)[1];
+    P208_lat = offset_well_3(degLat2, degLon2, -160 , 1.44, color)[0];	 P208_lon = offset_well_3(degLat2, degLon2, -160 , 1.44, color)[1];
+    P209_lat = offset_well_3(degLat2, degLon2, -150.56 , 1.51, color)[0];	 P209_lon = offset_well_3(degLat2, degLon2, -150.56 , 1.51, color)[1];
+    P210_lat = offset_well_3(degLat2, degLon2, -141.48 , 1.58, color)[0];	 P210_lon = offset_well_3(degLat2, degLon2, -141.48 , 1.58, color)[1];
+    P211_lat = offset_well_3(degLat2, degLon2, -133.12 , 1.66, color)[0];	 P211_lon = offset_well_3(degLat2, degLon2, -133.12 , 1.66, color)[1];
+    P212_lat = offset_well_3(degLat2, degLon2, -125.84 , 1.8, color)[0];	 P212_lon = offset_well_3(degLat2, degLon2, -125.84 , 1.8, color)[1];
+    P213_lat = offset_well_3(degLat2, degLon2, -120 , 2, color)[0];	 P213_lon = offset_well_3(degLat2, degLon2, -120 , 2, color)[1];
+    P214_lat = offset_well_3(degLat2, degLon2, -115.59 , 2.3, color)[0];	 P214_lon = offset_well_3(degLat2, degLon2, -115.59 , 2.3, color)[1];
+    P215_lat = offset_well_3(degLat2, degLon2, -112.24 , 2.66, color)[0];	 P215_lon = offset_well_3(degLat2, degLon2, -112.24 , 2.66, color)[1];
+    P216_lat = offset_well_3(degLat2, degLon2, -109.75 , 3.08, color)[0];	 P216_lon = offset_well_3(degLat2, degLon2, -109.75 , 3.08, color)[1];
+    P217_lat = offset_well_3(degLat2, degLon2, -107.92 , 3.51, color)[0];	 P217_lon = offset_well_3(degLat2, degLon2, -107.92 , 3.51, color)[1];
+    P218_lat = offset_well_3(degLat2, degLon2, -106.56 , 3.94, color)[0];	 P218_lon = offset_well_3(degLat2, degLon2, -106.56 , 3.94, color)[1];
+    P219_lat = offset_well_3(degLat2, degLon2, -105.48 , 4.33, color)[0];	 P219_lon = offset_well_3(degLat2, degLon2, -105.48 , 4.33, color)[1];
+    P220_lat = offset_well_3(degLat2, degLon2, -104.48 , 4.66, color)[0];	 P220_lon = offset_well_3(degLat2, degLon2, -104.48 , 4.66, color)[1];
+    P221_lat = offset_well_3(degLat2, degLon2, -103.36 , 4.9, color)[0];	 P221_lon = offset_well_3(degLat2, degLon2, -103.36 , 4.9, color)[1];
+    P222_lat = offset_well_3(degLat2, degLon2, -101.93 , 5.02, color)[0];	 P222_lon = offset_well_3(degLat2, degLon2, -101.93 , 5.02, color)[1];
+    P223_lat = offset_well_3(degLat2, degLon2, -100 , 5, color)[0];	 P223_lon = offset_well_3(degLat2, degLon2, -100 , 5, color)[1];
+    P224_lat = offset_well_3(degLat2, degLon2, -97.7 , 4.78, color)[0];	 P224_lon = offset_well_3(degLat2, degLon2, -97.7 , 4.78, color)[1];
+    P225_lat = offset_well_3(degLat2, degLon2, -95.32 , 4.35, color)[0];	 P225_lon = offset_well_3(degLat2, degLon2, -95.32 , 4.35, color)[1];
+    P226_lat = offset_well_3(degLat2, degLon2, -92.87 , 3.77, color)[0];	 P226_lon = offset_well_3(degLat2, degLon2, -92.87 , 3.77, color)[1];
+    P227_lat = offset_well_3(degLat2, degLon2, -90.36 , 3.1, color)[0];	 P227_lon = offset_well_3(degLat2, degLon2, -90.36 , 3.1, color)[1];
+    P228_lat = offset_well_3(degLat2, degLon2, -87.81 , 2.38, color)[0];	 P228_lon = offset_well_3(degLat2, degLon2, -87.81 , 2.38, color)[1];
+    P229_lat = offset_well_3(degLat2, degLon2, -85.24 , 1.66, color)[0];	 P229_lon = offset_well_3(degLat2, degLon2, -85.24 , 1.66, color)[1];
+    P230_lat = offset_well_3(degLat2, degLon2, -82.66 , 1.02, color)[0];	 P230_lon = offset_well_3(degLat2, degLon2, -82.66 , 1.02, color)[1];
+    P231_lat = offset_well_3(degLat2, degLon2, -80.08 , 0.49, color)[0];	 P231_lon = offset_well_3(degLat2, degLon2, -80.08 , 0.49, color)[1];
+    P232_lat = offset_well_3(degLat2, degLon2, -77.52 , 0.13, color)[0];	 P232_lon = offset_well_3(degLat2, degLon2, -77.52 , 0.13, color)[1];
+    P233_lat = offset_well_3(degLat2, degLon2, -75 , 0, color)[0];	 P233_lon = offset_well_3(degLat2, degLon2, -75 , 0, color)[1];
+    P234_lat = offset_well_3(degLat2, degLon2, -72.61 , 0.14, color)[0];	 P234_lon = offset_well_3(degLat2, degLon2, -72.61 , 0.14, color)[1];
+    P235_lat = offset_well_3(degLat2, degLon2, -70.4 , 0.52, color)[0];	 P235_lon = offset_well_3(degLat2, degLon2, -70.4 , 0.52, color)[1];
+    P236_lat = offset_well_3(degLat2, degLon2, -68.29 , 1.08, color)[0];	 P236_lon = offset_well_3(degLat2, degLon2, -68.29 , 1.08, color)[1];
+    P237_lat = offset_well_3(degLat2, degLon2, -66.2 , 1.76, color)[0];	 P237_lon = offset_well_3(degLat2, degLon2, -66.2 , 1.76, color)[1];
+    P238_lat = offset_well_3(degLat2, degLon2, -64.06 , 2.5, color)[0];	 P238_lon = offset_well_3(degLat2, degLon2, -64.06 , 2.5, color)[1];
+    P239_lat = offset_well_3(degLat2, degLon2, -61.8 , 3.24, color)[0];	 P239_lon = offset_well_3(degLat2, degLon2, -61.8 , 3.24, color)[1];
+    P240_lat = offset_well_3(degLat2, degLon2, -59.34 , 3.92, color)[0];	 P240_lon = offset_well_3(degLat2, degLon2, -59.34 , 3.92, color)[1];
+    P241_lat = offset_well_3(degLat2, degLon2, -56.6 , 4.48, color)[0];	 P241_lon = offset_well_3(degLat2, degLon2, -56.6 , 4.48, color)[1];
+    P242_lat = offset_well_3(degLat2, degLon2, -53.51 , 4.86, color)[0];	 P242_lon = offset_well_3(degLat2, degLon2, -53.51 , 4.86, color)[1];
+    P243_lat = offset_well_3(degLat2, degLon2, -50 , 5, color)[0];	 P243_lon = offset_well_3(degLat2, degLon2, -50 , 5, color)[1];
+    P244_lat = offset_well_3(degLat2, degLon2, -40.8 , 4.56, color)[0];	 P244_lon = offset_well_3(degLat2, degLon2, -40.8 , 4.56, color)[1];
+    P245_lat = offset_well_3(degLat2, degLon2, -35.26 , 4.08, color)[0];	 P245_lon = offset_well_3(degLat2, degLon2, -35.26 , 4.08, color)[1];
+    P246_lat = offset_well_3(degLat2, degLon2, -29.4 , 3.48, color)[0];	 P246_lon = offset_well_3(degLat2, degLon2, -29.4 , 3.48, color)[1];
+    P247_lat = offset_well_3(degLat2, degLon2, -23.44 , 2.81, color)[0];	 P247_lon = offset_well_3(degLat2, degLon2, -23.44 , 2.81, color)[1];
+    P248_lat = offset_well_3(degLat2, degLon2, -17.6 , 2.12, color)[0];	 P248_lon = offset_well_3(degLat2, degLon2, -17.6 , 2.12, color)[1];
+    P249_lat = offset_well_3(degLat2, degLon2, -12.11 , 1.45, color)[0];	 P249_lon = offset_well_3(degLat2, degLon2, -12.11 , 1.45, color)[1];
+    P250_lat = offset_well_3(degLat2, degLon2, -7.2 , 0.84, color)[0];	 P250_lon = offset_well_3(degLat2, degLon2, -7.2 , 0.84, color)[1];
+    P251_lat = offset_well_3(degLat2, degLon2, -3.09 , 0.34, color)[0];	 P251_lon = offset_well_3(degLat2, degLon2, -3.09 , 0.34, color)[1];
+    P252_lat = offset_well_3(degLat2, degLon2, 0 , 0, color)[0];	 P252_lon = offset_well_3(degLat2, degLon2, 0 , 0, color)[1];
 
     L.polygon([
 
-      [P1_lat, P1_lon],
-      [P2_lat, P2_lon],
-      [P3_lat, P3_lon],
-      [P4_lat, P4_lon],
-      [P5_lat, P5_lon],
-      [P6_lat, P6_lon],
-      [P7_lat, P7_lon],
-      [P8_lat, P8_lon],
-      [P9_lat, P9_lon],
-      [P10_lat, P10_lon],
-      [P11_lat, P11_lon],
-      [P12_lat, P12_lon],
-      [P13_lat, P13_lon],
-      [P14_lat, P14_lon],
-      [P15_lat, P15_lon],
-      [P16_lat, P16_lon],
-      [P17_lat, P17_lon],
-      [P18_lat, P18_lon],
-      [P19_lat, P19_lon],
-      [P20_lat, P20_lon],
-      [P21_lat, P21_lon],
-      [P22_lat, P22_lon],
-      [P23_lat, P23_lon],
-      [P24_lat, P24_lon],
-      [P25_lat, P25_lon],
-      [P26_lat, P26_lon],
-      [P27_lat, P27_lon],
-      [P28_lat, P28_lon],
-      [P29_lat, P29_lon],
-      [P30_lat, P30_lon],
-      [P31_lat, P31_lon],
-      [P32_lat, P32_lon],
-      [P33_lat, P33_lon],
-      [P34_lat, P34_lon],
-      [P35_lat, P35_lon],
-      [P36_lat, P36_lon],
-      [P37_lat, P37_lon],
-      [P38_lat, P38_lon],
-      [P39_lat, P39_lon],
-      [P40_lat, P40_lon],
-      [P41_lat, P41_lon],
-      [P42_lat, P42_lon],
-      [P43_lat, P43_lon],
-      [P44_lat, P44_lon],
-      [P45_lat, P45_lon],
-      [P46_lat, P46_lon],
-      [P47_lat, P47_lon],
-      [P48_lat, P48_lon],
-      [P49_lat, P49_lon],
-      [P50_lat, P50_lon],
-      [P51_lat, P51_lon],
-      [P52_lat, P52_lon],
-      [P53_lat, P53_lon],
-      [P54_lat, P54_lon],
-      [P55_lat, P55_lon],
-      [P56_lat, P56_lon],
-      [P57_lat, P57_lon],
-      [P58_lat, P58_lon],
-      [P59_lat, P59_lon],
-      [P60_lat, P60_lon],
-      [P61_lat, P61_lon],
-      [P62_lat, P62_lon],
-      [P63_lat, P63_lon],
-      [P64_lat, P64_lon],
-      [P65_lat, P65_lon],
-      [P66_lat, P66_lon],
-      [P67_lat, P67_lon],
-      [P68_lat, P68_lon],
-      [P69_lat, P69_lon],
-      [P70_lat, P70_lon],
-      [P71_lat, P71_lon],
-      [P72_lat, P72_lon],
-      [P73_lat, P73_lon],
-      [P74_lat, P74_lon],
-      [P75_lat, P75_lon],
-      [P76_lat, P76_lon],
-      [P77_lat, P77_lon],
-      [P78_lat, P78_lon],
-      [P79_lat, P79_lon],
-      [P80_lat, P80_lon],
-      [P81_lat, P81_lon],
-      [P82_lat, P82_lon],
-      [P83_lat, P83_lon],
-      [P84_lat, P84_lon],
-      [P85_lat, P85_lon],
-      [P86_lat, P86_lon],
-      [P87_lat, P87_lon],
-      [P88_lat, P88_lon],
-      [P89_lat, P89_lon],
-      [P90_lat, P90_lon],
-      [P91_lat, P91_lon],
-      [P92_lat, P92_lon],
-      [P93_lat, P93_lon],
-      [P94_lat, P94_lon],
-      [P95_lat, P95_lon],
-      [P96_lat, P96_lon],
-      [P97_lat, P97_lon],
-      [P98_lat, P98_lon],
-      [P99_lat, P99_lon],
-      [P100_lat, P100_lon],
-      [P101_lat, P101_lon],
-      [P102_lat, P102_lon],
-      [P103_lat, P103_lon],
-      [P104_lat, P104_lon],
-      [P105_lat, P105_lon],
-      [P106_lat, P106_lon],
-      [P107_lat, P107_lon],
-      [P108_lat, P108_lon],
-      [P109_lat, P109_lon],
-      [P110_lat, P110_lon],
-      [P111_lat, P111_lon],
-      [P112_lat, P112_lon],
-      [P113_lat, P113_lon],
-      [P114_lat, P114_lon],
-      [P115_lat, P115_lon],
-      [P116_lat, P116_lon],
-      [P117_lat, P117_lon],
-      [P118_lat, P118_lon],
-      [P119_lat, P119_lon],
-      [P120_lat, P120_lon],
-      [P121_lat, P121_lon],
-      [P122_lat, P122_lon],
-      [P123_lat, P123_lon],
-      [P124_lat, P124_lon],
-      [P125_lat, P125_lon],
-      [P126_lat, P126_lon],
-      [P127_lat, P127_lon],
-      [P128_lat, P128_lon],
-      [P129_lat, P129_lon],
-      [P130_lat, P130_lon],
-      [P131_lat, P131_lon],
-      [P132_lat, P132_lon],
-      [P133_lat, P133_lon],
-      [P134_lat, P134_lon],
-      [P135_lat, P135_lon],
-      [P136_lat, P136_lon],
-      [P137_lat, P137_lon],
-      [P138_lat, P138_lon],
-      [P139_lat, P139_lon],
-      [P140_lat, P140_lon],
-      [P141_lat, P141_lon],
-      [P142_lat, P142_lon],
-      [P143_lat, P143_lon],
-      [P144_lat, P144_lon],
-      [P145_lat, P145_lon],
-      [P146_lat, P146_lon],
-      [P147_lat, P147_lon],
-      [P148_lat, P148_lon],
-      [P149_lat, P149_lon],
-      [P150_lat, P150_lon],
-      [P151_lat, P151_lon],
-      [P152_lat, P152_lon],
-      [P153_lat, P153_lon],
-      [P154_lat, P154_lon],
-      [P155_lat, P155_lon],
-      [P156_lat, P156_lon],
-      [P157_lat, P157_lon],
-      [P158_lat, P158_lon],
-      [P159_lat, P159_lon],
-      [P160_lat, P160_lon],
-      [P161_lat, P161_lon],
-      [P162_lat, P162_lon],
-      [P163_lat, P163_lon],
-      [P164_lat, P164_lon],
-      [P165_lat, P165_lon],
-      [P166_lat, P166_lon],
-      [P167_lat, P167_lon],
-      [P168_lat, P168_lon],
-      [P169_lat, P169_lon],
-      [P170_lat, P170_lon],
-      [P171_lat, P171_lon],
-      [P172_lat, P172_lon],
-      [P173_lat, P173_lon],
-      [P174_lat, P174_lon],
-      [P175_lat, P175_lon],
-      [P176_lat, P176_lon],
-      [P177_lat, P177_lon],
-      [P178_lat, P178_lon],
-      [P179_lat, P179_lon],
-      [P180_lat, P180_lon],
-      [P181_lat, P181_lon],
-      [P182_lat, P182_lon],
-      [P183_lat, P183_lon],
-      [P184_lat, P184_lon],
-      [P185_lat, P185_lon],
-      [P186_lat, P186_lon],
-      [P187_lat, P187_lon],
-      [P188_lat, P188_lon],
-      [P189_lat, P189_lon],
-      [P190_lat, P190_lon],
-      [P191_lat, P191_lon],
-      [P192_lat, P192_lon],
-      [P193_lat, P193_lon],
-      [P194_lat, P194_lon],
-      [P195_lat, P195_lon],
-      [P196_lat, P196_lon],
-      [P197_lat, P197_lon],
-      [P198_lat, P198_lon],
-      [P199_lat, P199_lon],
-      [P200_lat, P200_lon],
-      [P201_lat, P201_lon],
-      [P202_lat, P202_lon],
-      [P203_lat, P203_lon],
-      [P204_lat, P204_lon],
-      [P205_lat, P205_lon],
-      [P206_lat, P206_lon],
-      [P207_lat, P207_lon],
-      [P208_lat, P208_lon],
-      [P209_lat, P209_lon],
-      [P210_lat, P210_lon],
-      [P211_lat, P211_lon],
-      [P212_lat, P212_lon],
-      [P213_lat, P213_lon],
-      [P214_lat, P214_lon],
-      [P215_lat, P215_lon],
-      [P216_lat, P216_lon],
-      [P217_lat, P217_lon],
-      [P218_lat, P218_lon],
-      [P219_lat, P219_lon],
-      [P220_lat, P220_lon],
-      [P221_lat, P221_lon],
-      [P222_lat, P222_lon],
-      [P223_lat, P223_lon],
-      [P224_lat, P224_lon],
-      [P225_lat, P225_lon],
-      [P226_lat, P226_lon],
-      [P227_lat, P227_lon],
-      [P228_lat, P228_lon],
-      [P229_lat, P229_lon],
-      [P230_lat, P230_lon],
-      [P231_lat, P231_lon],
-      [P232_lat, P232_lon],
-      [P233_lat, P233_lon],
-      [P234_lat, P234_lon],
-      [P235_lat, P235_lon],
-      [P236_lat, P236_lon],
-      [P237_lat, P237_lon],
-      [P238_lat, P238_lon],
-      [P239_lat, P239_lon],
-      [P240_lat, P240_lon],
-      [P241_lat, P241_lon],
-      [P242_lat, P242_lon],
-      [P243_lat, P243_lon],
-      [P244_lat, P244_lon],
-      [P245_lat, P245_lon],
-      [P246_lat, P246_lon],
-      [P247_lat, P247_lon],
-      [P248_lat, P248_lon],
-      [P249_lat, P249_lon],
-      [P250_lat, P250_lon],
-      [P251_lat, P251_lon],
-      [P252_lat, P252_lon],
-      [P253_lat, P253_lon],
-      [P254_lat, P254_lon],
-      [P255_lat, P255_lon],
-      [P256_lat, P256_lon],
-      [P257_lat, P257_lon],
-      [P258_lat, P258_lon],
-      [P259_lat, P259_lon],
-      [P260_lat, P260_lon],
-      [P261_lat, P261_lon],
-      [P262_lat, P262_lon],
-      [P263_lat, P263_lon],
-      [P264_lat, P264_lon],
-      [P265_lat, P265_lon],
-      [P266_lat, P266_lon],
-      [P267_lat, P267_lon],
-      [P268_lat, P268_lon],
-      [P269_lat, P269_lon],
-      [P270_lat, P270_lon],
-      [P271_lat, P271_lon],
-      [P272_lat, P272_lon],
-      [P273_lat, P273_lon],
-      [P274_lat, P274_lon],
-      [P275_lat, P275_lon],
-      [P276_lat, P276_lon],
-      [P277_lat, P277_lon],
-      [P278_lat, P278_lon],
-      [P279_lat, P279_lon],
-      [P280_lat, P280_lon],
-      [P281_lat, P281_lon],
-      [P282_lat, P282_lon],
-      [P283_lat, P283_lon],
-      [P284_lat, P284_lon],
-      [P285_lat, P285_lon],
-      [P286_lat, P286_lon],
-      [P287_lat, P287_lon],
-      [P288_lat, P288_lon],
-      [P289_lat, P289_lon],
-      [P290_lat, P290_lon],
-      [P291_lat, P291_lon],
-      [P292_lat, P292_lon],
-      [P293_lat, P293_lon],
-      [P294_lat, P294_lon],
-      [P295_lat, P295_lon],
-      [P296_lat, P296_lon],
-      [P297_lat, P297_lon],
-      [P298_lat, P298_lon],
-      [P299_lat, P299_lon],
-      [P300_lat, P300_lon],
-      [P301_lat, P301_lon],
-      [P302_lat, P302_lon],
-      [P303_lat, P303_lon],
-      [P304_lat, P304_lon],
-      [P305_lat, P305_lon],
-      [P306_lat, P306_lon],
-      [P307_lat, P307_lon],
-      [P308_lat, P308_lon],
-      [P309_lat, P309_lon],
-      [P310_lat, P310_lon],
-      [P311_lat, P311_lon],
-      [P312_lat, P312_lon],
-      [P313_lat, P313_lon],
-      [P314_lat, P314_lon],
-      [P315_lat, P315_lon],
-      [P316_lat, P316_lon],
-      [P317_lat, P317_lon],
-      [P318_lat, P318_lon],
-      [P319_lat, P319_lon],
-      [P320_lat, P320_lon],
-      [P321_lat, P321_lon],
-      [P322_lat, P322_lon],
-      [P323_lat, P323_lon],
-      [P324_lat, P324_lon],
-      [P325_lat, P325_lon],
-      [P326_lat, P326_lon],
-      [P327_lat, P327_lon],
-      [P328_lat, P328_lon],
-      [P329_lat, P329_lon],
-      [P330_lat, P330_lon],
-      [P331_lat, P331_lon],
-      [P332_lat, P332_lon],
-      [P333_lat, P333_lon],
-      [P334_lat, P334_lon],
-      [P335_lat, P335_lon],
-      [P336_lat, P336_lon],
-      [P337_lat, P337_lon],
-      [P338_lat, P338_lon],
-      [P339_lat, P339_lon],
-      [P340_lat, P340_lon],
-      [P341_lat, P341_lon],
-      [P342_lat, P342_lon],
-      [P343_lat, P343_lon],
-      [P344_lat, P344_lon],
-      [P345_lat, P345_lon],
-      [P346_lat, P346_lon],
-      [P347_lat, P347_lon],
-      [P348_lat, P348_lon],
-      [P349_lat, P349_lon],
-      [P350_lat, P350_lon],
-      [P351_lat, P351_lon],
-      [P352_lat, P352_lon],
-      [P353_lat, P353_lon],
-      [P354_lat, P354_lon],
-      [P355_lat, P355_lon],
-      [P356_lat, P356_lon],
-      [P357_lat, P357_lon],
-      [P358_lat, P358_lon],
-      [P359_lat, P359_lon],
-      [P360_lat, P360_lon],
-      [P361_lat, P361_lon],
-      [P362_lat, P362_lon],
-      [P363_lat, P363_lon],
-      [P364_lat, P364_lon],
-      [P365_lat, P365_lon],
-      [P366_lat, P366_lon],
-      [P367_lat, P367_lon],
-      [P368_lat, P368_lon],
-      [P369_lat, P369_lon],
-      [P370_lat, P370_lon],
-      [P371_lat, P371_lon],
-      [P372_lat, P372_lon],
-      [P373_lat, P373_lon],
-      [P374_lat, P374_lon],
-      [P375_lat, P375_lon],
-      [P376_lat, P376_lon],
-      [P377_lat, P377_lon],
-      [P378_lat, P378_lon],
-      [P379_lat, P379_lon],
-      [P380_lat, P380_lon],
-      [P381_lat, P381_lon],
-      [P382_lat, P382_lon],
-      [P383_lat, P383_lon],
-      [P384_lat, P384_lon],
-      [P385_lat, P385_lon],
-      [P386_lat, P386_lon],
-      [P387_lat, P387_lon],
-      [P388_lat, P388_lon],
-      [P389_lat, P389_lon],
-      [P390_lat, P390_lon],
-      [P391_lat, P391_lon],
-      [P392_lat, P392_lon],
-      [P393_lat, P393_lon],
-      [P394_lat, P394_lon],
-      [P395_lat, P395_lon],
-      [P396_lat, P396_lon],
-      [P397_lat, P397_lon],
-      [P398_lat, P398_lon],
-      [P399_lat, P399_lon],
-      [P400_lat, P400_lon],
-      [P401_lat, P401_lon],
-      [P402_lat, P402_lon],
-      [P403_lat, P403_lon],
-      [P404_lat, P404_lon],
-      [P405_lat, P405_lon],
-      [P406_lat, P406_lon],
-      [P407_lat, P407_lon],
-      [P408_lat, P408_lon],
-      [P409_lat, P409_lon],
-      [P410_lat, P410_lon],
-      [P411_lat, P411_lon],
-      [P412_lat, P412_lon],
-      [P413_lat, P413_lon],
-      [P414_lat, P414_lon],
-      [P415_lat, P415_lon],
-      [P416_lat, P416_lon],
-      [P417_lat, P417_lon],
-      [P418_lat, P418_lon],
-      [P419_lat, P419_lon],
-      [P420_lat, P420_lon],
-      [P421_lat, P421_lon],
-      [P422_lat, P422_lon],
-      [P423_lat, P423_lon],
-      [P424_lat, P424_lon],
-      [P425_lat, P425_lon],
-      [P426_lat, P426_lon],
-      [P427_lat, P427_lon],
-      [P428_lat, P428_lon],
-      [P429_lat, P429_lon],
-      [P430_lat, P430_lon],
-      [P431_lat, P431_lon],
-      [P432_lat, P432_lon],
-      [P433_lat, P433_lon],
-      [P434_lat, P434_lon],
-      [P435_lat, P435_lon],
-      [P436_lat, P436_lon],
-      [P437_lat, P437_lon],
-      [P438_lat, P438_lon],
-      [P439_lat, P439_lon],
-      [P440_lat, P440_lon],
-      [P441_lat, P441_lon],
-      [P442_lat, P442_lon],
-      [P443_lat, P443_lon],
-      [P444_lat, P444_lon],
-      [P445_lat, P445_lon],
-      [P446_lat, P446_lon],
-      [P447_lat, P447_lon],
-      [P448_lat, P448_lon],
-      [P449_lat, P449_lon],
-      [P450_lat, P450_lon],
-      [P451_lat, P451_lon],
-      [P452_lat, P452_lon],
-      [P453_lat, P453_lon],
-      [P454_lat, P454_lon],
-      [P455_lat, P455_lon],
-      [P456_lat, P456_lon],
-      [P457_lat, P457_lon],
-      [P458_lat, P458_lon],
-      [P459_lat, P459_lon],
-      [P460_lat, P460_lon],
-      [P461_lat, P461_lon],
-      [P462_lat, P462_lon],
-      [P463_lat, P463_lon],
-      [P464_lat, P464_lon],
-      [P465_lat, P465_lon],
-      [P466_lat, P466_lon],
-      [P467_lat, P467_lon],
-      [P468_lat, P468_lon],
-      [P469_lat, P469_lon],
-      [P470_lat, P470_lon],
-      [P471_lat, P471_lon],
-      [P472_lat, P472_lon],
-      [P473_lat, P473_lon],
-      [P474_lat, P474_lon],
-      [P475_lat, P475_lon],
-      [P476_lat, P476_lon]
+    [P1_lat, P1_lon],
+    [P2_lat, P2_lon],
+    [P3_lat, P3_lon],
+    [P4_lat, P4_lon],
+    [P5_lat, P5_lon],
+    [P6_lat, P6_lon],
+    [P7_lat, P7_lon],
+    [P8_lat, P8_lon],
+    [P9_lat, P9_lon],
+    [P10_lat, P10_lon],
+    [P11_lat, P11_lon],
+    [P12_lat, P12_lon],
+    [P13_lat, P13_lon],
+    [P14_lat, P14_lon],
+    [P15_lat, P15_lon],
+    [P16_lat, P16_lon],
+    [P17_lat, P17_lon],
+    [P18_lat, P18_lon],
+    [P19_lat, P19_lon],
+    [P20_lat, P20_lon],
+    [P21_lat, P21_lon],
+    [P22_lat, P22_lon],
+    [P23_lat, P23_lon],
+    [P24_lat, P24_lon],
+    [P25_lat, P25_lon],
+    [P26_lat, P26_lon],
+    [P27_lat, P27_lon],
+    [P28_lat, P28_lon],
+    [P29_lat, P29_lon],
+    [P30_lat, P30_lon],
+    [P31_lat, P31_lon],
+    [P32_lat, P32_lon],
+    [P33_lat, P33_lon],
+    [P34_lat, P34_lon],
+    [P35_lat, P35_lon],
+    [P36_lat, P36_lon],
+    [P37_lat, P37_lon],
+    [P38_lat, P38_lon],
+    [P39_lat, P39_lon],
+    [P40_lat, P40_lon],
+    [P41_lat, P41_lon],
+    [P42_lat, P42_lon],
+    [P43_lat, P43_lon],
+    [P44_lat, P44_lon],
+    [P45_lat, P45_lon],
+    [P46_lat, P46_lon],
+    [P47_lat, P47_lon],
+    [P48_lat, P48_lon],
+    [P49_lat, P49_lon],
+    [P50_lat, P50_lon],
+    [P51_lat, P51_lon],
+    [P52_lat, P52_lon],
+    [P53_lat, P53_lon],
+    [P54_lat, P54_lon],
+    [P55_lat, P55_lon],
+    [P56_lat, P56_lon],
+    [P57_lat, P57_lon],
+    [P58_lat, P58_lon],
+    [P59_lat, P59_lon],
+    [P60_lat, P60_lon],
+    [P61_lat, P61_lon],
+    [P62_lat, P62_lon],
+    [P63_lat, P63_lon],
+    [P64_lat, P64_lon],
+    [P65_lat, P65_lon],
+    [P66_lat, P66_lon],
+    [P67_lat, P67_lon],
+    [P68_lat, P68_lon],
+    [P69_lat, P69_lon],
+    [P70_lat, P70_lon],
+    [P71_lat, P71_lon],
+    [P72_lat, P72_lon],
+    [P73_lat, P73_lon],
+    [P74_lat, P74_lon],
+    [P75_lat, P75_lon],
+    [P76_lat, P76_lon],
+    [P77_lat, P77_lon],
+    [P78_lat, P78_lon],
+    [P79_lat, P79_lon],
+    [P80_lat, P80_lon],
+    [P81_lat, P81_lon],
+    [P82_lat, P82_lon],
+    [P83_lat, P83_lon],
+    [P84_lat, P84_lon],
+    [P85_lat, P85_lon],
+    [P86_lat, P86_lon],
+    [P87_lat, P87_lon],
+    [P88_lat, P88_lon],
+    [P89_lat, P89_lon],
+    [P90_lat, P90_lon],
+    [P91_lat, P91_lon],
+    [P92_lat, P92_lon],
+    [P93_lat, P93_lon],
+    [P94_lat, P94_lon],
+    [P95_lat, P95_lon],
+    [P96_lat, P96_lon],
+    [P97_lat, P97_lon],
+    [P98_lat, P98_lon],
+    [P99_lat, P99_lon],
+    [P100_lat, P100_lon],
+    [P101_lat, P101_lon],
+    [P102_lat, P102_lon],
+    [P103_lat, P103_lon],
+    [P104_lat, P104_lon],
+    [P105_lat, P105_lon],
+    [P106_lat, P106_lon],
+    [P107_lat, P107_lon],
+    [P108_lat, P108_lon],
+    [P109_lat, P109_lon],
+    [P110_lat, P110_lon],
+    [P111_lat, P111_lon],
+    [P112_lat, P112_lon],
+    [P113_lat, P113_lon],
+    [P114_lat, P114_lon],
+    [P115_lat, P115_lon],
+    [P116_lat, P116_lon],
+    [P117_lat, P117_lon],
+    [P118_lat, P118_lon],
+    [P119_lat, P119_lon],
+    [P120_lat, P120_lon],
+    [P121_lat, P121_lon],
+    [P122_lat, P122_lon],
+    [P123_lat, P123_lon],
+    [P124_lat, P124_lon],
+    [P125_lat, P125_lon],
+    [P126_lat, P126_lon],
+    [P127_lat, P127_lon],
+    [P128_lat, P128_lon],
+    [P129_lat, P129_lon],
+    [P130_lat, P130_lon],
+    [P131_lat, P131_lon],
+    [P132_lat, P132_lon],
+    [P133_lat, P133_lon],
+    [P134_lat, P134_lon],
+    [P135_lat, P135_lon],
+    [P136_lat, P136_lon],
+    [P137_lat, P137_lon],
+    [P138_lat, P138_lon],
+    [P139_lat, P139_lon],
+    [P140_lat, P140_lon],
+    [P141_lat, P141_lon],
+    [P142_lat, P142_lon],
+    [P143_lat, P143_lon],
+    [P144_lat, P144_lon],
+    [P145_lat, P145_lon],
+    [P146_lat, P146_lon],
+    [P147_lat, P147_lon],
+    [P148_lat, P148_lon],
+    [P149_lat, P149_lon],
+    [P150_lat, P150_lon],
+    [P151_lat, P151_lon],
+    [P152_lat, P152_lon],
+    [P153_lat, P153_lon],
+    [P154_lat, P154_lon],
+    [P155_lat, P155_lon],
+    [P156_lat, P156_lon],
+    [P157_lat, P157_lon],
+    [P158_lat, P158_lon],
+    [P159_lat, P159_lon],
+    [P160_lat, P160_lon],
+    [P161_lat, P161_lon],
+    [P162_lat, P162_lon],
+    [P163_lat, P163_lon],
+    [P164_lat, P164_lon],
+    [P165_lat, P165_lon],
+    [P166_lat, P166_lon],
+    [P167_lat, P167_lon],
+    [P168_lat, P168_lon],
+    [P169_lat, P169_lon],
+    [P170_lat, P170_lon],
+    [P171_lat, P171_lon],
+    [P172_lat, P172_lon],
+    [P173_lat, P173_lon],
+    [P174_lat, P174_lon],
+    [P175_lat, P175_lon],
+    [P176_lat, P176_lon],
+    [P177_lat, P177_lon],
+    [P178_lat, P178_lon],
+    [P179_lat, P179_lon],
+    [P180_lat, P180_lon],
+    [P181_lat, P181_lon],
+    [P182_lat, P182_lon],
+    [P183_lat, P183_lon],
+    [P184_lat, P184_lon],
+    [P185_lat, P185_lon],
+    [P186_lat, P186_lon],
+    [P187_lat, P187_lon],
+    [P188_lat, P188_lon],
+    [P189_lat, P189_lon],
+    [P190_lat, P190_lon],
+    [P191_lat, P191_lon],
+    [P192_lat, P192_lon],
+    [P193_lat, P193_lon],
+    [P194_lat, P194_lon],
+    [P195_lat, P195_lon],
+    [P196_lat, P196_lon],
+    [P197_lat, P197_lon],
+    [P198_lat, P198_lon],
+    [P199_lat, P199_lon],
+    [P200_lat, P200_lon],
+    [P201_lat, P201_lon],
+    [P202_lat, P202_lon],
+    [P203_lat, P203_lon],
+    [P204_lat, P204_lon],
+    [P205_lat, P205_lon],
+    [P206_lat, P206_lon],
+    [P207_lat, P207_lon],
+    [P208_lat, P208_lon],
+    [P209_lat, P209_lon],
+    [P210_lat, P210_lon],
+    [P211_lat, P211_lon],
+    [P212_lat, P212_lon],
+    [P213_lat, P213_lon],
+    [P214_lat, P214_lon],
+    [P215_lat, P215_lon],
+    [P216_lat, P216_lon],
+    [P217_lat, P217_lon],
+    [P218_lat, P218_lon],
+    [P219_lat, P219_lon],
+    [P220_lat, P220_lon],
+    [P221_lat, P221_lon],
+    [P222_lat, P222_lon],
+    [P223_lat, P223_lon],
+    [P224_lat, P224_lon],
+    [P225_lat, P225_lon],
+    [P226_lat, P226_lon],
+    [P227_lat, P227_lon],
+    [P228_lat, P228_lon],
+    [P229_lat, P229_lon],
+    [P230_lat, P230_lon],
+    [P231_lat, P231_lon],
+    [P232_lat, P232_lon],
+    [P233_lat, P233_lon],
+    [P234_lat, P234_lon],
+    [P235_lat, P235_lon],
+    [P236_lat, P236_lon],
+    [P237_lat, P237_lon],
+    [P238_lat, P238_lon],
+    [P239_lat, P239_lon],
+    [P240_lat, P240_lon],
+    [P241_lat, P241_lon],
+    [P242_lat, P242_lon],
+    [P243_lat, P243_lon],
+    [P244_lat, P244_lon],
+    [P245_lat, P245_lon],
+    [P246_lat, P246_lon],
+    [P247_lat, P247_lon],
+    [P248_lat, P248_lon],
+    [P249_lat, P249_lon],
+    [P250_lat, P250_lon],
+    [P251_lat, P251_lon],
+    [P252_lat, P252_lon]
 
   ], {
     color: color,
