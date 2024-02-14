@@ -3,7 +3,8 @@
 
 let latitudeHome = 56
 let longitudeHome = -114
-let zoom = 5
+// let zoom = 5
+let zoom = 12
 let map = L.map('map').setView([latitudeHome,longitudeHome],zoom)
 
 
@@ -14,8 +15,28 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
+// https://res.cloudinary.com/metacortexjohn/image/upload/v1707881405/Vermilion_logo_gsyosy.png
 
 
+
+// document.getElementById('btnShow').addEventListener('click',function(){
+//   let rigLatitude = Number(document.getElementById('rigLat').value)
+//   let rigLongitude = Number(document.getElementById('rigLon').value)
+//   if(rigLatitude == 0 && rigLongitude == 0){
+//     rigLatitude = 56.005;
+//     document.getElementById('rigLat').value = 56.005;
+//     rigLongitude = -114.002;
+//     document.getElementById('rigLon').value = -114.002;
+//   }
+//   let rigIcon = L.icon({
+//     iconUrl: 'https://res.cloudinary.com/metacortexjohn/image/upload/v1682359935/rig01_vgeizw.png',
+//     iconSize: [20, 30],
+//   });
+//   L.marker([rigLatitude, rigLongitude], {icon: rigIcon}).addTo(map);
+// });
+
+
+var rigs = new Array();
 document.getElementById('btnShow').addEventListener('click',function(){
   let rigLatitude = Number(document.getElementById('rigLat').value)
   let rigLongitude = Number(document.getElementById('rigLon').value)
@@ -29,18 +50,32 @@ document.getElementById('btnShow').addEventListener('click',function(){
     iconUrl: 'https://res.cloudinary.com/metacortexjohn/image/upload/v1682359935/rig01_vgeizw.png',
     iconSize: [20, 30],
   });
-  L.marker([rigLatitude, rigLongitude], {icon: rigIcon}).addTo(map);
+  if(rigs.length > 0){
+    let rigToRemove = document.getElementsByClassName('leaflet-marker-icon')[2]
+    rigToRemove.remove();
+    item = [{"lat": rigLatitude, "lon": rigLongitude}];
+    rigs.push(item);
+    msg="Lat:" + rigLatitude + ", Lon: " + rigLongitude
+    marcador = L.marker([rigLatitude, rigLongitude], {icon: rigIcon, clickable: true}).bindPopup(msg); 
+    map.addLayer(marcador);
+  }
+  if(rigs.length == 0){
+    item = [{"lat": rigLatitude, "lon": rigLongitude}];
+    rigs.push(item);
+    msg="Lat:" + rigLatitude + ", Lon: " + rigLongitude
+    marcador = L.marker([rigLatitude, rigLongitude], {icon: rigIcon, clickable: true}).bindPopup(msg); 
+    map.addLayer(marcador);
+  }
 });
 
 
 
 document.getElementById('btnBuscar').addEventListener('click',function(){
-
+  document.getElementById('btnBuscar').hidden = true;
   let heelLatitude = Number(document.getElementById('heelLat').value)
   let heelLongitude = Number(document.getElementById('heelLon').value)
   let toeLatitude = Number(document.getElementById('toeLat').value)
   let toeLongitude = Number(document.getElementById('toeLon').value)
-
   if(heelLatitude == 0 && heelLongitude == 0 && toeLatitude == 0 && toeLongitude == 0){
     heelLatitude = 56;
     document.getElementById('heelLat').value = 56;
@@ -51,18 +86,12 @@ document.getElementById('btnBuscar').addEventListener('click',function(){
     toeLongitude = -114;
     document.getElementById('toeLon').value = -114;
   }
-
-
   function deg2rad(deg) {
     return deg * (Math.PI/180)
   }
-
-
   function rad2deg(rad) {
     return rad * (180/Math.PI)
   }
-
-
   function getDistance(lat1,lon1,lat2,lon2) {
     // Haversine formula:
     let R = 6371e3; // metres // let R = 6378.14e3; // metres
@@ -76,8 +105,6 @@ document.getElementById('btnBuscar').addEventListener('click',function(){
     return d;
   }
   let distance = getDistance(heelLatitude, heelLongitude, toeLatitude, toeLongitude)
-
-
   function getBearing(lat1,lon1,lat2,lon2){
     let radLatHeel = deg2rad(lat1)
     let radLatToe = deg2rad(lat2)
@@ -90,24 +117,17 @@ document.getElementById('btnBuscar').addEventListener('click',function(){
     return brng
   }
   let Bearing = getBearing(heelLatitude, heelLongitude, toeLatitude, toeLongitude)
-
-
   let textAz = document.getElementById('az').innerText = " Distance: " + distance.toFixed(2) + " m | Bearing: " + Bearing.toFixed(2) + " deg";
-
-
-
   let heelIcon = L.icon({
     iconUrl: 'https://res.cloudinary.com/metacortexjohn/image/upload/v1690300661/position_ikv9ce.png',
     iconSize: [20, 20],
   });
   L.marker([heelLatitude, heelLongitude], {icon: heelIcon}).addTo(map);
-
   let toeIcon = L.icon({
     iconUrl: 'https://res.cloudinary.com/metacortexjohn/image/upload/v1690300661/position_ikv9ce.png',
     iconSize: [20, 20],
   });
   L.marker([toeLatitude, toeLongitude], {icon: toeIcon}).addTo(map);
-
   let well_trajectory = L.polygon([
     [heelLatitude, heelLongitude],
     [toeLatitude, toeLongitude]
